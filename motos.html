@@ -1,0 +1,189 @@
+ <!-- carrousel con modelos motos----------------------------------- -->
+ <section class="mt-5 modelos-carousel">
+    <div class="container-fluid">
+        <div id="modelosCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="img/hero/himalayan-removebg-preview.png" class="card-img-top"
+                                    alt="Modelo 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Himalayan 450</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="img/hero/shotgun-650-white-removebg-preview.png" class="card-img-top"
+                                    alt="Modelo 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Shotgun 650</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="img/hero/himalayan-removebg-preview.png" class="card-img-top"
+                                    alt="Modelo 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Himalayan 2</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="img/hero/himalayan-removebg-preview.png" class="card-img-top"
+                                    alt="Modelo 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Himalayan 450</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="img/hero/shotgun-650-white-removebg-preview.png" class="card-img-top"
+                                    alt="Modelo 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Shotgun 650</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="img/hero/himalayan-removebg-preview.png" class="card-img-top"
+                                    alt="Modelo 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Himalayan 2</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Agrega más items si lo deseas -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="img/hero/himalayan-removebg-preview.png" class="card-img-top"
+                                    alt="Modelo 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Himalayan 450</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="img/hero/shotgun-650-white-removebg-preview.png" class="card-img-top"
+                                    alt="Modelo 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Shotgun 650</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="img/hero/himalayan-removebg-preview.png" class="card-img-top"
+                                    alt="Modelo 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Himalayan 2</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#modelosCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#modelosCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+/*---------------------------------Carrousel motos------------------------------------
+
+.modelos-carousel {
+    background-color: black; /* Fondo negro para el carrusel */
+    padding: 20px 0; /* Espaciado en la parte superior e inferior */
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro translúcido para cada tarjeta */
+    border: none; /* Sin borde */
+    margin: 10px 0; /* Separación de 1 cm entre cards */
+    transition: transform 0.3s; /* Efecto de movimiento suave */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+.card-img-top {
+    height: 200px; /* Ajusta la altura de la imagen */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    filter: grayscale(50%); /* Opcional: añade un filtro para atenuar la imagen */
+    position: relative; /* Para el efecto de difuminado */
+}
+
+.card-body {
+    padding: 0; /* Sin padding para que el texto esté más cerca de la imagen */
+}
+
+.card-title {
+    color: var(--blanco); /* Color del texto */
+    font-size: 1rem;
+    text-align: center; /* Centra el texto */
+    position: absolute; /* Para superponer sobre la imagen */
+    top: 10px; /* Ajusta la posición vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translateX(-50%); /* Centrado horizontal */
+    background-color: rgba(0, 0, 0, 0); /* Sin fondo */
+    padding: 5px; /* Espaciado interno */
+}
+
+.carousel-inner {
+    width: 100%; /* Asegurarse que el carrusel ocupa el 100% de ancho */
+}
+
+.carousel-item {
+    padding: 10px; /* Espaciado entre las tarjetas */
+    position: relative; /* Para permitir la superposición de los efectos */
+}
+
+/* Efecto de difuminado en la parte superior e inferior de las imágenes */
+.card-img-top::before,
+.card-img-top::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 50px; /* Ajusta la altura del difuminado */
+    background: linear-gradient(to bottom, rgba(249, 237, 237, 0.7), transparent), 
+                linear-gradient(to top, rgba(233, 227, 227, 0.7), transparent);
+    z-index: 1;
+}
+
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* Color de las flechas */
+}
+
+/* Espaciado entre filas de modelos */
+.row {
+    margin-bottom: 20px; /* Espacio entre las filas */
+}

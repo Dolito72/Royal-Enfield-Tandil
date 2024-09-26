@@ -1,0 +1,879 @@
+/* -----------------------------------------------------------Variables---------------------------------------------------------*/
+:root {
+    --font: 'Lato', sans-serif;
+
+    /* Colores predominantes */
+    --rojo: #FF0000; /* Rojo principal */
+    --rojo-claro: #FF4C4C; /* Rojo más claro */
+    --rojo-oscuro: #C00000; /* Rojo más oscuro */
+    --negro: #121111;
+    --blanco: #f1eeee;
+    --gris-scroll: rgba(0, 0, 0, 0.1); /* Gris más transparente al hacer scroll */
+    /* Colores adicionales */
+    --gris: rgba(0, 0, 0, 0.39); /* Gris semitransparente */
+    --amarillo: #e8d532;
+    --gris-oscuro: #5E5E5D;
+  
+
+    /* Gradientes */
+    --background-header: linear-gradient(180deg, var(--rojo) 0%, var(--negro) 100%);
+    --background-section-8: linear-gradient(180deg, #F7E3D8 21.2%, #8FBEFC 81.48%);
+}
+
+/* -------------------------------------------------------Estilos Globales-------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--negro); /* Fondo negro */
+    color: var(--negro); /* Texto negro */
+    font-family: var(--font);
+    font-weight: 800; /* Semi-bold */
+  
+    font-size: 20px;
+    line-height: 18.9px;
+    
+}
+
+
+  
+/* -----------------------------------------------------Estilos Personalizados---------------------------------------------------*/
+/* -------------------------------Navbar ------------------------------------------------------------*/
+
+
+/* Navbar general (mobile-first) */
+.navbar {
+    background-color: rgba(255, 255, 255, 0); /* Fondo transparente */
+    padding: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+
+
+
+
+
+
+/* Logo con animación de agrandamiento */
+.navbar-brand img {
+    height: 50px;
+    transition: transform 0.3s ease, height 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1); /* Aumenta el logo al pasar el mouse */
+}
+
+.navbar.scrolled .navbar-brand img {
+    height: 40px; /* Se reduce el logo al hacer scroll */
+}
+
+/* Links de navegación */
+.navbar .nav-link {
+    color: var(--blanco);
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.navbar .nav-link:hover {
+    color: var(--rojo);
+}
+
+/* Centrar los enlaces verticalmente */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+
+/* --------------------------------Sección Hero---------------------------------------- */
+.carousel-item {
+    background-image: url('../img/hero/fondo-hero.jpeg'); /* Reemplaza con tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 60vh;
+    overflow: hidden;
+    padding: 0px;
+    background-color: var(--negro);
+}
+
+.carousel-item {
+    position: relative;
+    background-color: var(--gris); /* Fondo negro por defecto */
+    color: var(--blanco); /* Texto blanco por defecto */
+    padding: 10px;
+}
+
+
+/* Imagen de la moto */
+.moto-img {
+    width: 100%; /* Full width en mobile */
+    max-width: 400px; /* Limitar el tamaño máximo */
+    margin: 0 auto; /* Centrar en pantallas pequeñas */
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s ease-in-out;
+}
+
+/* Texto sobre la moto */
+.carousel-text {
+    position: relative; /* Cambiado a relativo para mobile */
+    top: auto;
+    left: auto;
+    text-align: center; /* Centrado en mobile */
+    margin-top: 20px;
+    color: var(--blanco);
+  
+}
+
+.animated-text {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+/* Botón debajo del texto */
+.btn-moto-link {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Animación activa */
+.active .moto-img {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.active .animated-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*-------------------------------------gama motos--------------------------------*/
+.modelos-section {
+    background-color: var(--negro); /* Fondo negro para la sección */
+    padding: 20px 4px; /* Espaciado arriba y abajo */
+}
+
+.title-gama {
+    color: var(--rojo); /* Título en rojo */
+    margin-bottom: 20px; /* Espacio inferior del título */
+    font-weight: 900;
+}
+
+.card {
+    background-color: #3A3A3A; /* Fondo gris más oscuro */
+    margin: 10px 0; /* Espacio vertical entre tarjetas */
+    transition: transform 0.3s ease; /* Animación para el hover */
+    border: none; /* Sin borde */
+    height: 350px; /* Altura de la tarjeta */
+    height: auto; /* Permite que la altura de la tarjeta se ajuste automáticamente */
+}
+
+.card-img-top {
+    height: 70%; /* Ajusta la altura de la imagen en relación a la tarjeta */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+    transition: transform 0.3s ease; /* Transición suave para la imagen */
+}
+
+.card-img-top:hover {
+    transform: scale(1.1); /* Escala al 110% al hacer hover */
+}
+
+.card-body {
+    height: 30%; /* Ajusta la altura del cuerpo de la tarjeta */
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.card-title {
+    color: var(--blanco); /* Color blanco para el nombre del modelo */
+    font-size: 1.5rem; /* Tamaño de fuente en mobile */
+    font-weight: bold; /* Fuente en negrita */
+    text-align: center; /* Centra el texto */
+    margin-top: 10px; /* Espacio superior */
+}
+
+
+
+
+/*------------------Seccion form y contacto---------------------------------------------------------------------------*/
+.contact-section {
+    background-image: url('../img/form/noticia_29498.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 35px; /* Elimina el padding a los lados */
+   
+    font-size: 16px; /* Ajusta el tamaño de la fuente según sea necesario */
+}
+
+
+.form-container {
+    background-color: rgba(220, 53, 69, 0.8); /* Fondo rojo translúcido */
+    padding: 30px; /* Más espacio dentro del formulario */
+    color: var(--blanco);
+    height: 100%; /* Asegura que el formulario ocupe toda la altura */
+}
+
+.form-container h4 {
+    color: var(--blanco); /* Asegúrate de que la variable esté definida */
+    font-size: 1.2em; /* Cambia el tamaño de fuente según tus preferencias */
+    margin-top: 20px; /* Añade un margen superior para separar del contenido anterior */
+    text-align: center; /* Centra el texto si deseas */
+}
+
+
+
+
+button.btn-warning {
+    display: block;
+    margin: 20px auto 0; /* Centra el botón y añade margen superior */
+    padding: 10px 20px; /* Tamaño del botón */
+    color: var(--blanco);
+}
+
+
+.contact-info-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco translúcido */
+    padding: 30px; /* Ajuste de padding */
+    height: 100%; /* Para igualar la altura con el formulario */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--gris-oscuro);
+}
+
+.contact-info .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px; /* Espacio entre las filas de contacto */
+}
+
+
+.social-media-icons {
+    display: flex;
+    justify-content: center; /* Centra los iconos de redes sociales */
+    margin-top: -10px; /* Mueve los iconos hacia arriba */
+}
+
+.social-media-icons i {
+    font-size: 36px; /* Tamaño aumentado para los íconos */
+    margin-right: 20px; /* Espacio más amplio entre los íconos */
+    color: var(--gris-oscuro); /* Cambia el color de los íconos, si es necesario */
+}
+
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.col-md-8, .col-md-4 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/*-----------------------------------------seccion mapa-----------------------*/
+.map {
+    padding: 0; /* Elimina padding del contenedor */
+    margin: 0;
+}
+
+
+
+iframe {
+    border: none; /* Asegúrate de que el iframe no tenga borde */
+}
+
+
+/* ----------------------------Pie de página -------------------------------*/
+
+/* Estilos para mobile-first por defecto */
+.fat-footer {
+    background-color: var(--gris); /* Fondo negro */
+    color: var(--blanco); /* Color de texto blanco */
+    padding: 40px 0; /* Espaciado vertical */
+}
+
+.footer-title, .footer-links, .fat-footer p {
+    text-align: center; /* Centra todo en pantallas pequeñas por defecto */
+}
+
+/* Agregar espacio entre las secciones del footer para mobile */
+.fat-footer .col-12 {
+    margin-bottom: 20px; /* Espacio entre las secciones en mobile */
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.footer-links a:hover {
+    color: var(--gris-oscuro);
+}
+
+
+.footer-title:hover {
+    color: var(--gris-oscuro);
+}
+
+.social-media-icons{
+    padding-top: 30px;
+   
+}
+.footer-bottom {
+    font-size: smaller;
+    font-weight: 100;
+    text-align: center; /* Asegura que el texto esté centrado */
+    margin: 0 auto; /* Centrando el contenido horizontalmente */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+/* --------------------Estilo para el icono fijo de WhatsApp------------------- */
+/* Estilo para el icono fijo de WhatsApp */
+.whatsapp-fixed {
+    position: fixed; /* Fijo al hacer scroll */
+    bottom: 20px; /* Separación inferior */
+    right: 20px; /* Separación derecha */
+    background-color: #25D366; /* Color verde de WhatsApp */
+    color: var(--blanco); /* Color de icono */
+    font-size: 2.5rem; /* Tamaño del icono (mediano) */
+    padding: 10px; /* Espaciado interno para el botón */
+    border-radius: 50%; /* Forma circular */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle relieve */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+    transition: background-color 0.3s ease; /* Efecto de transición suave */
+    display: block !important;
+}
+
+.whatsapp-fixed:hover {
+    background-color: #128C7E; /* Cambia el color al pasar el mouse */
+}
+
+/*--------Hasta 900px para cubrir todo tipo de móviles (vertical y horizontal).------------------*/
+
+@media (max-width: 900px) and (orientation: landscape){
+/*------------------- Navbar ------------------------------------------------------------*/
+    .navbar {
+        padding: 5px;
+    }
+
+   
+
+    .navbar-brand img {
+        height: 60px;
+    }
+
+    .navbar.scrolled .navbar-brand img {
+        height: 50px;
+    }
+
+    .navbar .nav-link {
+        font-size: 18px;
+        margin-left: 15px;
+    }
+
+/* --------------------------------Sección Hero---------------------------------------- */
+.carousel-item {
+    background-image: url('../img/hero/fondo-hero.jpeg'); /* Reemplaza con tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 60vh;
+    overflow: hidden;
+    padding: 0px;
+    background-color: var(--negro);
+}
+
+.carousel-item {
+    position: relative;
+    background-color: var(--gris); /* Fondo negro por defecto */
+    color: var(--blanco); /* Texto blanco por defecto */
+    padding: 10px;
+}
+
+
+/* Imagen de la moto */
+.moto-img {
+    width: 100%; /* Full width en mobile */
+    max-width: 400px; /* Limitar el tamaño máximo */
+    margin: 0 auto; /* Centrar en pantallas pequeñas */
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s ease-in-out;
+}
+
+/* Texto sobre la moto */
+.carousel-text {
+    position: relative; /* Cambiado a relativo para mobile */
+    top: auto;
+    left: auto;
+    text-align: center; /* Centrado en mobile */
+    margin-top: 20px;
+    color: var(--blanco);
+  
+}
+
+.animated-text {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+/* Botón debajo del texto */
+.btn-moto-link {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Animación activa */
+.active .moto-img {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.active .animated-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*-------------------------------------gama motos--------------------------------*/
+.modelos-section {
+    background-color: var(--gris); /* Fondo negro para la sección */
+    padding: 20px 4px; /* Espaciado arriba y abajo */
+}
+
+.title-gama {
+    color: var(--rojo-oscuro); /* Título en rojo */
+    margin-bottom: 20px; /* Espacio inferior del título */
+    font-weight: 900;
+}
+
+.card {
+    background-color: #3A3A3A; /* Fondo gris más oscuro */
+    margin: 10px 0; /* Espacio vertical entre tarjetas */
+    transition: transform 0.3s ease; /* Animación para el hover */
+    border: none; /* Sin borde */
+    height: 350px; /* Altura de la tarjeta */
+    overflow: hidden; /* Evita que el contenido sobresalga de la tarjeta */
+}
+
+.card-img-top {
+    height: 70%; /* Ajusta la altura de la imagen en relación a la tarjeta */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+    transition: transform 0.3s ease; /* Transición suave para la imagen */
+    
+
+}
+
+
+
+
+.card-img-top:hover {
+    transform: scale(1.1); /* Escala al 110% al hacer hover */
+}
+
+.card-body {
+    height: 30%; /* Ajusta la altura del cuerpo de la tarjeta */
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.card-title {
+    color: var(--blanco); /* Color blanco para el nombre del modelo */
+    font-size: 1.5rem; /* Tamaño de fuente en mobile */
+    font-weight: bold; /* Fuente en negrita */
+    text-align: center; /* Centra el texto */
+    margin-top: 10px; /* Espacio superior */
+}
+
+
+
+
+/*------------------Seccion form y contacto---------------------------------------------------------------------------*/
+.contact-section {
+    background-image: url('../img/form/noticia_29498.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 35px; /* Elimina el padding a los lados */
+   
+    font-size: 16px; /* Ajusta el tamaño de la fuente según sea necesario */
+}
+
+
+.form-container {
+    background-color: rgba(220, 53, 69, 0.8); /* Fondo rojo translúcido */
+    padding: 30px; /* Más espacio dentro del formulario */
+    color: var(--blanco);
+    height: 100%; /* Asegura que el formulario ocupe toda la altura */
+}
+
+.form-container h4 {
+    color: var(--blanco); /* Asegúrate de que la variable esté definida */
+    font-size: 1.2em; /* Cambia el tamaño de fuente según tus preferencias */
+    margin-top: 60px; /* Añade un margen superior para separar del contenido anterior */
+    text-align: center; /* Centra el texto si deseas */
+}
+
+
+button.btn-warning {
+    display: block;
+    margin: 20px auto 0; /* Centra el botón y añade margen superior */
+    padding: 10px 20px; /* Tamaño del botón */
+    color: var(--blanco);
+}
+
+
+.contact-info-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco translúcido */
+    padding: 28px; /* Ajuste de padding */
+    height: 100%; /* Para igualar la altura con el formulario */
+   
+     /* Cambia el ancho de 270px a 100% */
+     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    color: var(--gris-oscuro);
+}
+
+.contact-info .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px; /* Espacio entre las filas de contacto */
+}
+
+
+.social-media-icons {
+    display: flex;
+    justify-content: center; /* Centra los iconos de redes sociales */
+    margin-top: -10px; /* Mueve los iconos hacia arriba */
+}
+
+.social-media-icons i {
+    font-size: 36px; /* Tamaño aumentado para los íconos */
+    margin-right: 20px; /* Espacio más amplio entre los íconos */
+    color: var(--gris-oscuro); /* Cambia el color de los íconos, si es necesario */
+}
+
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.col-md-8, .col-md-4 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/*-----------------------------------------seccion mapa-----------------------*/
+.map {
+    padding: 0; /* Elimina padding del contenedor */
+    margin: 0;
+}
+
+
+
+iframe {
+    border: none; /* Asegúrate de que el iframe no tenga borde */
+}
+
+
+/* ----------------------------Pie de página -------------------------------*/
+
+/* Estilos para mobile-first por defecto */
+.fat-footer {
+    background-color: var(--gris); /* Fondo negro */
+    color: var(--blanco); /* Color de texto blanco */
+    padding: 40px 0; /* Espaciado vertical */
+}
+
+.footer-title, .footer-links, .fat-footer p {
+    text-align: center; /* Centra todo en pantallas pequeñas por defecto */
+}
+
+/* Agregar espacio entre las secciones del footer para mobile */
+.fat-footer .col-12 {
+    margin-bottom: 20px; /* Espacio entre las secciones en mobile */
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.footer-links a:hover {
+    color: var(--gris-oscuro);
+}
+
+
+.footer-title:hover {
+    color: var(--gris-oscuro);
+}
+
+ .social-media-icons{
+    padding-top: 30px;
+   
+}
+
+.footer-bottom {
+    font-size: smaller;
+    font-weight: 100;
+    text-align: center; /* Asegura que el texto esté centrado */
+    margin: 0 auto; /* Centrando el contenido horizontalmente */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+}
+/* --------------------Estilo para el icono fijo de WhatsApp------------------- */
+/* Estilo para el icono fijo de WhatsApp */
+.whatsapp-fixed {
+    position: fixed; /* Fijo al hacer scroll */
+    bottom: 20px; /* Separación inferior */
+    right: 20px; /* Separación derecha */
+    background-color: #25D366; /* Color verde de WhatsApp */
+    color: var(--blanco); /* Color de icono */
+    font-size: 2.5rem; /* Tamaño del icono (mediano) */
+    padding: 10px; /* Espaciado interno para el botón */
+    border-radius: 50%; /* Forma circular */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle relieve */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+    transition: background-color 0.3s ease; /* Efecto de transición suave */
+    display: block !important;
+}
+
+.whatsapp-fixed:hover {
+    background-color: #128C7E; /* Cambia el color al pasar el mouse */
+}
+
+}
+
+/* ----------------------------------------------------------- Estilos Desktop --------------------------------------------------------- */
+@media (min-width: 901px) {
+/*-------------------------------------nav------------------------------*/
+
+    .navbar {
+        padding: 6px;
+       
+      
+    }
+
+    #logo{
+        width: 90px; /* Aumenta el tamaño del logo */
+        height: auto; /* Mantiene las proporciones */
+
+    }
+   
+    .navbar .nav-link {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+
+    /*--------------------------seccion hero------------------------------------------*/
+      /* Opción 2: Fondo con imagen y capa semitransparente */
+      .carousel-item {
+        background-image: url('../img/hero/fondo-hero.jpeg'); /* Reemplaza con tu imagen */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* Capa semitransparente sobre la imagen */
+    .carousel-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.2); /* Negro con 70% de transparencia */
+        z-index: 1;
+    }
+
+    /* Asegura que el contenido esté encima del fondo */
+    .carousel-caption {
+        position: relative;
+        z-index: 2;
+        color: var(--blanco); /* Asegura que el texto siga siendo blanco */
+    }
+
+    /* Imagen de la moto en tablet/desktop */
+    .moto-img {
+        width: 75%; /* Ajustamos para que ocupe más espacio en desktop */
+        max-width: none;
+        object-fit: cover; /* Para que la imagen no se deforme */
+        z-index: 2;
+    }
+
+    /* Texto en tablet/desktop */
+    .carousel-text {
+        position: absolute;
+        top: 50%;
+        left: 70%; /* Movemos el texto al costado derecho */
+        transform: translateY(-50%);
+        text-align: left; /* Texto alineado a la izquierda */
+        max-width: 25%; /* Limitamos el ancho del texto */
+        z-index: 5;
+    }
+
+    /* Título grande y llamativo */
+    .carousel-text h5 {
+        font-size: 4rem; /* Aumentamos aún más el tamaño del título */
+        font-weight: bold; /* Letras gruesas */
+        text-transform: uppercase; /* Texto en mayúsculas */
+        color: var(--blanco); /* Usamos el color rojo de la marca */
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* Sombra para que destaque */
+        margin-bottom: 15px;
+        letter-spacing: 2px; /* Más espacio entre letras */
+    }
+
+    /* Descripción estilizada */
+    .carousel-text p {
+        font-size: 2.5rem; /* Aumentamos el tamaño de la descripción */
+        color:  #ffcc00 ; /* Descripción en amarillo para contrastar */
+        font-style: italic; /* Agregamos cursiva para un toque elegante */
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4); /* Sombra sutil para la descripción */
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+    }
+/* Botón estilizado */
+.btn-moto-link {
+    margin-top: 20px;
+    padding: 15px 25px; /* Botón más grande */
+    background-color: var(--rojo);
+    color: var(--blanco);
+    font-size: 1.2rem; /* Letra más grande en el botón */
+    font-weight: bold;
+    text-transform: uppercase; /* Texto en mayúsculas */
+    border: 2px solid var(--rojo-oscuro); /* Borde rojo para destacarlo */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Añadir transformación */
+    cursor: pointer;
+}
+
+/* Efecto hover en el botón */
+.btn-moto-link:hover {
+    background-color: var(--rojo); /* Cambia el fondo a rojo al hacer hover */
+    color: var(--blanco); /* Texto blanco siempre */
+    border-color: var(--rojo-oscuro); /* Cambia el borde a rojo oscuro al hacer hover */
+    transform: scale(1.3); /* Efecto de escalado al pasar el ratón */
+}
+/*---------------------------------seccion modelos motos-----------------------------------------*/
+.card {
+    margin: 20px auto; /* Centrar tarjetas en desktop */
+    height: 500px; /* Altura de la tarjeta en desktop */
+    width: 500px; /* Ancho de la tarjeta */
+}
+
+.card-img-top {
+    height: 80%; /* Aumenta la altura de la imagen en desktop */
+}
+
+.card-title {
+    font-size: 1.8rem; /* Tamaño de fuente más grande en desktop */
+}
+
+.row {
+    justify-content: center; /* Centra la fila en desktop */
+}
+
+
+/*----------------------------seccion form y contacto----------------------------*/
+.form-container h4 {
+    color: var(--blanco);
+    font-weight: 600; /* Asegúrate de que la variable esté definida */
+    font-size: 1.6em; /* Cambia el tamaño de fuente según tus preferencias */
+    margin-top: 60px; /* Añade un margen superior para separar del contenido anterior */
+    text-align: center; /* Centra el texto si deseas */
+}
+
+
+.contact-section {
+    font-size: 20px; /* Ajusta el tamaño de la fuente según sea necesario */
+}
+
+/*----------------------------footer------------------------*/
+.footer-title, .footer-links, .fat-footer p {
+    text-align: left; /* Alinea el texto a la izquierda en desktop */
+}
+
+.fat-footer .col-md-4 {
+    margin-bottom: 0; /* Elimina el espacio extra entre secciones en desktop */
+}
+
+.social-media-icons{
+    padding-top: 30px;
+    padding-right: 260px;
+}
+
+.footer-bottom {
+   
+    text-align: center; /* Asegura que el texto esté centrado */
+    padding-bottom: 10px;
+    padding-left: 240px;
+    
+}
+
+/*---------------------------icono whatsapp--desktop-----------------*/
+.whatsapp-fixed{
+    font-size: 4rem;
+}
+
+}
