@@ -186,7 +186,6 @@ body {
 .card {
     background-color: #3A3A3A; /* Fondo gris más oscuro */
     margin: 10px 0; /* Espacio vertical entre tarjetas */
-    transition: transform 0.3s ease; /* Animación para el hover */
     border: none; /* Sin borde */
     height: 350px; /* Altura de la tarjeta */
     height: auto; /* Permite que la altura de la tarjeta se ajuste automáticamente */
@@ -196,11 +195,11 @@ body {
     height: 70%; /* Ajusta la altura de la imagen en relación a la tarjeta */
     object-fit: cover; /* Mantiene la proporción de la imagen */
     width: 100%; /* Asegura que la imagen ocupe todo el ancho */
-    transition: transform 0.3s ease; /* Transición suave para la imagen */
+    transition: transform 0.5s ease; /* Transición suave para la imagen */
 }
 
 .card-img-top:hover {
-    transform: scale(1.1); /* Escala al 110% al hacer hover */
+    transform: scale(1.05); /* Escala al 110% al hacer hover */
 }
 
 .card-body {
@@ -497,7 +496,7 @@ iframe {
 .card {
     background-color: #3A3A3A; /* Fondo gris más oscuro */
     margin: 10px 0; /* Espacio vertical entre tarjetas */
-    transition: transform 0.3s ease; /* Animación para el hover */
+   
     border: none; /* Sin borde */
     height: 350px; /* Altura de la tarjeta */
     overflow: hidden; /* Evita que el contenido sobresalga de la tarjeta */
@@ -516,7 +515,7 @@ iframe {
 
 
 .card-img-top:hover {
-    transform: scale(1.1); /* Escala al 110% al hacer hover */
+    transform: scale(1.05); /* Escala al 110% al hacer hover */
 }
 
 .card-body {
@@ -556,10 +555,10 @@ iframe {
 }
 
 .form-container h4 {
-    color: var(--blanco); /* Asegúrate de que la variable esté definida */
-    font-size: 1.2em; /* Cambia el tamaño de fuente según tus preferencias */
+    color: var(--blanco); 
+    font-size: 1.2em; /* Cambia el tamaño de fuente  */
     margin-top: 60px; /* Añade un margen superior para separar del contenido anterior */
-    text-align: center; /* Centra el texto si deseas */
+    text-align: center; /* Centra el texto  */
 }
 
 
@@ -573,13 +572,14 @@ button.btn-warning {
 
 .contact-info-container {
     background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco translúcido */
-    padding: 28px; /* Ajuste de padding */
+    padding: 16px; /* Ajuste de padding */
     height: 100%; /* Para igualar la altura con el formulario */
-   
+    
      /* Cambia el ancho de 270px a 100% */
-     width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    font-size: 1 rem;
     justify-content:space-between;
     color: var(--gris-oscuro);
 }
@@ -615,7 +615,7 @@ button.btn-warning {
 
 /*-----------------------------------------seccion mapa-----------------------*/
 .map {
-    padding: 0; /* Elimina padding del contenedor */
+    padding-right: 30px; /* Elimina padding del contenedor */
     margin: 0;
 }
 
@@ -672,6 +672,10 @@ iframe {
  .social-media-icons{
     padding-top: 30px;
    
+}
+
+.footer-contacto p{
+    font-size: 1 rem;
 }
 
 .footer-bottom {
@@ -819,7 +823,7 @@ iframe {
 .card {
     margin: 20px auto; /* Centrar tarjetas en desktop */
     height: 500px; /* Altura de la tarjeta en desktop */
-    width: 500px; /* Ancho de la tarjeta */
+    width: 600px; /* Ancho de la tarjeta */
 }
 
 .card-img-top {
