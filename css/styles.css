@@ -268,37 +268,44 @@ body {
 
 .slider-item:nth-child(3) {
     background-image: linear-gradient(to bottom, var(--negro), transparent),
+    linear-gradient(to top, var(--negro), transparent),
         url('../img/gama/fondo-gris.jpg');
 }
 
 .slider-item:nth-child(4) {
     background-image: linear-gradient(to bottom, var(--negro), transparent),
-        url('../img/gama/fondo-cielo.jpg');
+    linear-gradient(to top, var(--negro), transparent),
+    url('../img/gama/fondo-cielo.jpg');
 }
 
 .slider-item:nth-child(5) {
     background-image: linear-gradient(to bottom, var(--negro), transparent),
-        url('../img/gama/fondo-atardecer.jpg');
+    linear-gradient(to top, var(--negro), transparent),
+    url('../img/gama/fondo-atardecer.jpg');
 }
 
 .slider-item:nth-child(6) {
     background-image: linear-gradient(to bottom, var(--negro), transparent),
-        url('../img/gama/fondo-ruta.jpg');
+    linear-gradient(to top, var(--negro), transparent),
+    url('../img/gama/fondo-ruta.jpg');
 }
 
 .slider-item:nth-child(7) {
     background-image: linear-gradient(to bottom, var(--negro), transparent),
+    linear-gradient(to top, var(--negro), transparent),
         url('../img/gama/fondo-borroso-velocidad.jpg');
 }
 
 .slider-item:nth-child(8) {
     background-image: linear-gradient(to bottom, var(--negro), transparent),
-        url('../img/gama/fondo-marron.jpg');
+    linear-gradient(to top, var(--negro), transparent),
+    url('../img/gama/fondo-marron.jpg');
 }
 
 .slider-item:nth-child(9) {
     background-image: linear-gradient(to bottom, var(--negro), transparent),
-        url('../img/gama/fondo-gris.jpg');
+    linear-gradient(to top, var(--negro), transparent),
+    url('../img/gama/fondo-gris.jpg');
 }
 
 
@@ -363,7 +370,63 @@ body {
     right: 10px;
 }
 
+/* ------------------------------Sección eventos  */
+/*----------------------------- Eventos------------------------------*/
+/* Estilo para la sección */
+/* Estilos generales para la sección */
+.section-eventos {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  
+}
 
+.section-eventos-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--blanco);
+}
+
+/* Estilos para las imágenes */
+.eventos-container {
+    display: flex;
+    flex-direction: column; /* Mobile-first: imágenes una debajo de la otra */
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+.eventos-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.eventos-item img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+/* Estilo del título de la imagen (oculto por defecto) */
+.eventos-title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--blanco);
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    opacity: 0; /* Ocultar el título inicialmente */
+    transition: opacity 0.2s ease;
+}
+
+/* Efecto de hover en la imagen */
+.eventos-item:hover img {
+    transform: scale(1.2); /* Agrandar la imagen al hacer hover */
+}
+
+.eventos-item:hover .eventos-title {
+    opacity: 1; /* Mostrar el título al hacer hover */
+}
 
 
 /*------------------Seccion form y contacto---------------------------------------------------------------------------*/
@@ -755,7 +818,12 @@ iframe {
         transform: translateY(-50%);
         z-index: 1;
     }
-
+    /*----------------*/
+       /*-----------------------seccion eventos----------------------*/
+    /* Estilos para las imágenes */
+    .eventos-container {
+        flex-direction: row; /* Alinear imágenes horizontalmente en pantallas grandes */
+     }
 
 
     /*------------------Seccion form y contacto---------------------------------------------------------------------------*/
@@ -1191,6 +1259,17 @@ iframe {
         top: 140%;
         /* Ajusta la posición si es necesario */
     }
+      /*-----------------------seccion eventos--------------------------*/
+      .eventos-container {
+        flex-direction: row; /* Alinear imágenes horizontalmente en pantallas grandes */
+     }
+     .section-eventos-title{
+         font-weight: 900;
+         font-size: 2rem;
+     }
+
+
+
 
     /*----------------------------seccion form y contacto----------------------------*/
     .form-container h4 {
