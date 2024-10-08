@@ -450,6 +450,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--blanco);
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000; /* Sombra negra alrededor del texto */
     font-size: 40px;
     font-weight: 900;
     text-transform: uppercase;
@@ -873,7 +878,8 @@ iframe {
     }
      
 
-
+  
+     
 
     /*------------------Seccion form y contacto---------------------------------------------------------------------------*/
     .contact-section {
@@ -1323,6 +1329,8 @@ iframe {
      .section-eventos-title{
          font-weight: 900;
          font-size: 2rem;
+     
+       
      }
 
 
