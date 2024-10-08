@@ -391,7 +391,7 @@ body {
 .eventos-container {
     display: flex;
     flex-direction: column; /* Mobile-first: imágenes una debajo de la otra */
-    gap: 10px; /* Espacio entre las imágenes */
+    gap: 2px; /* Espacio entre las imágenes */
 }
 
 .eventos-item {
@@ -403,6 +403,44 @@ body {
 .eventos-item img {
     width: 100%;
     transition: transform 0.3s ease;
+}
+
+.video-container {
+    position: relative; /* Para posicionar el botón Play sobre el video */
+}
+
+.eventos-video {
+    width: 100%; /* Video se ajusta al contenedor */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Elimina el espacio en la parte inferior */
+}
+
+.play-button {
+    position: absolute;
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Centrado exacto */
+    width: 60px; /* Ancho del botón Play */
+    height: 60px; /* Altura del botón Play */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    border-radius: 50%; /* Bordes redondeados */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+.play-button::before {
+    content: ''; /* Contenido vacío */
+    border-left: 20px solid white; /* Triángulo de Play */
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+/* Ocultar el botón Play cuando el video está reproduciendo */
+.eventos-video:focus + .play-button,
+.eventos-video:playing + .play-button {
+    display: none; /* Oculta el botón Play al reproducir */
 }
 
 /* Estilo del título de la imagen (oculto por defecto) */
@@ -824,6 +862,17 @@ iframe {
     .eventos-container {
         flex-direction: row; /* Alinear imágenes horizontalmente en pantallas grandes */
      }
+
+     .eventos-item {
+        width: 38%; /* Tres ítems por fila en desktop */
+        height: 400px; /* Altura específica para video en desktop */
+    }
+    .eventos-video {
+        width: 100%;
+        height: 400px; /* Altura específica para video en desktop */
+    }
+     
+
 
 
     /*------------------Seccion form y contacto---------------------------------------------------------------------------*/
@@ -1263,6 +1312,14 @@ iframe {
       .eventos-container {
         flex-direction: row; /* Alinear imágenes horizontalmente en pantallas grandes */
      }
+     .eventos-item {
+        width: 38%; /* Tres ítems por fila en desktop */
+        height: 600px; /* Altura específica para video en desktop */
+    }
+    .eventos-video {
+        width: 100%;
+        height: 600px; /* Altura específica para video en desktop */
+    }
      .section-eventos-title{
          font-weight: 900;
          font-size: 2rem;
