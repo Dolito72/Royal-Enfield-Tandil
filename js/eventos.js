@@ -13,4 +13,10 @@ videoContainers.forEach(container => {
     video.addEventListener('pause', function() {
         playButton.style.display = 'flex'; // Muestra el botón Play
     });
+
+    // Manejar el final del video para mostrar el poster
+    video.addEventListener('ended', function() {
+        playButton.style.display = 'flex'; // Muestra el botón Play al final
+        video.load(); // Vuelve a cargar el video para que muestre el poster
+    });
 });
