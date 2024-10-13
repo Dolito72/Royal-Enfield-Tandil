@@ -1,0 +1,63 @@
+{
+    "motos": [
+        {
+            "id": 1,
+            "nombre": "Shotgun 650",
+            "logo": "../img/gama/logo-shotgun-blanco.png",
+            "imagenHeader": "../img/hero/Shotgun 650 - Stencil White(6).webp",
+            "fondoHeader": "../img/gama/fondo-borroso-velocidad.jpg",
+            "descripcion": "La Shotgun 650 escapa a cualquier intento de categorización, tanto en la forma como en el fondo.",
+            "fichaTecnica": "../pdf/ficha-shotgun.pdf",
+            "imagenFicha": "../img/detalle/shotgun.webp", 
+            "descripcionFicha":"Esta moto encarna nuestro más puro ADN motero, cuenta con capacidades modulares y luce una estética neomodernista con colores exclusivos que se salen de lo común para redefinir los límites donde Royal Enfield puede llegar.", 
+            "imagenForm": "../img/form/shotgun.webp",
+            "video": "https://www.youtube.com/embed/wBjtalKpsJ0",
+            "imagenGira": "",
+            "colores": [
+                {
+                    "nombre": "Rojo",
+                    "imagen": "ruta/a/moto-roja.jpg"
+                },
+                {
+                    "nombre": "Azul",
+                    "imagen": "ruta/a/moto-azul.jpg"
+                }
+            ],
+            "wallpapers": [
+                "../img/galeria/shotgun-galeria.webp",
+                "../img/galeria/galeria-2.jpg",
+                "../img/galeria/galeria-4.jpg",
+                "../img/galeria/galeria-6.jpeg",
+                "../img/galeria/galeria-7.jpg",
+                "../img/galeria/gallery-2.jpg",
+                "../img/galeria/galeria-4.jpg",
+                "../img/galeria/image-13.png",
+                "../img/galeria/galeria-11.webp",
+                "../img/galeria/galeria-12.webp"
+            ]
+        },
+        {
+            "id": 2,
+            "nombre": "Modelo 2",
+            "imagenHeader": "ruta/a/imagen-modelo2-header.jpg",
+            "descripcion": "Descripción del Modelo 2",
+            "fichaTecnica": "ruta/a/ficha-tecnica-modelo2.pdf",
+            "video": "https://www.youtube.com/embed/video-id-modelo2",
+            "imagenGira": "ruta/a/imagen-modelo2-gira.jpg",
+            "colores": [
+                {
+                    "nombre": "Verde",
+                    "imagen": "ruta/a/moto-verde.jpg"
+                },
+                {
+                    "nombre": "Negro",
+                    "imagen": "ruta/a/moto-negra.jpg"
+                }
+            ],
+            "wallpapers": [
+                "ruta/a/wallpaper3.jpg",
+                "ruta/a/wallpaper4.jpg"
+            ]
+        }
+    ]
+}

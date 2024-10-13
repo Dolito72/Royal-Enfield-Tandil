@@ -1,0 +1,373 @@
+:root {
+    --font: 'Lato', sans-serif;
+
+    /* Colores predominantes */
+    --rojo: #FF0000;
+    /* Rojo principal */
+    --rojo-claro: #FF4C4C;
+    /* Rojo más claro */
+    --rojo-oscuro: #C00000;
+    /* Rojo más oscuro */
+    --negro: #121111;
+    --blanco: #f1eeee;
+    --gris-scroll: rgba(0, 0, 0, 0.1);
+    /* Gris más transparente al hacer scroll */
+    /* Colores adicionales */
+    --gris: rgba(0, 0, 0, 0.39);
+    /* Gris semitransparente */
+    --amarillo: #e8d532;
+    --gris-oscuro: #5E5E5D;
+
+
+    /*----gama colores ----*/
+
+    --rojo-intenso: #D32F2F;
+    --amarillo-intenso: #FFC107;
+    --negro-2:#212121 ;
+    --gris-medio: #9E9E9E;
+    --negro: #121111;
+    
+}
+
+
+
+/*------------------estilos Seccion 1 - Header ----------------------------- */
+p{
+    color: var(--blanco);
+    line-height: 1.4; /* Ajusta el interlineado */
+    font-weight: 400;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra del texto */
+}
+#header {
+    position: relative;
+    background-size: cover;
+    background-position: center ;   
+    height: 70vh; /* Toma el alto completo de la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: var(--blanco);
+    overflow: hidden; /* Para evitar que el pseudo-elemento salga del contenedor */
+}
+
+/* Estilo para el logo */
+#logo-header {
+    width: 150px; /* Tamaño del logo */
+    margin-bottom: 10px;
+    padding-top: 40px;
+}
+
+/* Descripción */
+#descripcion-header {
+ 
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    max-width: 90%;
+   /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Resplandor blanco */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra del texto */
+    /*text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000; /* Sombra negra alrededor del texto */
+}
+
+/* Imagen de la moto */
+#imagen-header {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* ---------------Estilos generales seccion 2 ficha tecnica---------- */
+/* Estilos base para mobile-first */
+.descripcion-ficha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  /*  background-color: #424949 ;  Fondo gris */
+ /*   background-color: var(--gris-medio);*/
+   /* background-color:#6c757d ; */
+}
+
+.div-imagen-ficha,
+.div-descripcion-ficha {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#imagen-ficha {
+    width: 100%; /* Ajusta según el tamaño que necesites para mobile */
+    max-width: 420px; /* Tamaño máximo para no exceder en pantallas más grandes */
+ 
+}
+
+.btn-ficha {
+    margin-top: 15px;
+}
+
+/*----------------------Seccion 5 formulario contacto -------------------*/
+.moto-detail-section .spec-item {
+    margin-bottom: 20px;
+}
+
+.moto-detail-section .spec-item i {
+    color: var(--blanco);
+    margin-bottom: 10px;
+}
+
+.moto-detail-section .spec-item p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.moto-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+ 
+}
+
+.form-container{
+    background-color: var(--rojo-intenso);
+   
+   
+}
+
+
+.moto-image-container img {
+    max-width: 100%; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 330px;
+}
+
+/* Espaciado entre los campos del formulario */
+.moto-detail-section .form-control, 
+.moto-detail-section .form-select, 
+.moto-detail-section textarea {
+    padding-top: 20px;
+    padding: 5px; /* Mantener un padding compacto */
+    margin-bottom: 10px; /* Añadir un margen inferior para espaciar los campos */
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño para reducir el tamaño del campo */
+}
+
+
+.moto-detail-section .form-container button {
+    margin-top: 20px; /* Reducir el margen superior del botón */
+    
+}
+
+/* ----------------Estilos generales para la galería----------------- */
+/* Título de la galería */
+.wallpapers-title {
+    color: var(--blanco);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 1.8rem; /* Ajusta el tamaño del título */
+}
+
+/* Estilos base para la galería */
+.wallpaper-grid {
+    display: grid;
+    gap: 10px; /* Espacio entre las imágenes */
+    grid-template-columns: 1fr; /* Una sola columna por defecto en mobile */
+    justify-items: center; /* Centrar las imágenes dentro de sus celdas */
+}
+
+.wallpaper-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar un efecto elegante */
+    cursor: pointer; /* Indicar que se puede hacer clic */
+    transition: transform 0.3s; /* Animación suave al pasar el ratón */
+}
+
+.wallpaper-img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+/* Estilos para pantallas landscape (horizontal) */
+@media (min-width: 768px) {
+    .wallpaper-grid {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en landscape */
+    }
+}
+
+
+
+/*--------Hasta 900px para cubrir todo tipo de móviles (vertical y horizontal).------------------*/
+/* Landscape para dispositivos con ancho mayor a 480px y en modo horizontal */
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+
+    #header {
+        display: flex;
+        flex-direction: row; /* Los elementos en fila */
+        justify-content: space-between;
+        align-items: center;
+        background-position: center ;
+        padding: 40px;
+        height: 80vh; /* Aumenta la altura para landscape */
+    }
+
+    #logo-header {
+        width: 180px;
+    }
+
+    #descripcion-header {
+        font-size: 1.1em;
+     
+        padding: 10px;
+    }
+
+    #imagen-header {
+        max-width: 500px;
+        padding-bottom: 2px;
+    }
+
+
+      /*--------------------seccion 2------------------------*/
+      .descripcion-ficha {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #texto-ficha {
+        padding-top: 20px;
+        margin-bottom: 2px; /* Espacio entre el texto y el botón */
+        font-size: 1.1 rem;
+    }
+
+    #imagen-ficha {
+        width: 100%; /* Ajusta según el tamaño que necesites para mobile */
+        max-width: 480px; /* Tamaño máximo para no exceder en pantallas más grandes */
+     
+    }
+
+}
+
+/* ----------------------------------------------------------- Estilos Desktop --------------------------------------------------------- */
+@media (min-width: 901px) {
+    #header {
+        display: flex;
+        flex-direction: row; /* Los elementos en fila */
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        height: 100vh;
+    }
+
+    .header-content {
+        text-align: left;
+        flex: 1;
+        max-width: 40%;
+    }
+
+    #logo-header {
+        width: 400px;
+    }
+
+    #descripcion-header {
+        font-size: 1.2em;  
+    }
+
+    #imagen-header {
+        flex: 1;
+        width: 100%;
+        max-width: 90%;
+    }
+    /*--------------------seccion 2------------------------*/
+    .descripcion-ficha {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .div-imagen-ficha {
+        width: 50%;
+        text-align: center;
+    }
+    #imagen-ficha{
+        width: 100%;
+        max-width: 700px; 
+    }
+
+    .div-descripcion-ficha {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    #texto-ficha {
+        margin-bottom: 15px; /* Espacio entre el texto y el botón */
+        font-size: 1.4 rem;
+    }
+
+    .btn-ficha {
+        align-self: center; /* Mantiene el botón alineado a la izquierda */
+    }
+
+/*------------------seccion 5 form-----------------------*/
+
+
+
+
+/* Espaciado entre los campos del formulario */
+.moto-detail-section .form-control, 
+.moto-detail-section .form-select, 
+.moto-detail-section textarea {
+    font-size: 1.1rem;
+    margin: 10px;
+    padding: 10px; /* Mantener un padding compacto */
+   
+}
+
+.form-container{
+    margin-top: 6px;
+    height: 500px;
+}
+.moto-image-container img {
+    max-width: 110%; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 500px;
+}
+
+
+
+.moto-detail-section .form-container button {
+    margin-top: 40px; /* Reducir el margen superior del botón */
+    font-size: 1.1 rem;
+}
+
+/* Estilos para wallpapers pantallas desktop --------------------------*/
+
+.wallpaper-grid {
+   
+  
+    grid-template-columns: repeat(5, 1fr); /* Cinco columnas en desktop */
+}
+
+.wallpaper-img {
+    width: 100%;
+    min-height: 250px; /* Altura mínima para que todas las imágenes sean al menos de este tamaño */
+    max-height: 380px; /* Limita la altura máxima para evitar que se estiren demasiado */
+    object-fit: cover; /* Ajusta la imagen para que ocupe todo el espacio sin deformarse */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+
+
+
+}

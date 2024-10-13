@@ -5,6 +5,31 @@ const totalItems = items.length;
 const slideInterval = 3000; // Tiempo en milisegundos (3 segundos)
 let isMoving = false; // Variable para verificar si está en movimiento
 
+// Agregar el evento click a cada item del slider
+document.querySelectorAll('.slider-item').forEach(item => { 
+    item.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevenir la acción predeterminada del enlace
+
+        const motoId = this.getAttribute('data-id'); // Obtener el id de la moto
+        const motoNombre = this.getAttribute('data-nombre').replace(/\s+/g, '-').toLowerCase(); // Reemplazar espacios con guiones y convertir a minúsculas
+
+        if (motoId) {
+            localStorage.setItem('motoSeleccionada', motoId); // Guardar el id en localStorage
+
+            // Redirigir a la página de detalles de la moto usando el nombre
+               // Redirigir a la página de detalles de la moto usando solo el nombre
+               window.location.href = `pages/modelos.html?name=${motoNombre}`;
+        } else {
+            console.error('No se encontró el id de la moto en el data-id.');
+        }
+    });
+});
+
+
+
+
+
+
 // Función para mover al siguiente slide
 function nextSlide() {
     if (!isMoving) { // Solo avanzar si no estamos en movimiento
