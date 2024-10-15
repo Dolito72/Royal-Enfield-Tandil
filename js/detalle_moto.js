@@ -93,6 +93,7 @@ if (moto.wallpapers && moto.wallpapers.length > 0) {
         img.alt = `Wallpaper ${index + 1}`;
         img.id = `wallpaper-${index + 1}`; // Asigna un ID único para cada imagen
         img.classList.add('wallpaper-img'); // Agrega una clase para estilos CSS
+        img.loading = 'lazy'; // Añade carga diferida
         wallpaperGrid.appendChild(img);
     });
 } else {
