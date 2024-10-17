@@ -72,7 +72,7 @@ function mostrarDetallesMoto(moto) {
       const imagenMoto = document.getElementById('imagen-moto-giratoria');
       const motoNombre = document.getElementById('moto-nombre');
       const motoDescripcion = document.getElementById('moto-descripcion');
-  
+      document.getElementById('logo-gira').src = moto.logoGira;
       motoNombre.textContent = moto.nombre;
       motoDescripcion.textContent = moto.descripcionGira;
       imagenMoto.src = moto.colores[0].imagenes[indiceImagenActual]; // Muestra la primera imagen por defecto

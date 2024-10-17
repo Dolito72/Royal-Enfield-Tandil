@@ -118,7 +118,7 @@ p{
 
 /*--------------------------seccion 4 moto gira---------------------*/
 .section-gira{
-    background-color:  var(--negro-2);
+    background-color:  var(--blanco);
 }
 
 /* Diseño por defecto para mobile-first (column layout) */
@@ -137,6 +137,20 @@ p{
     text-align: center; /* Centrar el texto y la imagen en mobile */
 }
 
+#moto-nombre{
+    font-weight: 700;
+}
+ #moto-descripcion{
+    color: var(--negro-2);
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(198, 198, 198, 0.6); /* Sombra del texto */
+}
+
+#logo-gira{
+    width: 250px;
+    padding-left: 20px;
+}
+
 
 .moto-imagen-container {
   
@@ -145,7 +159,7 @@ p{
 }
 
 .moto-detalle-container {
-    color: var(--blanco);
+    color: var(--negro-2);
     text-align: justify;
 }
 #moto-nombre{
@@ -191,13 +205,18 @@ p{
     align-items: center; /* Centrar verticalmente si es necesario */
     gap: 15px; /* Espacio entre los tanques */
     margin: 10px 0; /* Espacio superior e inferior alrededor del contenedor */
-    color:var(--blanco) ;
+    color:var(--negro-2) ;
 }
 .titulo-tanques{
     display: flex;
     justify-content: center; /* Centrar los tanques horizontalmente */
     align-items: center; /* Centrar verticalmente si es necesario */
-    color: var(--blanco);
+    color: var(--negro-2);
+   
+}
+
+#titulo-tanques{
+    font-weight: 800;
 }
 .tanque-color {
     width: 150px; /* Ajusta el tamaño de los tanques según sea necesario */
