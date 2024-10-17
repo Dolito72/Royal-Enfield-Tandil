@@ -68,6 +68,7 @@ p{
     font-size: 1.2em;
     margin-bottom: 20px;
     max-width: 90%;
+  
    /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Resplandor blanco */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra del texto */
     /*text-shadow: 
@@ -89,6 +90,7 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
+   
     padding: 10px;
     background-color: var(--negro-2);
   /*  background-color: #424949 ;  Fondo gris */
@@ -144,9 +146,10 @@ p{
 
 .moto-detalle-container {
     color: var(--blanco);
-  
+    text-align: justify;
 }
 #moto-nombre{
+    text-align: center;
     font-weight: 900;
 }
 
@@ -154,7 +157,7 @@ p{
 #imagen-moto-giratoria{
     width: 100%;
     mask-image: radial-gradient(circle, black 70%, transparent 100%);
-    max-width: 600px; /* Tamaño máximo para la imagen de la moto */
+    max-width: 700px; /* Tamaño máximo para la imagen de la moto */
    
 }
 .flecha-animada-container {
@@ -211,6 +214,9 @@ p{
 /*----------------------Seccion 5 formulario contacto -------------------*/
 .moto-detail-section .spec-item {
     margin-bottom: 20px;
+    color: var(--blanco);
+    font-weight: 500;
+    font-size:1rem ;
 }
 
 .moto-detail-section .spec-item i {
@@ -419,18 +425,31 @@ p{
         justify-content: space-between;
     }
 
+  
+    
     .moto-imagen-container,
     .moto-detalle-container {
         flex: 1;
-        padding: 10px;
     }
-
     
-#imagen-moto-giratoria{
-    width: 100%;
-   
-    max-width: 800px; /* Tamaño máximo para la imagen de la moto */
-}
+    .moto-imagen-container {
+        flex: 0 0 60%; /* La imagen ocupa el 60% */
+        padding: 10px; /* Puedes ajustar este padding si es necesario */
+    }
+    
+    .moto-detalle-container {
+        flex: 0 0 40%; /* El texto ocupa el 40% */
+        padding-left: 50px; /* Aumentar el padding para separar más el texto */
+        padding-right: 50px;
+        padding-top: 20px; /* Agregar padding adicional si lo deseas */
+        padding-bottom: 20px;
+    }
+    
+    #imagen-moto-giratoria {
+        width: 100%;
+        max-width: none; /* Permitir que la imagen ocupe el 60% */
+        height: auto;
+    }
     #color-container {
         flex-direction: row; /* En desktop, los tanques vuelven a estar en fila */
         flex-wrap: nowrap; 

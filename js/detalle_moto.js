@@ -52,6 +52,10 @@ function mostrarDetallesMoto(moto) {
     pdfFicha.setAttribute('download', `${moto.nombre.replace(/\s+/g, '_')}-ficha-shotgun.pdf`);
     document.getElementById('imagen-ficha').src = moto.imagenFicha; // Cambia el logo dinámicamente
     document.getElementById('texto-ficha').textContent = moto.descripcionFicha;
+    document.getElementById("potencia").textContent = moto.potencia;
+    document.getElementById("cilindrada").textContent = moto.cilindrada;
+    document.getElementById("sistema").textContent = moto.sistema;
+    document.getElementById("luces").textContent = moto.luces;
     document.getElementById('imagen-form').src = moto.imagenForm;
     const iframe = document.getElementById('video');
     console.log('Iframe encontrado:', iframe); // Esto debería imprimir el iframe si está presente
