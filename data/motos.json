@@ -8,32 +8,69 @@
             "fondoHeader": "../img/gama/fondo-borroso-velocidad.jpg",
             "descripcion": "La Shotgun 650 escapa a cualquier intento de categorización, tanto en la forma como en el fondo.",
             "fichaTecnica": "../pdf/ficha-shotgun.pdf",
-            "imagenFicha": "../img/detalle/shotgun.webp", 
-            "descripcionFicha":"Esta moto encarna nuestro más puro ADN motero, cuenta con capacidades modulares y luce una estética neomodernista con colores exclusivos que se salen de lo común para redefinir los límites donde Royal Enfield puede llegar.", 
+            "imagenFicha": "../img/detalle/shotgun.webp",
+            "descripcionFicha": "Esta moto encarna nuestro más puro ADN motero, cuenta con capacidades modulares y luce una estética neomodernista con colores exclusivos que se salen de lo común para redefinir los límites donde Royal Enfield puede llegar.",
             "imagenForm": "../img/form/shotgun.webp",
             "video": "https://www.youtube.com/embed/wBjtalKpsJ0",
-            "imagenGira": "",
+            "descripcionGira": "Bajo el inquebrantable espinazo de acero de la Shotgun 650 late nuestro motor bicilíndrico paralelo de 648 cc, diseñado para enfrentarse al mundo real gracias a su sólida respuesta en el rango medio de revoluciones y un par motor sobrado en todas las marchas.",
             "colores": [
                 {
-                    "nombre": "Rojo",
-                    "imagen": "ruta/a/moto-roja.jpg"
+                    "nombre": "Metal Grey",
+                    "imagenes": [
+                       
+                        "../img/giro/shotgun-grey-1.png",
+                        "../img/giro/shotgun-grey-2.png",
+                        "../img/giro/shotgun-grey-3.png",
+                        "../img/giro/shotgun-grey-4.png",
+                        "../img/giro/shotgun-grey-5.png",
+                        "../img/giro/shotgun-grey-6.png",
+                        "../img/giro/shotgun-grey-7.png",
+                        "../img/giro/shotgun-grey-8.png"
+                    ],
+                    "tanque": "../img/giro/tanque-shotgun-grey.png"
                 },
                 {
-                    "nombre": "Azul",
-                    "imagen": "ruta/a/moto-azul.jpg"
+                    "nombre": "Drill Green",
+                    "imagenes": [
+                        "../img/giro/shotgun-green-1.png",
+                        "../img/giro/shotgun-green-2.png",
+                        "../img/giro/shotgun-green-3.png",
+                        "../img/giro/shotgun-green-4.png",
+                        "../img/giro/shotgun-green-5.png",
+                        "../img/giro/shotgun-green-6.png",
+                        "../img/giro/shotgun-green-7.png",
+                        "../img/giro/shotgun-green-8.png"
+
+                    ],
+                     "tanque": "../img/giro/tanque-shotgun-green.png"
+                }, {
+                    "nombre": "Stencil White",
+                    "imagenes": [
+                       
+                        "../img/giro/shotgun-white-1.png",
+                        "../img/giro/shotgun-white-2.png",
+                        "../img/giro/shotgun-white-3.png",
+                        "../img/giro/shotgun-white-4.png",
+                        "../img/giro/shotgun-white-5.png",
+                        "../img/giro/shotgun-white-6.png",
+                        "../img/giro/shotgun-white-7.png",
+                        "../img/giro/shotgun-white-8.png"
+                    ],
+                    "tanque": "../img/giro/tanque-shotgun-white.png"
                 }
+
             ],
             "wallpapers": [
-                "../img/galeria/vert-1.jpg",
-                "../img/galeria/vert-2.jpg",
-                "../img/galeria/vert-3.webp",
-                "../img/galeria/vert-4.webp",
-                "../img/galeria/vert-5.jpg",
+                "../img/galeria/shotgun_1.webp",
+                "../img/galeria/shotgun_2.webp",
+                "../img/galeria/shotgun_3.webp",
+                "../img/galeria/shotgun_4.webp",
+                "../img/galeria/shotgun_5.webp",
                 "../img/galeria/horizontal-1.webp",
-                "../img/galeria/horizontal-2.webp",
+                "../img/galeria/horizontal-6.webp",
                 "../img/galeria/horizontal-3.webp",
-                "../img/galeria/horizontal-4.webp",
-                "../img/galeria/horizontal-5.webp"
+                "../img/galeria/shotgun-8.webp",
+                "../img/galeria/download-2.jpg"
             ]
         },
         {

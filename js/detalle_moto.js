@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const motoNombre = queryParams.get('nombre'); // Obtener el nombre de la moto
     const motoSeleccionada = queryParams.get('id') || localStorage.getItem('motoSeleccionada'); // Obtener el id de la moto
 
- 
+
     if (!motoSeleccionada) {
         console.error('No se encontró la moto seleccionada.');
         return;
@@ -27,6 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const moto = data.motos.find(m => m.id === Number(motoSeleccionada)); // Asegúrate de comparar números
             if (moto) {
                 mostrarDetallesMoto(moto);
+                generarOpcionesDeColor(moto);
+                
             } else {
                 console.error('No se encontró la moto en los datos.');
             }
@@ -37,20 +39,13 @@ document.addEventListener('DOMContentLoaded', function () {
 function mostrarDetallesMoto(moto) {
     // Cambiar el título de la página
     document.title = `${moto.nombre} - Royal Enfield Tandil`;
-
     // Actualizar el logo, descripción e imagen de la moto
     document.getElementById('logo-header').src = moto.logo; // Cambia el logo dinámicamente
     document.getElementById('descripcion-header').textContent = moto.descripcion;
     document.getElementById('imagen-header').src = moto.imagenHeader;
-
     // Cambiar la imagen de fondo del header (si tienes uno)
     document.getElementById('header').style.backgroundImage = `url(${moto.fondoHeader})`;
-
-    // Las siguientes secciones están comentadas porque aún no están implementadas
-
-    
     // Seccion ficha técnica
-   
     // Actualizar el botón de ficha técnica
     const pdfFicha = document.getElementById('pdf-ficha');
     pdfFicha.href = moto.fichaTecnica; // Cambia el enlace al PDF
@@ -67,46 +62,63 @@ function mostrarDetallesMoto(moto) {
     } else {
         console.error('El iframe no se encuentra en el DOM');
     }
+    // seccion moto q gira
+      // Configuración inicial de la imagen de la moto y sus detalles
+      let indiceImagenActual = 0; // Comenzamos con la primera imagen
+      const imagenMoto = document.getElementById('imagen-moto-giratoria');
+      const motoNombre = document.getElementById('moto-nombre');
+      const motoDescripcion = document.getElementById('moto-descripcion');
+  
+      motoNombre.textContent = moto.nombre;
+      motoDescripcion.textContent = moto.descripcionGira;
+      imagenMoto.src = moto.colores[0].imagenes[indiceImagenActual]; // Muestra la primera imagen por defecto
+  
+      // Añade un evento de clic para cambiar la imagen de la moto
+      imagenMoto.addEventListener('click', function () {
+          indiceImagenActual = (indiceImagenActual + 1) % moto.colores[0].imagenes.length; // Avanza a la siguiente imagen en el array
+          imagenMoto.src = moto.colores[0].imagenes[indiceImagenActual];
+      });
+    // seccion wallpaper
+    const wallpaperGrid = document.querySelector('.wallpaper-grid');
+    wallpaperGrid.innerHTML = ''; // Limpiar los wallpapers anteriores
 
-   /*/ document.getElementById('imagen-gira').src = moto.imagenGira;
+    // Verificar si el array de wallpapers existe
+    if (moto.wallpapers && moto.wallpapers.length > 0) {
+        moto.wallpapers.forEach((wallpaper, index) => {
+            const img = document.createElement('img');
+            img.src = wallpaper;
+            img.alt = `Wallpaper ${index + 1}`;
+            img.id = `wallpaper-${index + 1}`; // Asigna un ID único para cada imagen
+            img.classList.add('wallpaper-img'); // Agrega una clase para estilos CSS
+            img.loading = 'lazy'; // Añade carga diferida
+            wallpaperGrid.appendChild(img);
+        });
+    } else {
+        console.error('No se encontraron wallpapers en los datos.');
+    }
 
-    // Colores
-    const colorOptions = document.querySelector('.color-options');
-    colorOptions.innerHTML = ''; // Limpiar las opciones anteriores
-    moto.colores.forEach(color => {
-        const colorDiv = document.createElement('div');
-        colorDiv.className = 'color';
-        colorDiv.style.backgroundColor = color.nombre.toLowerCase(); // Usar el nombre del color
-        colorDiv.onclick = () => cambiarColor(color.imagen); // Cambiar la imagen cuando se selecciona un color
-        colorOptions.appendChild(colorDiv);
-    });*/
+}
+function generarOpcionesDeColor(moto) {
+    const colorContainer = document.getElementById('color-container'); // Contenedor para los tanques de colores
+    colorContainer.innerHTML = ''; // Limpiar opciones anteriores
 
-// Asumiendo que los datos de la moto ya se cargaron y se encuentran en la variable 'moto'
-const wallpaperGrid = document.querySelector('.wallpaper-grid');
-wallpaperGrid.innerHTML = ''; // Limpiar los wallpapers anteriores
-
-// Verificar si el array de wallpapers existe
-if (moto.wallpapers && moto.wallpapers.length > 0) {
-    moto.wallpapers.forEach((wallpaper, index) => {
-        const img = document.createElement('img');
-        img.src = wallpaper;
-        img.alt = `Wallpaper ${index + 1}`;
-        img.id = `wallpaper-${index + 1}`; // Asigna un ID único para cada imagen
-        img.classList.add('wallpaper-img'); // Agrega una clase para estilos CSS
-        img.loading = 'lazy'; // Añade carga diferida
-        wallpaperGrid.appendChild(img);
+    moto.colores.forEach((color, index) => {
+        const tanqueImg = document.createElement('img');
+        tanqueImg.src = color.tanque;
+        tanqueImg.alt = `Tanque de color ${color.nombre}`;
+        tanqueImg.classList.add('tanque-color'); // Clase para estilos
+        tanqueImg.addEventListener('click', () => cambiarColorMoto(moto, index));
+        colorContainer.appendChild(tanqueImg);
     });
-} else {
-    console.error('No se encontraron wallpapers en los datos.');
 }
 
+function cambiarColorMoto(moto, colorIndex) {
+    const imagenMoto = document.getElementById('imagen-moto-giratoria');
+    let indiceImagenActual = 0;
+    imagenMoto.src = moto.colores[colorIndex].imagenes[indiceImagenActual]; // Cambia a la primera imagen del nuevo color
 
-
-
-
-// Función para cambiar el color de la moto (por ahora no es necesario)
-function cambiarColor(imagenRuta) {
-    document.getElementById('imagen-gira').src = imagenRuta;
-}
-
+    imagenMoto.addEventListener('click', function () {
+        indiceImagenActual = (indiceImagenActual + 1) % moto.colores[colorIndex].imagenes.length; // Cambia a la siguiente imagen
+        imagenMoto.src = moto.colores[colorIndex].imagenes[indiceImagenActual];
+    });
 }

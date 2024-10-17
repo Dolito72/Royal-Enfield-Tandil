@@ -21,8 +21,8 @@
 </head>
 
 <body>
-     <!-- Navegación -->
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="../index.html">
                 <img id="logo" src="../img/nav/logo_red.png" alt="Logo Concesionario">
@@ -35,7 +35,8 @@
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item"><a class="nav-link" href="#motos">Motos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://nsm.store.royalenfield.com.ar/es-AR/apparel" target="_blank">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://nsm.store.royalenfield.com.ar/es-AR/apparel"
+                            target="_blank">Tienda</a></li>
                     <li class="nav-item"><a class="nav-link" href="#eventos">Eventos</a></li>
                     <li class="nav-item"><a class="nav-link" href="../#ubicacion">Ubicación</a></li>
                     <li class="nav-item"><a class=" btn-nav" href="#myForm">Contacto</a></li>
@@ -59,10 +60,10 @@
             <img id="imagen-ficha" src="" alt="Imagen de la moto">
         </div>
         <div class="div-descripcion-ficha">
-            <p id="texto-ficha"></p> 
-            <a id="pdf-ficha" href="#" class="btn-ficha btn-moto-link">Descargar Ficha Técnica</a> 
+            <p id="texto-ficha"></p>
+            <a id="pdf-ficha" href="#" class="btn-ficha btn-moto-link">Descargar Ficha Técnica</a>
         </div>
-    </section> 
+    </section>
 
     <!-- Sección 3: Video -------------------------------------------------------------------->
     <section class="mt-5 ">
@@ -71,31 +72,48 @@
             <div class="row">
                 <div class="col-md-12">
                     <!-- Aquí va el iframe de Google  -->
-                    <iframe id="video" width="100%" height="415" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen></iframe>
+                    <iframe id="video" width="100%" height="415" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </section>
-  
-    <!-- ----------------------------------------Sección 4: Gira 360° y colores ------------
-    <section class="gira-colores">
-        <div class="gira">
-            <img id="imagen-gira" src="" alt="Moto girando"> 
-        </div>
-        <div class="descripcion-gira">
-            <p>Descripción sobre la moto giratoria</p>
-        </div>
-        <div class="colores">
-            <h3>Colores Disponibles</h3>
-            <div class="color-options">
-              
+
+    <!-- ----------------------------------------Sección 4: Gira 360° y colores ------------>
+    <!-- ----------------------------------------Sección 4: Gira 360° y colores ------------>
+
+
+    <!-- Sección de la moto que gira -->
+    <section class="section-gira">
+        <div class="moto-giratoria">
+            <div class="moto-imagen-container">
+                <img id="imagen-moto-giratoria" src="" alt="Moto girando" />
+                <div class="flecha-animada-container">
+                    <span class="texto-flecha">Girala</span>
+                    <svg class="flecha-animada" width="120" height="24" viewBox="0 0 120 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 12H100L90 2M100 12L90 22" stroke="#9E9E9E" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
             </div>
+            <div class="moto-detalle-container">
+                <h2 id="moto-nombre"></h2>
+                <p id="moto-descripcion">Descripción del modelo...</p>
+
+
+            </div>
+
         </div>
-    </section>-------------------------------------------------------------->
+        <div class="titulo-tanques">  
+            <h2 >Disponible en:</h2>
+          </div>
+        <div id="color-container" class="color-options">
+          
+            <!-- Aquí se agregarán dinámicamente las imágenes de los tanques de colores -->
+        </div>
+    </section>
 
     <!------------ Sección 5: Formulario de contacto------------------------------------->
     <section class="mt-5 moto-detail-section">
@@ -122,13 +140,13 @@
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="spec-item">
-                        
+
                         <i class="fas fa-lightbulb fa-3x"></i> <!-- Icono de luces -->
                         <p>Luces: Full Led</p>
                     </div>
                 </div>
             </div>
-    
+
             <!-- Sección de imagen y formulario -->
             <div class="row no-gutters align-items-stretch">
                 <div class="col-md-6">
@@ -139,19 +157,22 @@
                 <div class="col-md-6">
                     <div class="form-container text-start">
                         <h2>Hablá con un experto</h2>
-                 
+
                         <form id="myForm" action="https://formspree.io/f/xjkbqeld" method="POST">
                             <div class="row mb-2">
                                 <div class="col-6">
-                                    <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre" required>
+                                    <input type="text" name="nombre" class="form-control" id="nombre"
+                                        placeholder="Nombre" required>
                                 </div>
                                 <div class="col-6">
-                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email"
+                                        required>
                                 </div>
                             </div>
                             <div class="row mb-2">
                                 <div class="col-6">
-                                    <input type="tel" name="telefono" class="form-control" id="telefono" placeholder="Teléfono" required>
+                                    <input type="tel" name="telefono" class="form-control" id="telefono"
+                                        placeholder="Teléfono" required>
                                 </div>
                                 <div class="col-6">
                                     <select class="form-select" name="modelo" id="modelo" required>
@@ -169,7 +190,8 @@
                                 </div>
                             </div>
                             <div class="mb-2">
-                                <textarea class="form-control" name="mensaje" id="consulta" rows="2" placeholder="Consulta" required></textarea>
+                                <textarea class="form-control" name="mensaje" id="consulta" rows="2"
+                                    placeholder="Consulta" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-warning d-block w-50">Enviar</button>
                         </form>
@@ -178,14 +200,14 @@
             </div>
         </div>
     </section>
-    
+
 
     <!-- Sección 6: Wallpapers ----------------------------------------->
     <!-- Sección 6: Wallpapers -->
     <section class="wallpapers">
         <h2 class="wallpapers-title">Wallpapers</h2>
         <div class="wallpaper-grid">
-        <!-- Las imágenes se generarán aquí dinámicamente con JavaScript -->
+            <!-- Las imágenes se generarán aquí dinámicamente con JavaScript -->
         </div>
     </section>
 
@@ -244,7 +266,7 @@
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <script src="../js/detalle_moto.js" defer></script> <!-- Script JavaScript actualizado -->
 
 

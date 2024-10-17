@@ -90,6 +90,7 @@ p{
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    background-color: var(--negro-2);
   /*  background-color: #424949 ;  Fondo gris */
  /*   background-color: var(--gris-medio);*/
    /* background-color:#6c757d ; */
@@ -110,6 +111,100 @@ p{
 
 .btn-ficha {
     margin-top: 15px;
+}
+
+
+/*--------------------------seccion 4 moto gira---------------------*/
+.section-gira{
+    background-color: var(--negro-2);
+}
+
+/* Diseño por defecto para mobile-first (column layout) */
+.moto-giratoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+.moto-imagen-container,
+.moto-detalle-container {
+    flex: unset;
+    width: 100%;
+    padding: 20px; /* Puedes ajustar el padding para mejor distribución en mobile */
+    text-align: center; /* Centrar el texto y la imagen en mobile */
+}
+
+
+.moto-imagen-container {
+  
+    position: relative;
+    cursor: pointer; 
+}
+
+.moto-detalle-container {
+    color: var(--blanco);
+  
+}
+#moto-nombre{
+    font-weight: 900;
+}
+
+
+#imagen-moto-giratoria{
+    width: 100%;
+   
+    max-width: 600px; /* Tamaño máximo para la imagen de la moto */
+}
+.flecha-animada-container {
+    position: absolute;
+   
+    bottom: -30px; /* Ajusta la posición de la flecha según sea necesario */
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* animation: mover-flecha 2s infinite alternate;*/
+}
+
+.texto-flecha {
+    font-size: 14px;
+    color: var(--gris-medio);
+    margin-right: 8px;
+}
+
+.flecha-animada {
+    stroke: var(--gris-medio); /* Cambia el color de la flecha si es necesario */
+}
+
+/* Estilos para el contenedor de los tanques de colores */
+
+#color-container {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan a una nueva fila si no caben */
+    justify-content: center; /* Centrar los tanques horizontalmente */
+    align-items: center; /* Centrar verticalmente si es necesario */
+    gap: 15px; /* Espacio entre los tanques */
+    margin: 10px 0; /* Espacio superior e inferior alrededor del contenedor */
+    color:var(--blanco) ;
+}
+.titulo-tanques{
+    display: flex;
+    justify-content: center; /* Centrar los tanques horizontalmente */
+    align-items: center; /* Centrar verticalmente si es necesario */
+    color: var(--blanco);
+}
+.tanque-color {
+    width: 150px; /* Ajusta el tamaño de los tanques según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    cursor: pointer; /* Muestra un puntero al pasar sobre la imagen */
+    padding-bottom: 5px;
+    transition: transform 0.3s ease; /* Animación suave al pasar el mouse */
+}
+
+.tanque-color:hover {
+    transform: scale(1.2); /* Aumenta el tamaño del tanque al pasar el mouse */
 }
 
 /*----------------------Seccion 5 formulario contacto -------------------*/
@@ -316,6 +411,35 @@ p{
     .btn-ficha {
         align-self: center; /* Mantiene el botón alineado a la izquierda */
     }
+/*----------------------------------SECCION 4 MOTO GIRA-------------------------*/
+    .moto-giratoria {
+        flex-direction: row; /* Cambia a diseño en fila para pantallas más grandes */
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .moto-imagen-container,
+    .moto-detalle-container {
+        flex: 1;
+        padding: 10px;
+    }
+
+    
+#imagen-moto-giratoria{
+    width: 100%;
+   
+    max-width: 800px; /* Tamaño máximo para la imagen de la moto */
+}
+    #color-container {
+        flex-direction: row; /* En desktop, los tanques vuelven a estar en fila */
+        flex-wrap: nowrap; 
+    }
+
+    .tanque-color {
+        width: 200px; /* Tamaño más pequeño en mobile */
+        padding-bottom: 10px; /* Reduce el espacio inferior */
+    }
+
 
 /*------------------seccion 5 form-----------------------*/
 
