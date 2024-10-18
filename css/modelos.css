@@ -140,7 +140,8 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px 0;
+    margin: 20px 0 ;
+  
 }
 .moto-imagen-container,
 .moto-detalle-container {
@@ -179,11 +180,13 @@ p{
     justify-content: center; /* Centrar verticalmente */
     align-items: center; /* Centrar horizontalmente */
     text-align: center; /* Para centrar el texto también */
+
     
 }
 #moto-nombre{
     text-align: center;
     font-weight: 900;
+    padding-top: 20px;
 }
 
 
@@ -223,7 +226,7 @@ p{
     justify-content: center; /* Centrar los tanques horizontalmente */
     align-items: center; /* Centrar verticalmente si es necesario */
     gap: 15px; /* Espacio entre los tanques */
-    margin: 10px 0; /* Espacio superior e inferior alrededor del contenedor */
+   /* Espacio superior e inferior alrededor del contenedor */
     color:var(--negro-2) ;
 }
 .titulo-tanques{
@@ -231,6 +234,7 @@ p{
     justify-content: center; /* Centrar los tanques horizontalmente */
     align-items: center; /* Centrar verticalmente si es necesario */
     color: var(--negro-2);
+    
    
 }
 
