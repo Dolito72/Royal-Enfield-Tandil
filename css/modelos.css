@@ -47,12 +47,20 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+   
     padding: 20px;
     color: var(--blanco);
     overflow: hidden; /* Para evitar que el pseudo-elemento salga del contenedor */
 }
+
+.header-content{
+    flex-direction: column; /* Para alinear el logo y la descripción en columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    text-align: center; /* Para centrar el texto también */
+    
+}
+
 
 /* Estilo para el logo */
 #logo-header {
@@ -63,11 +71,15 @@ p{
 
 /* Descripción */
 #descripcion-header {
- 
+    text-align: center;
     font-weight: 400;
     font-size: 1.2em;
     margin-bottom: 20px;
     max-width: 90%;
+    flex-direction: column; /* Para alinear el logo y la descripción en columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    text-align: center; /* Para centrar el texto también */
   
    /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Resplandor blanco */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra del texto */
@@ -82,6 +94,7 @@ p{
 #imagen-header {
     width: 100%;
     max-width: 300px;
+   
 }
 
 /* ---------------Estilos generales seccion 2 ficha tecnica---------- */
@@ -135,6 +148,7 @@ p{
     width: 100%;
     padding: 20px; /* Puedes ajustar el padding para mejor distribución en mobile */
     text-align: center; /* Centrar el texto y la imagen en mobile */
+
 }
 
 #moto-nombre{
@@ -148,7 +162,7 @@ p{
 
 #logo-gira{
     width: 250px;
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 
@@ -160,7 +174,12 @@ p{
 
 .moto-detalle-container {
     color: var(--negro-2);
-    text-align: justify;
+    display: flex;
+    flex-direction: column; /* Para alinear el logo y la descripción en columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    text-align: center; /* Para centrar el texto también */
+    
 }
 #moto-nombre{
     text-align: center;
@@ -382,18 +401,25 @@ p{
         flex-direction: row; /* Los elementos en fila */
         justify-content: space-between;
         align-items: center;
-        padding: 50px;
+        padding: 10px;
         height: 100vh;
     }
 
     .header-content {
-        text-align: left;
+        padding-top: 10px;
+        padding-left: 20px;
         flex: 1;
         max-width: 40%;
+        display: flex;
+        flex-direction: column; /* Para alinear el logo y la descripción en columna */
+        justify-content: center; /* Centrar verticalmente */
+        align-items: center; /* Centrar horizontalmente */
+        text-align: center; /* Para centrar el texto también */
     }
 
     #logo-header {
-        width: 400px;
+        padding-left: 30px;
+        width: 200px;
     }
 
     #descripcion-header {
@@ -403,7 +429,7 @@ p{
     #imagen-header {
         flex: 1;
         width: 100%;
-        max-width: 90%;
+        max-width: 80%;
     }
     /*--------------------seccion 2------------------------*/
     .descripcion-ficha {
@@ -462,6 +488,11 @@ p{
         padding-right: 50px;
         padding-top: 20px; /* Agregar padding adicional si lo deseas */
         padding-bottom: 20px;
+        display: flex;
+    flex-direction: column; /* Para alinear el logo y la descripción en columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    text-align: center; /* Para centrar el texto también */
     }
     
     #imagen-moto-giratoria {
@@ -469,13 +500,20 @@ p{
         max-width: none; /* Permitir que la imagen ocupe el 60% */
         height: auto;
     }
+    #logo-gira{
+        padding: 30px;
+       
+    }
     #color-container {
         flex-direction: row; /* En desktop, los tanques vuelven a estar en fila */
         flex-wrap: nowrap; 
+
     }
 
     .tanque-color {
         width: 200px; /* Tamaño más pequeño en mobile */
+        margin: 10px;
+        padding: 10px;
         padding-bottom: 10px; /* Reduce el espacio inferior */
     }
 

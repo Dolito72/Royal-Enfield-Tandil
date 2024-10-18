@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (moto) {
                 mostrarDetallesMoto(moto);
                 generarOpcionesDeColor(moto);
-                
+
             } else {
                 console.error('No se encontró la moto en los datos.');
             }
@@ -49,7 +49,7 @@ function mostrarDetallesMoto(moto) {
     // Actualizar el botón de ficha técnica
     const pdfFicha = document.getElementById('pdf-ficha');
     pdfFicha.href = moto.fichaTecnica; // Cambia el enlace al PDF
-    pdfFicha.setAttribute('download', `${moto.nombre.replace(/\s+/g, '_')}-ficha-shotgun.pdf`);
+    pdfFicha.setAttribute('download', `${moto.nombre.replace(/\s+/g, '_')}-ficha.pdf`);
     document.getElementById('imagen-ficha').src = moto.imagenFicha; // Cambia el logo dinámicamente
     document.getElementById('texto-ficha').textContent = moto.descripcionFicha;
     document.getElementById("potencia").textContent = moto.potencia;
@@ -67,21 +67,20 @@ function mostrarDetallesMoto(moto) {
         console.error('El iframe no se encuentra en el DOM');
     }
     // seccion moto q gira
-      // Configuración inicial de la imagen de la moto y sus detalles
-      let indiceImagenActual = 0; // Comenzamos con la primera imagen
-      const imagenMoto = document.getElementById('imagen-moto-giratoria');
-      const motoNombre = document.getElementById('moto-nombre');
-      const motoDescripcion = document.getElementById('moto-descripcion');
-      document.getElementById('logo-gira').src = moto.logoGira;
-      motoNombre.textContent = moto.nombre;
-      motoDescripcion.textContent = moto.descripcionGira;
-      imagenMoto.src = moto.colores[0].imagenes[indiceImagenActual]; // Muestra la primera imagen por defecto
-  
-      // Añade un evento de clic para cambiar la imagen de la moto
-      imagenMoto.addEventListener('click', function () {
-          indiceImagenActual = (indiceImagenActual + 1) % moto.colores[0].imagenes.length; // Avanza a la siguiente imagen en el array
-          imagenMoto.src = moto.colores[0].imagenes[indiceImagenActual];
-      });
+    // Configuración inicial de la imagen de la moto y sus detalles
+    mostrarMotoGira(moto, 0); // Mostrar la primera imagen del primer color por defecto
+    // let indiceImagenActual = 0; // Comenzamos con la primera imagen
+    // const imagenMoto = document.getElementById('imagen-moto-giratoria');
+    document.getElementById('moto-nombre').textContent = moto.nombre;
+    document.getElementById('moto-descripcion').textContent = moto.descripcionGira;
+    document.getElementById('logo-gira').src = moto.logoGira;
+    // imagenMoto.src = moto.colores[0].imagenes[indiceImagenActual]; // Muestra la primera imagen por defecto
+
+    // Añade un evento de clic para cambiar la imagen de la moto
+    /*   imagenMoto.addEventListener('click', function () {
+           indiceImagenActual = (indiceImagenActual + 1) % moto.colores[0].imagenes.length; // Avanza a la siguiente imagen en el array
+           imagenMoto.src = moto.colores[0].imagenes[indiceImagenActual];
+       });*/
     // seccion wallpaper
     const wallpaperGrid = document.querySelector('.wallpaper-grid');
     wallpaperGrid.innerHTML = ''; // Limpiar los wallpapers anteriores
@@ -102,6 +101,44 @@ function mostrarDetallesMoto(moto) {
     }
 
 }
+function generarOpcionesDeColor(moto) {
+    const colorContainer = document.getElementById('color-container');
+    colorContainer.innerHTML = '';
+
+    moto.colores.forEach((color, index) => {
+        const tanqueImg = document.createElement('img');
+        tanqueImg.src = color.tanque;
+        tanqueImg.alt = `Tanque de color ${color.nombre}`;
+        tanqueImg.classList.add('tanque-color');
+        tanqueImg.addEventListener('click', () => mostrarMotoGira(moto, index)); // Cambiar color al hacer clic
+        colorContainer.appendChild(tanqueImg);
+    });
+}
+
+function mostrarMotoGira(moto, colorIndex) {
+    const imagenMoto = document.getElementById('imagen-moto-giratoria');
+    let indiceImagenActual = 0;
+
+    // Mostrar la primera imagen del color seleccionado
+    imagenMoto.src = moto.colores[colorIndex].imagenes[indiceImagenActual];
+
+    // Eliminar cualquier evento anterior para evitar duplicaciones
+    imagenMoto.replaceWith(imagenMoto.cloneNode(true));
+    const nuevaImagenMoto = document.getElementById('imagen-moto-giratoria');
+
+    // Añadir un nuevo evento de clic para cambiar la imagen
+    nuevaImagenMoto.addEventListener('click', function () {
+        indiceImagenActual = (indiceImagenActual + 1) % moto.colores[colorIndex].imagenes.length;
+        nuevaImagenMoto.src = moto.colores[colorIndex].imagenes[indiceImagenActual];
+    });
+}
+
+
+
+
+
+/*
+
 function generarOpcionesDeColor(moto) {
     const colorContainer = document.getElementById('color-container'); // Contenedor para los tanques de colores
     colorContainer.innerHTML = ''; // Limpiar opciones anteriores
@@ -124,5 +161,5 @@ function cambiarColorMoto(moto, colorIndex) {
     imagenMoto.addEventListener('click', function () {
         indiceImagenActual = (indiceImagenActual + 1) % moto.colores[colorIndex].imagenes.length; // Cambia a la siguiente imagen
         imagenMoto.src = moto.colores[colorIndex].imagenes[indiceImagenActual];
-    });
-}
+    });*/
+

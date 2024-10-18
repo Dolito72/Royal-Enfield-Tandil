@@ -22,7 +22,6 @@
                 {
                     "nombre": "Metal Grey",
                     "imagenes": [
-                       
                         "../img/giro/shotgun-grey-1.png",
                         "../img/giro/shotgun-grey-2.png",
                         "../img/giro/shotgun-grey-3.png",
@@ -45,13 +44,12 @@
                         "../img/giro/shotgun-green-6.png",
                         "../img/giro/shotgun-green-7.png",
                         "../img/giro/shotgun-green-8.png"
-
                     ],
-                     "tanque": "../img/giro/tanque-shotgun-green.png"
-                }, {
+                    "tanque": "../img/giro/tanque-shotgun-green.png"
+                },
+                {
                     "nombre": "Stencil White",
                     "imagenes": [
-                       
                         "../img/giro/shotgun-white-1.png",
                         "../img/giro/shotgun-white-2.png",
                         "../img/giro/shotgun-white-3.png",
@@ -63,7 +61,6 @@
                     ],
                     "tanque": "../img/giro/tanque-shotgun-white.png"
                 }
-
             ],
             "wallpapers": [
                 "../img/galeria/shotgun_1.webp",
@@ -80,25 +77,138 @@
         },
         {
             "id": 2,
-            "nombre": "Modelo 2",
-            "imagenHeader": "ruta/a/imagen-modelo2-header.jpg",
-            "descripcion": "Descripción del Modelo 2",
-            "fichaTecnica": "ruta/a/ficha-tecnica-modelo2.pdf",
-            "video": "https://www.youtube.com/embed/video-id-modelo2",
-            "imagenGira": "ruta/a/imagen-modelo2-gira.jpg",
+            "nombre": "Continental GT 650",
+            "logo": "../img/gama/logo-continental.svg",
+            "imagenHeader": "../img/header-modelo/continental_green2.png",
+            "fondoHeader": "../img/header-modelo/fondo-night.jpg",
+            "descripcion": "La original Royal Enfield British café racer, una joya clásica con gran tecnología.",
+            "fichaTecnica": "../pdf/ficha-Continental.pdf",
+            "imagenFicha": "../img/detalle/continental.webp",
+            "descripcionFicha": "La nueva Continental GT 650 es una evolución del Continental GT 535. Impulsada por el nuevo motor 650 Twin, se parece en todo a su predecesor y funciona aún mucho mejor.",
+            "potencia": "34.9 kW a 7250 RPM",
+            "cilindrada": "648 CC BICILÍNDRICO EN PARALELO",
+            "sistema": "ANTIBLOQUEO DE FRENOS",
+            "luces": "ENCENDIDO AUTOMÁTICO",
+            "imagenForm": "../img/form/continental.jpg",
+            "video": "https://www.youtube.com/embed/M9AKbbls7BA?si=WolZM7VJdYfYVl0b",
+            "logoGira": "../img/gama/logo-continental.svg",
+            "descripcionGira": "La época en la que hombres y mujeres personalizaban sus motocicletas para hacer carreras de café a café mientras sonaba una canción. La Continental GT 650 celebra este un estilo único.",
             "colores": [
                 {
-                    "nombre": "Verde",
-                    "imagen": "ruta/a/moto-verde.jpg"
+                    "nombre": "Br Green",
+                    "imagenes": [
+                        "../img/giro/continental/green (1).png",
+                        "../img/giro/continental/green (2).png",
+                        "../img/giro/continental/green (3).png",
+                        "../img/giro/continental/green (4).png",
+                        "../img/giro/continental/green (5).png",
+                        "../img/giro/continental/green (6).png",
+                        "../img/giro/continental/green (7).png",
+                        "../img/giro/continental/green (8).png",
+                        "../img/giro/continental/green (9).png",
+                        "../img/giro/continental/green (10).png",
+                        "../img/giro/continental/green (11).png"
+                    ],
+                    "tanque": "../img/giro/continental/tanque-green.png"
                 },
                 {
-                    "nombre": "Negro",
-                    "imagen": "ruta/a/moto-negra.jpg"
+                    "nombre": "Dux Deluxe",
+                    "imagenes": [
+                        "../img/giro/continental/dux_1 (1).png",
+                        "../img/giro/continental/dux_1 (2).png",
+                        "../img/giro/continental/dux_1 (3).png",
+                        "../img/giro/continental/dux_1 (4).png",
+                        "../img/giro/continental/dux_1 (5).png",
+                        "../img/giro/continental/dux_1 (6).png",
+                        "../img/giro/continental/dux_1 (7).png",
+                        "../img/giro/continental/dux_1 (8).png",
+                        "../img/giro/continental/dux_1 (9).png",
+                        "../img/giro/continental/dux_1 (10).png",
+                        "../img/giro/continental/dux_1 (11).png"
+                    ],
+                    "tanque": "../img/giro/continental/tanque-dux.png"
+                },
+                {
+                    "nombre": "Rocker Red",
+                    "imagenes": [
+                        "../img/giro/continental/red_1 (1).png",
+                        "../img/giro/continental/red_1 (2).png",
+                        "../img/giro/continental/red_1 (3).png",
+                        "../img/giro/continental/red_1 (4).png",
+                        "../img/giro/continental/red_1 (5).png",
+                        "../img/giro/continental/red_1 (6).png",
+                        "../img/giro/continental/red_1 (7).png",
+                        "../img/giro/continental/red_1 (8).png",
+                        "../img/giro/continental/red_1 (9).png",
+                        "../img/giro/continental/red_1 (10).png",
+                        "../img/giro/continental/red_1 (11).png"
+                    ],
+                    "tanque": "../img/giro/continental/tanque-red.png"
+                },
+                {
+                    "nombre": "Apex Grey",
+                    "imagenes": [
+                        "../img/giro/continental/grey (1).png",
+                        "../img/giro/continental/grey (2).png",
+                        "../img/giro/continental/grey (3).png",
+                        "../img/giro/continental/grey (-4).png",
+                        "../img/giro/continental/grey (-5).png",
+                        "../img/giro/continental/grey (-6).png",
+                        "../img/giro/continental/grey (-7).png",
+                        "../img/giro/continental/grey (-8).png",
+                        "../img/giro/continental/grey (-9).png",
+                        "../img/giro/continental/grey (-10).png"
+                    ],
+                    "tanque": "../img/giro/continental/tanque-grey.png"
+                },
+                {
+                    "nombre": "Slipstream Blue",
+                    "imagenes": [
+                        "../img/giro/continental/blue_0 (1).png",
+                        "../img/giro/continental/blue_0 (2).png",
+                        "../img/giro/continental/blue_0 (3).png",
+                        "../img/giro/continental/blue_0 (4).png",
+                        "../img/giro/continental/blue_0 (5).png",
+                        "../img/giro/continental/blue_0 (6).png",
+                        "../img/giro/continental/blue_0 (7).png",
+                        "../img/giro/continental/blue_0 (8).png",
+                        "../img/giro/continental/blue_0 (9).png",
+                        "../img/giro/continental/blue_0 (10).png",
+                        "../img/giro/continental/blue_0 (11).png"
+                    ],
+                    "tanque": "../img/giro/continental/tanque-blue.png"
+                },
+                {
+                    "nombre": "Mr Clean",
+                    "imagenes": [
+                        "../img/giro/continental/clean_0 (1).png",
+                        "../img/giro/continental/clean_0 (2).png",
+                        "../img/giro/continental/clean_0 (3).png",
+                        "../img/giro/continental/clean_0 (4).png",
+                        "../img/giro/continental/clean_0 (5).png",
+                        "../img/giro/continental/clean_0 (6).png",
+                        "../img/giro/continental/clean_0 (7).png",
+                        "../img/giro/continental/clean_0 (8).png",
+                        "../img/giro/continental/clean_0 (9).png",
+                        "../img/giro/continental/clean_0 (10).png",
+                        "../img/giro/continental/clean_0 (11).png",
+                        "../img/giro/continental/clean_0 (12).png",
+                        "../img/giro/continental/clean_0 (13).png"
+                    ],
+                    "tanque": "../img/giro/continental/tanque-clean.png"
                 }
             ],
             "wallpapers": [
-                "ruta/a/wallpaper3.jpg",
-                "ruta/a/wallpaper4.jpg"
+                "../img/galeria/continental/gallery-1.jpg",
+                "../img/galeria/continental/gallery-4.jpg",
+                "../img/galeria/continental/gallery-6.jpg",
+                "../img/galeria/continental/gallery-17.jpg",
+                "../img/galeria/continental/gallery-7.jpg",
+                "../img/galeria/continental/gallery-11.webp",
+                "../img/galeria/continental/galeria_continental_6.webp",
+                "../img/galeria/continental/galeria_continental_4.webp",
+                "../img/galeria/continental/gallery-83.webp",
+                "../img/galeria/continental/galeria_continental_2.webp"
             ]
         }
     ]
