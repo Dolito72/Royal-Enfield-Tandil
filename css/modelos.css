@@ -37,6 +37,28 @@ p{
     font-size: 1.2em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra del texto */
 }
+
+/* Placeholder para la imagen del header */
+.placeholder {
+    width: 100%;
+    height: auto;
+    background-color: #e0e0e0; /* Fondo gris claro mientras carga */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder img {
+    display: none; /* Oculta la imagen hasta que se cargue */
+}
+
+/* Cuando la imagen está cargada, se muestra */
+img.loaded {
+    display: block;
+}
+
+
+
 #header {
     position: relative;
     background-color: var(--gris-oscuro);
