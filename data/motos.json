@@ -81,7 +81,7 @@
             "logo": "../img/gama/logo-continental.svg",
             "imagenHeader": "../img/header-modelo/continental_green2.png",
             "fondoHeader": "../img/header-modelo/fondo-night.jpg",
-            "descripcion": "La original Royal Enfield British café racer, una joya clásica con gran tecnología.",
+            "descripcion": "La original Royal Enfield British café racer. Una joya clásica con gran tecnología, que se luce en estética y performance.",
             "fichaTecnica": "../pdf/ficha-Continental.pdf",
             "imagenFicha": "../img/detalle/continental.webp",
             "descripcionFicha": "La nueva Continental GT 650 es una evolución del Continental GT 535. Impulsada por el nuevo motor 650 Twin, se parece en todo a su predecesor y funciona aún mucho mejor.",
@@ -112,23 +112,6 @@
                     "tanque": "../img/giro/continental/tanque-green.png"
                 },
                 {
-                    "nombre": "Dux Deluxe",
-                    "imagenes": [
-                        "../img/giro/continental/dux_1 (1).png",
-                        "../img/giro/continental/dux_1 (2).png",
-                        "../img/giro/continental/dux_1 (3).png",
-                        "../img/giro/continental/dux_1 (4).png",
-                        "../img/giro/continental/dux_1 (5).png",
-                        "../img/giro/continental/dux_1 (6).png",
-                        "../img/giro/continental/dux_1 (7).png",
-                        "../img/giro/continental/dux_1 (8).png",
-                        "../img/giro/continental/dux_1 (9).png",
-                        "../img/giro/continental/dux_1 (10).png",
-                        "../img/giro/continental/dux_1 (11).png"
-                    ],
-                    "tanque": "../img/giro/continental/tanque-dux.png"
-                },
-                {
                     "nombre": "Rocker Red",
                     "imagenes": [
                         "../img/giro/continental/red_1 (1).png",
@@ -144,6 +127,23 @@
                         "../img/giro/continental/red_1 (11).png"
                     ],
                     "tanque": "../img/giro/continental/tanque-red.png"
+                },
+                {
+                    "nombre": "Dux Deluxe",
+                    "imagenes": [
+                        "../img/giro/continental/dux_1 (1).png",
+                        "../img/giro/continental/dux_1 (2).png",
+                        "../img/giro/continental/dux_1 (3).png",
+                        "../img/giro/continental/dux_1 (4).png",
+                        "../img/giro/continental/dux_1 (5).png",
+                        "../img/giro/continental/dux_1 (6).png",
+                        "../img/giro/continental/dux_1 (7).png",
+                        "../img/giro/continental/dux_1 (8).png",
+                        "../img/giro/continental/dux_1 (9).png",
+                        "../img/giro/continental/dux_1 (10).png",
+                        "../img/giro/continental/dux_1 (11).png"
+                    ],
+                    "tanque": "../img/giro/continental/tanque-dux.png"
                 },
                 {
                     "nombre": "Apex Grey",
@@ -209,6 +209,416 @@
                 "../img/galeria/continental/galeria_continental_4.webp",
                 "../img/galeria/continental/gallery-83.webp",
                 "../img/galeria/continental/galeria_continental_2.webp"
+            ]
+        },
+        {
+            "id": 3,
+            "nombre": "Super Meteor 650",
+            "logo": "../img/gama/logo-super-meteor-blanco.png",
+            "imagenHeader": "../img/header-modelo/super-meteor-grey.png",
+            "fondoHeader": "../img/header-modelo/fondo-night.jpg",
+            "descripcion": "La Super Meteor 650 es el fiel legado de Royal Enfield en su afán por crear motocicletas cruiser extraordinarias. Un modelo pensado y diseñado para salir a la ruta.",
+            "fichaTecnica": "../pdf/ficha-Super Meteor 650.pdf",
+            "imagenFicha": "../img/detalle/super-meteor.webp",
+            "descripcionFicha": "La práctica y nada intimidatoria naturaleza de la Super Meteor 650 queda reflejada en su silueta cruiser de pura raza, caracterizada por la posición baja y suntuosa del asiento y una cintura estrecha que, combinadas, te permitirán disfrutar de la brisa mientras va devorando kilómetros.",
+            "potencia": "34,6 kW @ 7250 rpm",
+            "cilindrada": "648 CC BICILÍNDRICO PARALELO",
+            "sistema": "ABS DE DOS CANALES",
+            "luces": "ENCENDIDO AUTOMÁTICO",
+            "imagenForm": "../img/form/super-meteor.webp",
+            "video": "https://www.youtube.com/embed/79sbEGokDV4?si=61fUg607LGQjPY1E",
+            "logoGira": "../img/gama/logo_super_meteor.png",
+            "descripcionGira": "Su motor, flexible y suave como la seda, tiene par de sobra, ofrece transiciones de marcha perfectas y una fuerte aceleración de gama baja, a la vez que su inequívoco estilo retro lleva estampado el inconfundible ADN de Royal Enfield.",
+            "colores": [
+                {
+                    "nombre": "Astral Black",
+                    "imagenes": [
+                        "../img/giro/super-meteor/astral_black_001.png",
+                        "../img/giro/super-meteor/astral_black_006.png",
+                        "../img/giro/super-meteor/astral_black_009.png",
+                        "../img/giro/super-meteor/astral_black_013.png",
+                        "../img/giro/super-meteor/astral_black_016.png",
+                        "../img/giro/super-meteor/astral_black_020.png",
+                        "../img/giro/super-meteor/astral_black_022.png",
+                        "../img/giro/super-meteor/astral_black_024.png",
+                        "../img/giro/super-meteor/astral_black_026.png",
+                        "../img/giro/super-meteor/astral_black_033.png"
+                    ],
+                    "tanque": "../img/giro/super-meteor/astral-black.png"
+                },
+                {
+                    "nombre": "Astral Blue",
+                    "imagenes": [
+                        "../img/giro/super-meteor/astral_blue_000.png",
+                        "../img/giro/super-meteor/astral_blue_007.png",
+                        "../img/giro/super-meteor/astral_blue_011.png",
+                        "../img/giro/super-meteor/astral_blue_013.png",
+                        "../img/giro/super-meteor/astral_blue_015.png",
+                        "../img/giro/super-meteor/astral_blue_019.png",
+                        "../img/giro/super-meteor/astral_blue_022.png",
+                        "../img/giro/super-meteor/astral_blue_025.png",
+                        "../img/giro/super-meteor/astral_blue_027.png",
+                        "../img/giro/super-meteor/astral_blue_031.png"
+                    ],
+                    "tanque": "../img/giro/super-meteor/astral-blue.png"
+                },
+                {
+                    "nombre": "Astral Green",
+                    "imagenes": [
+                        "../img/giro/super-meteor/astral_green_000.png",
+                        "../img/giro/super-meteor/astral_green_007.png",
+                        "../img/giro/super-meteor/astral_green_011.png",
+                        "../img/giro/super-meteor/astral_green_014.png",
+                        "../img/giro/super-meteor/astral_green_017.png",
+                        "../img/giro/super-meteor/astral_green_020.png",
+                        "../img/giro/super-meteor/astral_green_022.png",
+                        "../img/giro/super-meteor/astral_green_025.png",
+                        "../img/giro/super-meteor/astral_green_027.png",
+                        "../img/giro/super-meteor/astral_green_029.png",
+                        "../img/giro/super-meteor/astral_green_033.png"
+                    ],
+                    "tanque": "../img/giro/super-meteor/astral-green.png"
+                },
+                {
+                    "nombre": "Interstellar Grey",
+                    "imagenes": [
+                        "../img/giro/super-meteor/grey_0.png",
+                        "../img/giro/super-meteor/grey_1.png",
+                        "../img/giro/super-meteor/grey_2.png",
+                        "../img/giro/super-meteor/grey_3.png",
+                        "../img/giro/super-meteor/grey_4.png",
+                        "../img/giro/super-meteor/grey_5.png",
+                        "../img/giro/super-meteor/grey_8.png",
+                        "../img/giro/super-meteor/grey-9.png",
+                        "../img/giro/super-meteor/grey-10.png",
+                        "../img/giro/super-meteor/grey-11.png"
+                    ],
+                    "tanque": "../img/giro/super-meteor/interstellar_grey.png"
+                },
+                {
+                    "nombre": "Interstellar Green",
+                    "imagenes": [
+                        "../img/giro/super-meteor/green_000.png",
+                        "../img/giro/super-meteor/green_007.png",
+                        "../img/giro/super-meteor/green_010.png",
+                        "../img/giro/super-meteor/green_012.png",
+                        "../img/giro/super-meteor/green_013.png",
+                        "../img/giro/super-meteor/green_015.png",
+                        "../img/giro/super-meteor/green_019.png",
+                        "../img/giro/super-meteor/green_021.png",
+                        "../img/giro/super-meteor/greem_022.png",
+                        "../img/giro/super-meteor/greem_025.png",
+                        "../img/giro/super-meteor/greem_028.png",
+                        "../img/giro/super-meteor/greem_035.png"
+                    ],
+                    "tanque": "../img/giro/super-meteor/interstellar-green.png"
+                },
+                {
+                    "nombre": "Celestial Red",
+                    "imagenes": [
+                        "../img/giro/super-meteor/red-0.png",
+                        "../img/giro/super-meteor/red-1.png",
+                        "../img/giro/super-meteor/red-2.png",
+                        "../img/giro/super-meteor/red-3.png",
+                        "../img/giro/super-meteor/red-4.png",
+                        "../img/giro/super-meteor/red-6.png",
+                        "../img/giro/super-meteor/red-7.png",
+                        "../img/giro/super-meteor/red-8.png",
+                        "../img/giro/super-meteor/red-9.png"
+                    ],
+                    "tanque": "../img/giro/super-meteor/celestial-red.png"
+                },
+                {
+                    "nombre": "Celestial Blue",
+                    "imagenes": [
+                        "../img/giro/super-meteor/celestial_blue_000.png",
+                        "../img/giro/super-meteor/celestial_blue_006.png",
+                        "../img/giro/super-meteor/celestial_blue_010.png",
+                        "../img/giro/super-meteor/celestial_blue_013.png",
+                        "../img/giro/super-meteor/celestial_blue_015.png",
+                        "../img/giro/super-meteor/celestial_blue_017.png",
+                        "../img/giro/super-meteor/celestial_blue_020.png",
+                        "../img/giro/super-meteor/celestial_blue_023.png",
+                        "../img/giro/super-meteor/celestial_blue_026.png",
+                        "../img/giro/super-meteor/celestial_blue_029.png",
+                        "../img/giro/super-meteor/celestial_blue_033.png"
+                    ],
+                    "tanque": "../img/giro/super-meteor/celestial-blue.png"
+                }
+            ],
+            "wallpapers": [
+                "../img/galeria/super-meteor/gallery-3.jpg",
+                "../img/galeria/super-meteor/gallery-4.jpg",
+                "../img/galeria/super-meteor/gallery-5.jpg",
+                "../img/galeria/super-meteor/gallery-6.jpg",
+                "../img/galeria/super-meteor/gallery-3.jpg",
+                "../img/galeria/super-meteor/super_meteor_1.webp",
+                "../img/galeria/super-meteor/super_meteor_2.webp",
+                "../img/galeria/super-meteor/super_meteor_3.webp",
+                "../img/galeria/super-meteor/super_meteor_4.webp",
+                "../img/galeria/super-meteor/super_meteor_6.webp"
+            ]
+        },
+        {
+            "id": 4,
+            "nombre": "Interceptor 650",
+            "logo": "../img/gama/logo_interceptor.png",
+            "imagenHeader": "../img/header-modelo/interceptor.png",
+            "fondoHeader": "../img/gama/fondo-borroso-velocidad.jpg",
+            "descripcion": "Su diseño único y atemporal captura todas las miradas donde quiera que vayas. Una moto que siempre estará vigente.",
+            "fichaTecnica": "../pdf/Interceptor 650.pdf",
+            "imagenFicha": "../img/detalle/interceptor.webp",
+            "descripcionFicha": "Este nuevo motor bicilíndrico, es el propulsor de la nueva Interceptor 650. Con suficiente potencia como para sacarte una sonrisa en las autopistas y rutas, y con la maniobrabilidad ideal para interactuar en el tráfico urbano con facilidad. ",
+            "potencia": "34.9KW @ 7250 RPM",
+            "cilindrada": "648 CC BICILÍNDRICO EN LÍNEA",
+            "sistema": "ANTIBLOQUEO DE FRENOS",
+            "luces": "ENCENDIDO AUTOMÁTICO",
+            "imagenForm": "../img/form/interceptor.jpg",
+            "video": "https://www.youtube.com/embed/rWDy8ql1K9g?si=7RNXCjcV432cF5lP",
+            "logoGira": "../img/gama/logo_interceptor.png",
+            "descripcionGira": "Un cuerpo de aceleración doble, conectado al sistema de Inyección Electrónica Bosch de alta precisión, resulta una gran respuesta de aceleración en todo el régimen de revoluciones.",
+            "colores": [
+                {
+                    "nombre": "Canyon Red",
+                    "imagenes": [
+                        "../img/giro/interceptor/1.png",
+                        "../img/giro/interceptor/2.png",
+                        "../img/giro/interceptor/3.png",
+                        "../img/giro/interceptor/4.png",
+                        "../img/giro/interceptor/5.png",
+                        "../img/giro/interceptor/6.png",
+                        "../img/giro/interceptor/7.png",
+                        "../img/giro/interceptor/8.png",
+                        "../img/giro/interceptor/9.png",
+                        "../img/giro/interceptor/10.png",
+                        "../img/giro/interceptor/11.png"
+                    ],
+                    "tanque": "../img/giro/interceptor/Red.png"
+                },
+                {
+                    "nombre": "Cali Green",
+                    "imagenes": [
+                        "../img/giro/interceptor/green-1.png",
+                        "../img/giro/interceptor/green-2.png",
+                        "../img/giro/interceptor/green-3.png",
+                        "../img/giro/interceptor/green-4.png",
+                        "../img/giro/interceptor/green-5.png",
+                        "../img/giro/interceptor/green-6.png",
+                        "../img/giro/interceptor/green-7.png",
+                        "../img/giro/interceptor/green-8.png",
+                        "../img/giro/interceptor/green-9.png",
+                        "../img/giro/interceptor/green-10.png",
+                        "../img/giro/interceptor/green-11.png"
+                    ],
+                    "tanque": "../img/giro/interceptor/cali-green.png"
+                },
+                {
+                    "nombre": "Sunset Strip",
+                    "imagenes": [
+                        "../img/giro/interceptor/sunset-1.png",
+                        "../img/giro/interceptor/sunset-2.png",
+                        "../img/giro/interceptor/sunset-3.png",
+                        "../img/giro/interceptor/sunset-4.png",
+                        "../img/giro/interceptor/sunset-5.png",
+                        "../img/giro/interceptor/sunset-6.png",
+                        "../img/giro/interceptor/sunset-7.png",
+                        "../img/giro/interceptor/sunset-8.png",
+                        "../img/giro/interceptor/sunset-9.png",
+                        "../img/giro/interceptor/sunset-10.png",
+                        "../img/giro/interceptor/sunset-11.png"
+                    ],
+                    "tanque": "../img/giro/interceptor/Black.png"
+                },
+                {
+                    "nombre": "Barcelona Blue",
+                    "imagenes": [
+                        "../img/giro/interceptor/blue-1.png",
+                        "../img/giro/interceptor/blue-2.png",
+                        "../img/giro/interceptor/blue-3.png",
+                        "../img/giro/interceptor/blue-4.png",
+                        "../img/giro/interceptor/blue-5.png",
+                        "../img/giro/interceptor/blue-6.png",
+                        "../img/giro/interceptor/blue-7.png",
+                        "../img/giro/interceptor/blue-8.png",
+                        "../img/giro/interceptor/blue-9.png",
+                        "../img/giro/interceptor/blue-10.png",
+                        "../img/giro/interceptor/blue-11.png"
+                    ],
+                    "tanque": "../img/giro/interceptor/barcelona-blue.png"
+                },
+                {
+                    "nombre": "Black Ray",
+                    "imagenes": [
+                        "../img/giro/interceptor/black-1.png",
+                        "../img/giro/interceptor/black-2.png",
+                        "../img/giro/interceptor/black-3.png",
+                        "../img/giro/interceptor/black-4.png",
+                        "../img/giro/interceptor/black-5.png",
+                        "../img/giro/interceptor/black-6.png",
+                        "../img/giro/interceptor/black-7.png",
+                        "../img/giro/interceptor/black-9.png",
+                        "../img/giro/interceptor/black-10.png",
+                        "../img/giro/interceptor/black-11.png",
+                        "../img/giro/interceptor/black-12.png"
+                    ],
+                    "tanque": "../img/giro/interceptor/black-ray.png"
+                },
+                {
+                    "nombre": "Mark II",
+                    "imagenes": [
+                        "../img/giro/interceptor/mark-1.png",
+                        "../img/giro/interceptor/mark-2.png",
+                        "../img/giro/interceptor/mark-3.png",
+                        "../img/giro/interceptor/mark-4.png",
+                        "../img/giro/interceptor/mark-5.png",
+                        "../img/giro/interceptor/mark-6.png",
+                        "../img/giro/interceptor/mark-7.png",
+                        "../img/giro/interceptor/mark-8.png",
+                        "../img/giro/interceptor/mark-9.png",
+                        "../img/giro/interceptor/mark-10.png",
+                        "../img/giro/interceptor/mark-11.png"
+                    ],
+                    "tanque": "../img/giro/interceptor/GlitterDust.png"
+                }
+            ],
+            "wallpapers": [
+                "../img/galeria/interceptor/gallery-1.jpg",
+                "../img/galeria/interceptor/gallery-4.jpg",
+                "../img/galeria/interceptor/gallery-9.jpg",
+                "../img/galeria/interceptor/gallery-11.jpg",
+                "../img/galeria/interceptor/gallery-13.jpg",
+                "../img/galeria/interceptor/gallery-14.jpg",
+                "../img/galeria/interceptor/gallery-15.jpg",
+                "../img/galeria/interceptor/gallery-17.jpg",
+                "../img/galeria/interceptor/gallery-22.jpg",
+                "../img/galeria/interceptor/gallery-23.jpg"
+            ]
+        },
+        {
+            "id": 5,
+            "nombre": "Himalayan 450",
+            "logo": "../img/gama/logo-himalayan-blanco.png",
+            "imagenHeader": "../img/header-modelo/Himalayan.png",
+            "fondoHeader": "../img/header-modelo/fondo-night.jpg",
+            "descripcion": "La Himalayan de Royal Enfield es la motocicleta perfecta, conserva una apariencia clásica y detalles originales que la hacen única.",
+            "fichaTecnica": "../pdf/Himalayan 450.pdf",
+            "imagenFicha": "../img/detalle/himalayan.webp",
+            "descripcionFicha": " Es una de las motos de Royal Enfield más vendidas a nivel mundial, la diseñamos para recorrer el mundo entero, es perfecta para esos aventureros que necesitan moverse en el día a día a sus lugares de trabajo o para recorrer paisajes.",
+            "potencia": "40.02 PS @8000RPM",
+            "cilindrada": "451.65 CC MONOCILÍNDRICO",
+            "sistema": "ENCENDIDO ELÉCTRICO",
+            "luces": " LUZ DE FRENO E INTERMITENTES TRASEROS INTEGRADOS",
+            "imagenForm": "../img/form/Himalayan.webp",
+            "video": "https://www.youtube.com/embed/AGX3eZrGNao?si=HxbMjXi5hpJxvmd3",
+            "logoGira": "../img/gama/logo-himalayan.png",
+            "descripcionGira": "Con un equilibrio perfecto entre diseño y capacidad de usabilidad, la nueva Himalayan 450 es la única moto que se adapta sin esfuerzo al terreno, los elementos y al conductor, lo que la convierte en el modelo ideal para quienes disfrutan del turismo aventura.",
+            "colores": [
+                {
+                    "nombre": "Slate Himalayan Salt",
+                    "imagenes": [
+                        "../img/giro/himalayan/slate_salt_000.webp",
+                        "../img/giro/himalayan/slate_salt_001.webp",
+                        "../img/giro/himalayan/slate_salt_004.webp",
+                        "../img/giro/himalayan/slate_salt_008.webp",
+                        "../img/giro/himalayan/slate_salt_011.webp",
+                        "../img/giro/himalayan/slate_salt_014.webp",
+                        "../img/giro/himalayan/slate_salt_016.webp",
+                        "../img/giro/himalayan/slate_salt_021.webp",
+                        "../img/giro/himalayan/slate_salt_024.webp",
+                        "../img/giro/himalayan/slate_salt_028.webp",
+                        "../img/giro/himalayan/slate_salt_031.webp",
+                        "../img/giro/himalayan/slate_salt_033.webp"
+
+                    ],
+                    "tanque": "../img/giro/himalayan/RockSalt.png"
+                },
+                {
+                    "nombre": "Slate Poppy Blue",
+                    "imagenes": [
+                        "../img/giro/himalayan/slate_poppy_001.webp",
+                        "../img/giro/himalayan/slate_poppy_005.webp",
+                        "../img/giro/himalayan/slate_poppy_009.webp",
+                        "../img/giro/himalayan/slate_poppy_013.webp",
+                        "../img/giro/himalayan/slate_poppy_017.webp",
+                        "../img/giro/himalayan/slate_poppy_021.webp",
+                        "../img/giro/himalayan/slate_poppy_025.webp",
+                        "../img/giro/himalayan/slate_poppy_028.webp",
+                        "../img/giro/himalayan/slate_poppy_031.webp",
+                        "../img/giro/himalayan/slate_poppy_033.webp"
+                        
+                    ],
+                    "tanque": "../img/giro/himalayan/PoppyBlue.png"
+                },
+                {
+                    "nombre": "Hanle Black",
+                    "imagenes": [
+                        "../img/giro/himalayan/hanle-black-000.webp",
+                        "../img/giro/himalayan/hanle-black-005.webp",
+                        "../img/giro/himalayan/hanle-black-008.webp",
+                        "../img/giro/himalayan/hanle-black-011.webp",
+                        "../img/giro/himalayan/hanle-black-014.webp",
+                        "../img/giro/himalayan/hanle-black-017.webp",
+                        "../img/giro/himalayan/hanle-black-022.webp",
+                        "../img/giro/himalayan/hanle-black-026.webp",
+                        "../img/giro/himalayan/hanle-black-028.webp",
+                        "../img/giro/himalayan/hanle-black-031.webp",
+                        "../img/giro/himalayan/hanle-black-033.webp"
+
+                 
+                    ],
+                    "tanque":"../img/giro/himalayan/HanleBlack.png"
+                },
+                {
+                    "nombre": " Kaza Brown",
+                    "imagenes": [
+                        "../img/giro/himalayan/kaza_brown_001.webp",
+                        "../img/giro/himalayan/kaza_brown_005.webp",
+                        "../img/giro/himalayan/kaza_brown_009.webp",
+                        "../img/giro/himalayan/kaza_brown_013.webp",
+                        "../img/giro/himalayan/kaza_brown_017.webp",
+                        "../img/giro/himalayan/kaza_brown_023.webp",
+                        "../img/giro/himalayan/kaza_brown_027.webp",
+                        "../img/giro/himalayan/kaza_brown_030.webp",
+                        "../img/giro/himalayan/kaza_brown_032.webp",
+                        "../img/giro/himalayan/kaza_brown_034.webp"
+                        
+
+                    ],
+                    "tanque": "../img/giro/himalayan/KazaBrown.png"
+                },
+                {
+                    "nombre": "Kamet White",
+                    "imagenes": [
+                        "../img/giro/himalayan/kamet_white_001.webp",
+                        "../img/giro/himalayan/kamet_white_005.webp",
+                        "../img/giro/himalayan/kamet_white_008.webp",
+                        "../img/giro/himalayan/kamet_white_010.webp",
+                        "../img/giro/himalayan/kamet_white_012.webp",
+                        "../img/giro/himalayan/kamet_white_014.webp",
+                        "../img/giro/himalayan/kamet_white_018.webp",
+                        "../img/giro/himalayan/kamet_white_023.webp",
+                        "../img/giro/himalayan/kamet_white_025.webp",
+                        "../img/giro/himalayan/kamet_white_028.webp",
+                        "../img/giro/himalayan/kamet_white_031.webp",
+                        "../img/giro/himalayan/kamet_white_034.webp"
+                      
+                    ],
+                    "tanque": "../img/giro/himalayan/KametWhite.png"
+                }
+            ],
+            "wallpapers": [
+                "../img/galeria/himalayan/gallery-1.jpg",
+                "../img/galeria/himalayan/gallery-6.jpg",
+                "../img/galeria/himalayan/gallery-2.jpg",
+                "../img/galeria/himalayan/gallery-3.jpg",
+                "../img/galeria/himalayan/gallery-4.jpg",
+                
+                "../img/galeria/himalayan/new_himalayan.webp",
+                "../img/galeria/himalayan/himalayan-47.jpg",
+                "../img/galeria/himalayan/galeria_himalayan_5.webp",
+                "../img/galeria/himalayan/galeria_himalayan_6.webp",
+                "../img/galeria/himalayan/himalayan-52.jpg"
+
             ]
         }
     ]

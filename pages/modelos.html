@@ -33,8 +33,27 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <!-- Menú desplegable para Motos -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="motosDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Motos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="motosDropdown">
+                            
+                            <li><a href="#" class="dropdown-item moto-link" data-id="1" data-nombre="Shotgun">Shotgun 650</a></li>
+                            <li><a href="#" class="dropdown-item moto-link" data-id="2" data-nombre="Continental 650">Continental 650</a></li>
+                            <li><a href="#" class="dropdown-item moto-link" data-id="3" data-nombre="Super Meteor 650">Super Meteor 650</a></li>
+                            <li><a href="#" class="dropdown-item moto-link" data-id="4" data-nombre="Interceptor">Interceptor 650</a></li>
+                            <li><a href="#" class="dropdown-item moto-link" data-id="5" data-nombre="Himalayan">Himalayan 450</a></li>
+                            <li><a href="#" class="dropdown-item moto-link" data-id="6" data-nombre="Scram">Scram 411</a></li>
+                            <li><a href="#" class="dropdown-item moto-link" data-id="7" data-nombre="Classic">Classic 350</a></li>
+                            <li><a href="#" class="dropdown-item moto-link" data-id="8" data-nombre="Shotgun">Meteor 350</a></li>
+                            <li><a href="#" class="dropdown-item moto-link" data-id="9" data-nombre="HNTR">HNTR 350</a></li>
+                        </ul>
+                    </li>
 
-                    <li class="nav-item"><a class="nav-link" href="#motos">Motos</a></li>
+                  
                     <li class="nav-item"><a class="nav-link" href="https://nsm.store.royalenfield.com.ar/es-AR/apparel"
                             target="_blank">Tienda</a></li>
                     <li class="nav-item"><a class="nav-link" href="#eventos">Eventos</a></li>
@@ -44,16 +63,21 @@
             </div>
         </div>
     </nav>
-    <!-- ---------------------------Sección 1: Header ---------------------------->
-    <header id="header">
+    <!-- ---------------------------Sección prueba: Header --------------------------
+    <header class="header2">
+        <div class="header2-content">
+            <img id="logo-header2" src="../img/gama/logo_interceptor.png" alt="Logo" class="logo2">
+            <p class="description-header2">Tu descripción va aquí. Habla sobre la moto o el tema del sitio web.</p>
+        </div>
+    </header>-->
+     <!-- ---------------------------Sección 1: Header ---------------------------->
+     <header id="header">
         <div class="header-content">
             <img id="logo-header" src="" alt="Logo de la Marca">
             <p id="descripcion-header"></p>
         </div>
         <img id="imagen-header" src="" alt="Imagen de la Moto">
     </header>
-
-
     <!------------------- Sección 2: Descripción y ficha técnica -------------------------->
     <section class="descripcion-ficha">
         <div class="div-imagen-ficha">
@@ -214,6 +238,11 @@
             <!-- Las imágenes se generarán aquí dinámicamente con JavaScript -->
         </div>
     </section>
+    <!-- Modal para mostrar la imagen ampliada -->
+    <div id="image-modal">
+        <span id="close-modal">&times;</span> <!-- Botón de cierre -->
+        <img id="modal-image" src="" alt="Imagen grande">
+    </div>
 
 
     <!-- -------------------------Pie de Página------------------------ -->
@@ -223,15 +252,15 @@
                 <div class="col-12 col-md-4">
                     <h4 class="footer-title">Motos</h4>
                     <ul class="footer-links">
-                        <li><a href="#shotgun">Shotgun 650</a></li>
-                        <li><a href="#interceptor">Interceptor 650</a></li>
-                        <li><a href="#continental">Continental GT650</a></li>
-                        <li><a href="#super-meteor">Super Meteor 650</a></li>
-                        <li><a href="#himalayan">New Himalayan 450</a></li>
-                        <li><a href="#scram">Scram 411</a></li>
-                        <li><a href="#classic">Classic 350</a></li>
-                        <li><a href="#hunter">HNTR 350</a></li>
-                        <li><a href="#meteor">Meteor 350</a></li>
+                        <li><a href="#" class="footer-item  moto-link" data-id="1" data-nombre="Shotgun 650">Shotgun 650</a></li>
+                        <li><a href="#" class="footer-item moto-link" data-id="4" data-nombre="Interceptor 650">Interceptor 650</a></li>
+                        <li><a href="#" class="footer-item moto-link" data-id="2" data-nombre="Continental GT650">Continental GT650</a></li>
+                        <li><a href="#" class="footer-item moto-link" data-id="3" data-nombre="Super Meteor 650">Super Meteor 650</a></li>
+                        <li><a href="#" class="footer-item moto-link" data-id="5" data-nombre="New Himalayan 450">New Himalayan 450</a></li>
+                        <li><a href="#" class="footer-item moto-link" data-id="6" data-nombre="Scram 411">Scram 411</a></li>
+                        <li><a href="#" class="footer-item moto-link" data-id="7" data-nombre="Classic 350">Classic 350</a></li>
+                        <li><a href="#" class="footer-item moto-link" data-id="8" data-nombre="HNTR 350">HNTR 350</a></li>
+                        <li><a href="#" class="footer-item moto-link" data-id="9" data-nombre="Meteor 350">Meteor 350</a></li>
 
                     </ul>
                 </div>
@@ -273,6 +302,7 @@
 
     <script src="../js/detalle_moto.js"></script> <!-- Script JavaScript actualizado -->
     <script src="../js/form.js"></script> 
+    <script src="../js/footer.js"></script>
 
 
 

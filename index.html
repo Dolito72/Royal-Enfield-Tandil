@@ -34,9 +34,26 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-
-                    <li class="nav-item"><a class="nav-link" href="#motos">Motos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://nsm.store.royalenfield.com.ar/es-AR/apparel" target="_blank">Tienda</a></li>
+                    <!-- Menú desplegable para Motos -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="motosDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Motos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="motosDropdown">
+                            <li><a href="#" class="dropdown-item moto-link" data-id="1" data-nombre="Shotgun">Shotgun 650</a></li>
+                            <li><a href="#" class="dropdown-item moto-link" data-id="2" data-nombre="Continental 650">Continental 650</a></li>
+                            <li><a href="#" class="dropdown-item moto-link" data-id="3" data-nombre="Super Meteor 650">Super Meteor 650</a></li>
+                            <li><a href="#" class="dropdown-item moto-link" data-id="4" data-nombre="Interceptor">Interceptor 650</a></li>
+                            <li><a href="#" class="dropdown-item moto-link" data-id="5" data-nombre="Himalayan">Himalayan 450</a></li>
+                            <li><a href="#" class="dropdown-item moto-link" data-id="6" data-nombre="Scram">Scram 411</a></li>
+                            <li><a href="#" class="dropdown-item moto-link" data-id="7" data-nombre="Classic">Classic 350</a></li>
+                            <li><a href="#" class="dropdown-item moto-link" data-id="8" data-nombre="Shotgun">Meteor 350</a></li>
+                            <li><a href="#" class="dropdown-item moto-link" data-id="9" data-nombre="HNTR">HNTR 350</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="https://nsm.store.royalenfield.com.ar/es-AR/apparel"
+                            target="_blank">Tienda</a></li>
                     <li class="nav-item"><a class="nav-link" href="#eventos">Eventos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
                     <li class="nav-item"><a class=" btn-nav" href="#form">Contacto</a></li>
@@ -54,7 +71,7 @@
                         <img src="img/hero/new Himalayan - 4 Right View.png" class="moto-img moto-hero" loading="lazy"
                             alt="moto Himalayan">
                         <div class="carousel-text">
-                            <img  class="animated-text  logo-hero" src="img/gama/logo-himalayan-blanco.png" alt="">
+                            <img class="animated-text  logo-hero" src="img/gama/logo-himalayan-blanco.png" alt="">
                             <p class="animated-text">Reservá la tuya</p>
                             <a href="#form" class="btn-moto-link">Contactanos</a>
                         </div>
@@ -65,7 +82,8 @@
                         <img src="img/hero/Shotgun 650 - Stencil White(6).webp" class="moto-img moto-hero"
                             loading="lazy" alt="Shotgun">
                         <div class="carousel-text">
-                            <img class="animated-text logo-hero" src="img/gama/logo-shotgun-blanco.png" alt="logo shotgun">
+                            <img class="animated-text logo-hero" src="img/gama/logo-shotgun-blanco.png"
+                                alt="logo shotgun">
                             <p class="animated-text">Reservá la tuya </p>
                             <a href="#form" class="btn-moto-link">Contactanos</a>
                         </div>
@@ -98,7 +116,7 @@
                 </a>
                 <!-- Tarjeta 2 -->
                 <a href="#" class="slider-item" data-id="2" data-nombre="Continental GT 650">
-               
+
                     <div id="continental" class="content">
                         <img src="img/gama/logo_continental.png" alt="Logo Moto 2" class="logo">
                         <img src="./img/gama/Continental-650-mr_clean_000.png" alt="Moto Continental 650"
@@ -106,17 +124,14 @@
                     </div>
                 </a>
                 <!-- Tarjeta 3 -->
-                <a href="https://nsm.store.royalenfield.com.ar/es-AR/motos/super-meteor-650/reserve" target="_blank"
-                    class="slider-item">
-
+                <a href="#" class="slider-item" data-id="3" data-nombre="Super Meteor 650">
                     <div id="super_meteor" class="content">
                         <img src="./img/gama/logo-super-meteor-blanco.png" alt="Logo Super Meteor" class="logo">
                         <img src="./img/gama/super-meteor-650-2.webp" alt="Moto Super Meteor 650" class="gama-moto">
                     </div>
                 </a>
                 <!-- Tarjeta 4 -->
-                <a href="https://nsm.store.royalenfield.com.ar/es-AR/motos/interceptor-650-aleacion/reserve"
-                    target="_blank" class="slider-item">
+                <a href="#" class="slider-item" data-id="4" data-nombre="Interceptor 650">
 
                     <div id="interceptor" class="content">
                         <img src="./img/gama/logo_interceptor.png" alt="Logo Interceptor" class="logo">
@@ -126,10 +141,10 @@
                 </a>
                 <!-- Continúan los items... -->
                 <!-- Tarjeta 5 -->
-                <a href="https://nsm.store.royalenfield.com.ar/es-AR/motos/himalayan/reserve" target="_blank"
-                    class="slider-item">
+                <a href="#" class="slider-item" data-id="5" data-nombre="Himalayan 450">
 
-                    <div id="himalayan"  class="content">
+
+                    <div id="himalayan" class="content">
                         <img src="./img/gama/logo-himalayan-blanco.png" alt="Logo Himalayan" class="logo">
                         <img src="./img/gama/All-new Himalayan - Kamet White - Right Profile.webp" alt="Moto Himalayan"
                             class="gama-moto">
@@ -147,7 +162,7 @@
                 <!-- Tarjeta 7 -->
                 <a href="https://nsm.store.royalenfield.com.ar/es-AR/motos" target="_blank" class="slider-item">
 
-                    <div  id="classic" class="content">
+                    <div id="classic" class="content">
                         <img src="./img/gama/logo-classic-marron.png" alt="Logo Classic" class="logo">
                         <img src="./img/gama/Classic_350_SignalsDessert_000.webp" alt="Moto Classic 350"
                             class="gama-moto">
@@ -166,7 +181,7 @@
                 <a href="https://nsm.store.royalenfield.com.ar/es-AR/motos/rebel-blue/reserve" target="_blank"
                     class="slider-item">
 
-                    <div id="hunter"  class="content">
+                    <div id="hunter" class="content">
                         <img src="./img/gama/logo-hntr-blanco.png" alt="Logo HNTR" class="logo">
                         <img src="./img/gama/HNTR_GTred_000.webp" alt="Moto HNTR" class="gama-moto">
                     </div>
@@ -177,9 +192,9 @@
         <button class="custom-prev" onclick="prevSlide()">❮</button>
         <button class="custom-next" onclick="nextSlide()">❯</button>
     </section>
-    
-     <!-- Eventos-------------------------------------------------------- -->
-     <section id="eventos" class="section-eventos">
+
+    <!-- Eventos-------------------------------------------------------- -->
+    <section id="eventos" class="section-eventos">
         <h2 class="section-eventos-title">Descubrí lo que podes hacer con tu Royal Enfield</h2>
         <div class="eventos-container">
             <div class="eventos-item">
@@ -201,8 +216,8 @@
             </div>
         </div>
     </section>
-    
-   
+
+
 
 
 
@@ -239,6 +254,7 @@
                                     <option value="continental">Continental GT650</option>
                                     <option value="interceptor">Interceptor 650</option>
                                     <option value="himalayan">New Himalayan 452</option>
+                                    <option value="scram">Scram 411</option>
                                     <option value="classic">New Classic 350</option>
                                     <option value="meteor">Meteor 350</option>
                                     <option value="hntr">HNTR 350</option>
@@ -309,15 +325,15 @@
                 <div class="col-12 col-md-4">
                     <h4 class="footer-title">Motos</h4>
                     <ul class="footer-links">
-                        <li><a href="#shotgun">Shotgun 650</a></li>
-                        <li><a href="#interceptor">Interceptor 650</a></li>
-                        <li><a href="#continental">Continental GT650</a></li>
-                        <li><a href="#super-meteor">Super Meteor 650</a></li>
-                        <li><a href="#himalayan">New Himalayan 450</a></li>
-                        <li><a href="#scram">Scram 411</a></li>
-                        <li><a href="#classic">Classic 350</a></li>
-                        <li><a href="#hunter">HNTR 350</a></li>
-                        <li><a href="#meteor">Meteor 350</a></li>
+                        <li><a href="#" class="footer-item  moto-link" data-id="1" data-nombre="Shotgun 650">Shotgun 650</a></li>
+                        <li><a href="#" class="footer-item moto-link" data-id="4" data-nombre="Interceptor 650">Interceptor 650</a></li>
+                        <li><a href="#" class="footer-item moto-link" data-id="2" data-nombre="Continental GT650">Continental GT650</a></li>
+                        <li><a href="#" class="footer-item moto-link" data-id="3" data-nombre="Super Meteor 650">Super Meteor 650</a></li>
+                        <li><a href="#" class="footer-item moto-link" data-id="5" data-nombre="New Himalayan 450">New Himalayan 450</a></li>
+                        <li><a href="#" class="footer-item moto-link" data-id="6" data-nombre="Scram 411">Scram 411</a></li>
+                        <li><a href="#" class="footer-item moto-link" data-id="7" data-nombre="Classic 350">Classic 350</a></li>
+                        <li><a href="#" class="footer-item moto-link" data-id="8" data-nombre="HNTR 350">HNTR 350</a></li>
+                        <li><a href="#" class="footer-item moto-link" data-id="9" data-nombre="Meteor 350">Meteor 350</a></li>
 
                     </ul>
                 </div>
@@ -360,6 +376,7 @@
     <script src="js/form.js"></script>
     <script src="js/carrousel.js"></script>
     <script src="js/eventos.js"></script>
+    <script src="js/footer.js"></script>
 
 </body>
 

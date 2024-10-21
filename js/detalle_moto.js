@@ -69,22 +69,25 @@ function mostrarDetallesMoto(moto) {
     // seccion moto q gira
     // Configuración inicial de la imagen de la moto y sus detalles
     mostrarMotoGira(moto, 0); // Mostrar la primera imagen del primer color por defecto
-    // let indiceImagenActual = 0; // Comenzamos con la primera imagen
-    // const imagenMoto = document.getElementById('imagen-moto-giratoria');
     document.getElementById('moto-nombre').textContent = moto.nombre;
     document.getElementById('moto-descripcion').textContent = moto.descripcionGira;
     document.getElementById('logo-gira').src = moto.logoGira;
-    // imagenMoto.src = moto.colores[0].imagenes[indiceImagenActual]; // Muestra la primera imagen por defecto
-
-    // Añade un evento de clic para cambiar la imagen de la moto
-    /*   imagenMoto.addEventListener('click', function () {
-           indiceImagenActual = (indiceImagenActual + 1) % moto.colores[0].imagenes.length; // Avanza a la siguiente imagen en el array
-           imagenMoto.src = moto.colores[0].imagenes[indiceImagenActual];
-       });*/
     // seccion wallpaper
+    generarWallpapers(moto);
+
+
+
+
+
+
+}
+function generarWallpapers(moto) {
     const wallpaperGrid = document.querySelector('.wallpaper-grid');
     wallpaperGrid.innerHTML = ''; // Limpiar los wallpapers anteriores
-
+    // Obtener los elementos del modal
+    const modal = document.getElementById('image-modal');
+    const modalImage = document.getElementById('modal-image');
+    const closeModal = document.getElementById('close-modal');
     // Verificar si el array de wallpapers existe
     if (moto.wallpapers && moto.wallpapers.length > 0) {
         moto.wallpapers.forEach((wallpaper, index) => {
@@ -94,26 +97,57 @@ function mostrarDetallesMoto(moto) {
             img.id = `wallpaper-${index + 1}`; // Asigna un ID único para cada imagen
             img.classList.add('wallpaper-img'); // Agrega una clase para estilos CSS
             img.loading = 'lazy'; // Añade carga diferida
+            // Al hacer clic en una imagen, se abre el modal
+            img.addEventListener('click', function () {
+                modal.style.display = 'flex'; // Mostrar el modal
+                modalImage.src = this.src; // Cambiar la imagen del modal
+            });
             wallpaperGrid.appendChild(img);
         });
     } else {
         console.error('No se encontraron wallpapers en los datos.');
     }
-
+    closeModal.addEventListener('click', function () {
+        modal.style.display = 'none'; // Cerrar el modal cuando se hace clic en el botón de cierre
+    });
+    
+    modal.addEventListener('click', function (e) {
+        if (e.target !== modalImage) {
+            modal.style.display = 'none'; // Cerrar el modal cuando se hace clic fuera de la imagen
+        }
+    });
 }
+
 function generarOpcionesDeColor(moto) {
     const colorContainer = document.getElementById('color-container');
-    colorContainer.innerHTML = '';
+    colorContainer.innerHTML = ''; // Limpiar el contenido anterior
 
     moto.colores.forEach((color, index) => {
+        // Crear un contenedor para la imagen y el nombre del color
+        const colorOption = document.createElement('div');
+        colorOption.classList.add('color-option'); // Añadir una clase para estilos
+
+        // Crear la imagen del tanque
         const tanqueImg = document.createElement('img');
         tanqueImg.src = color.tanque;
         tanqueImg.alt = `Tanque de color ${color.nombre}`;
         tanqueImg.classList.add('tanque-color');
         tanqueImg.addEventListener('click', () => mostrarMotoGira(moto, index)); // Cambiar color al hacer clic
-        colorContainer.appendChild(tanqueImg);
+
+        // Crear el elemento para el nombre del color
+        const colorNombre = document.createElement('span');
+        colorNombre.textContent = color.nombre; // Asignar el nombre del color
+        colorNombre.classList.add('color-nombre'); // Añadir una clase para estilos
+
+        // Agregar la imagen y el nombre al contenedor
+        colorOption.appendChild(tanqueImg);
+        colorOption.appendChild(colorNombre);
+
+        // Agregar el contenedor al colorContainer
+        colorContainer.appendChild(colorOption);
     });
 }
+
 
 function mostrarMotoGira(moto, colorIndex) {
     const imagenMoto = document.getElementById('imagen-moto-giratoria');
@@ -134,32 +168,4 @@ function mostrarMotoGira(moto, colorIndex) {
 }
 
 
-
-
-
-/*
-
-function generarOpcionesDeColor(moto) {
-    const colorContainer = document.getElementById('color-container'); // Contenedor para los tanques de colores
-    colorContainer.innerHTML = ''; // Limpiar opciones anteriores
-
-    moto.colores.forEach((color, index) => {
-        const tanqueImg = document.createElement('img');
-        tanqueImg.src = color.tanque;
-        tanqueImg.alt = `Tanque de color ${color.nombre}`;
-        tanqueImg.classList.add('tanque-color'); // Clase para estilos
-        tanqueImg.addEventListener('click', () => cambiarColorMoto(moto, index));
-        colorContainer.appendChild(tanqueImg);
-    });
-}
-
-function cambiarColorMoto(moto, colorIndex) {
-    const imagenMoto = document.getElementById('imagen-moto-giratoria');
-    let indiceImagenActual = 0;
-    imagenMoto.src = moto.colores[colorIndex].imagenes[indiceImagenActual]; // Cambia a la primera imagen del nuevo color
-
-    imagenMoto.addEventListener('click', function () {
-        indiceImagenActual = (indiceImagenActual + 1) % moto.colores[colorIndex].imagenes.length; // Cambia a la siguiente imagen
-        imagenMoto.src = moto.colores[colorIndex].imagenes[indiceImagenActual];
-    });*/
 

@@ -72,8 +72,24 @@ body {
     transform: scale(1.1);
     /* Aumenta el logo al pasar el mouse */
 }
-
-
+.dropdown-menu{
+    background-color: #2c2c2c; 
+    
+}
+.dropdown-item{
+    background-color:  rgba(255, 255, 255, 0);
+    color: var(--blanco);
+  
+    padding-top: 15px;
+    /*text-transform: uppercase; /* Convertir texto a mayúsculas */
+    font-size: 1.1rem; /* Tamaño de letra más grande */
+}
+.navbar .dropdown-item:hover {
+    background-color:  rgba(255, 255, 255, 0);
+    color: var(--rojo);
+   /* text-transform: uppercase; /* Convertir texto a mayúsculas */
+    font-size: 1.1rem; /* Tamaño de letra más grande */
+}
 
 /* Links de navegación */
 .navbar .nav-link {

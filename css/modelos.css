@@ -29,8 +29,6 @@
     
 }
 
-
-
 /*------------------estilos Seccion 1 - Header ----------------------------- */
 p{
     color: var(--blanco);
@@ -41,6 +39,7 @@ p{
 }
 #header {
     position: relative;
+    background-color: var(--gris-oscuro);
     background-size: cover;
     background-position: center ;   
     height: 70vh; /* Toma el alto completo de la pantalla */
@@ -71,9 +70,9 @@ p{
 
 /* Descripción */
 #descripcion-header {
-    text-align: center;
+    text-align: justify;
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-bottom: 20px;
     max-width: 90%;
     flex-direction: column; /* Para alinear el logo y la descripción en columna */
@@ -95,6 +94,9 @@ p{
     width: 100%;
     max-width: 300px;
    
+}
+#descripcion-header{
+    text-align: justify;
 }
 
 /* ---------------Estilos generales seccion 2 ficha tecnica---------- */
@@ -118,6 +120,10 @@ p{
     margin: 10px 0;
 }
 
+#texto-ficha{
+    text-align: justify;
+    padding: 15px;
+}
 #imagen-ficha {
     width: 100%; /* Ajusta según el tamaño que necesites para mobile */
     max-width: 420px; /* Tamaño máximo para no exceder en pantallas más grandes */
@@ -156,9 +162,11 @@ p{
     font-weight: 700;
 }
  #moto-descripcion{
+    text-align: justify;
     color: var(--negro-2);
     font-weight: 500;
     text-shadow: 2px 2px 4px rgba(198, 198, 198, 0.6); /* Sombra del texto */
+    padding-top: 15px;
 }
 
 #logo-gira{
@@ -234,12 +242,26 @@ p{
     justify-content: center; /* Centrar los tanques horizontalmente */
     align-items: center; /* Centrar verticalmente si es necesario */
     color: var(--negro-2);
-    
+
    
 }
 
 #titulo-tanques{
     font-weight: 800;
+}
+
+.color-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2px;
+}
+
+.color-nombre {
+    margin-top: 0px;
+    padding-bottom: 20px;
+    font-size: 1.1em;
+    text-align: center;
 }
 .tanque-color {
     width: 150px; /* Ajusta el tamaño de los tanques según sea necesario */
@@ -332,11 +354,47 @@ p{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar un efecto elegante */
     cursor: pointer; /* Indicar que se puede hacer clic */
     transition: transform 0.3s; /* Animación suave al pasar el ratón */
+    max-width: 400px; /* Define un ancho máximo para evitar que sea demasiado grande */
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción */
 }
 
 .wallpaper-img:hover {
     transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
 }
+
+/* Estilos para el modal de la imagen */
+#image-modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000; /* Asegúrate de que esté por encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro transparente */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#modal-image {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#close-modal {
+    position: absolute;
+    top: 220px;
+    right: 20px;
+    font-size: 36px;
+    color: white; /* Haz que la cruz sea blanca para que contraste con el fondo oscuro */
+    cursor: pointer; /* Muestra el cursor de mano al pasar sobre la cruz */
+    z-index: 1001; /* Asegúrate de que esté por encima del modal */
+}
+
+
+
 
 /* Estilos para pantallas landscape (horizontal) */
 @media (min-width: 768px) {
@@ -344,6 +402,7 @@ p{
         grid-template-columns: repeat(2, 1fr); /* Dos columnas en landscape */
     }
 }
+
 
 
 
@@ -357,8 +416,8 @@ p{
         justify-content: space-between;
         align-items: center;
         background-position: center ;
-        padding: 40px;
-        height: 80vh; /* Aumenta la altura para landscape */
+        padding: 20px;
+        height: 100vh; /* Aumenta la altura para landscape */
     }
 
     #logo-header {
@@ -369,6 +428,7 @@ p{
         font-size: 1.1em;
      
         padding: 10px;
+        padding-bottom: 15px;
     }
 
     #imagen-header {
@@ -385,16 +445,24 @@ p{
     }
 
     #texto-ficha {
-        padding-top: 20px;
+        padding-top: 30px;
         margin-bottom: 2px; /* Espacio entre el texto y el botón */
-        font-size: 1.1 rem;
+        font-size: 0.9 rem;
     }
 
     #imagen-ficha {
         width: 100%; /* Ajusta según el tamaño que necesites para mobile */
-        max-width: 480px; /* Tamaño máximo para no exceder en pantallas más grandes */
-     
+      /* Tamaño máximo para no exceder en pantallas más grandes */
+        height:300px ;
     }
+    /*--------------------wallpapers--------------------------*/
+    #close-modal {
+   
+        top: 20px;
+        right: 210px;
+        font-size: 36px;
+    }
+    
 
 }
 
@@ -496,7 +564,7 @@ p{
     flex-direction: column; /* Para alinear el logo y la descripción en columna */
     justify-content: center; /* Centrar verticalmente */
     align-items: center; /* Centrar horizontalmente */
-    text-align: center; /* Para centrar el texto también */
+    text-align: justify; /* Para centrar el texto también */
     }
     
     #imagen-moto-giratoria {
@@ -510,8 +578,7 @@ p{
     }
     #color-container {
         flex-direction: row; /* En desktop, los tanques vuelven a estar en fila */
-        flex-wrap: nowrap; 
-
+      
     }
 
     .tanque-color {
@@ -572,6 +639,19 @@ p{
     transition: transform 0.3s;
 }
 
+
+
+#modal-image {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#close-modal {
+   
+    top: 30px;
+    right: 180px;
+    font-size: 36px;
+}
 
 
 
