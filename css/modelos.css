@@ -29,6 +29,252 @@
     
 }
 
+/* Estilos base para el header 2 prueba------------------(Mobile First) */
+
+
+/* shotgun*/
+#header2.model1{
+    background-size: cover;
+    background-position: center 40%;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: flex-start; /* Alinear el contenido a la izquierda */
+    padding-left: 20px; /* Añadir un pequeño padding para que el contenido no quede pegado a la izquierda */
+    padding-top: 10px; /* Ajusta la posición hacia abajo en mobile */
+}
+/* continental*/
+#header2.model2{
+    background-size: cover;
+    background-position: center bottom;
+    width: 100%;
+    height: 60vh;
+}
+/*super meteor*/
+#header2.model3{
+    background-size: cover;
+    background-position: center right;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: flex-start; /* Alinear el contenido a la izquierda */
+    padding-left: 20px; /* Añadir un pequeño padding para que el contenido no quede pegado a la izquierda */
+    padding-top: 10px; /* Ajusta la posición hacia abajo en mobile */
+}
+/*interceptor*/
+#header2.model4{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: flex-start; /* Alinear el contenido a la izquierda */
+    padding-left: 100px; /* Añadir un pequeño padding para que el contenido no quede pegado a la izquierda */
+    padding-bottom: 50px; /* Ajusta la posición hacia abajo en mobile */
+}
+
+/*himalayan*/
+#header2.model5{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: flex-start; /* Alinear el contenido a la izquierda */
+    padding-left: 10px; /* Añadir un pequeño padding para que el contenido no quede pegado a la izquierda */
+    padding-bottom: 100px; /* Ajusta la posición hacia abajo en mobile */
+}
+
+/*classic*/
+#header2.model7{
+    background-size: cover;
+    background-position: 80% center;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: flex-start; /* Alinear el contenido a la izquierda */
+    padding-left: 10px; /* Añadir un pequeño padding para que el contenido no quede pegado a la izquierda */
+    padding-bottom: 10px; /* Ajusta la posición hacia abajo en mobile */
+}
+
+
+
+
+/* Asegúrate de que el contenido esté sobre el gradiente */
+.header2-content {
+    z-index: 2;
+    display: flex; /* Usa flexbox para organizar el logo y la descripción */
+    flex-direction: column; /* Organiza en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: flex-start; /* Alinea a la izquierda */
+    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+    padding: 20px;
+
+}
+
+#logo-header2 {
+    max-width: 150px;
+    height: auto;
+    padding-bottom: 200px;
+}
+
+#description-header2 {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    display: none;
+    margin-top: 10px; /* Añadir un espacio entre el logo y la descripción */
+}
+/* Landscape para dispositivos con ancho mayor a 480px y en modo horizontal */
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+    #header2.model1 {
+        background-position: center 80%;
+        justify-content: flex-start;
+        height: 70vh;
+
+}  #header2.model2 {
+    background-position: center 70%;
+    justify-content: flex-start;
+    height: 70vh;
+
+}
+#header2.model3{
+    background-position: center 80%;
+    justify-content: flex-start;
+    height: 90vh; /* Aumentar la altura si es necesario */
+    background-size: cover; /* Asegúrate de que la imagen de fondo cubra el área */
+    padding-top: 20px;
+}
+/*interceptor*/
+#header2.model4{
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: flex-start; /* Alinear el contenido a la izquierda */
+    padding-left: 20px; /* Añadir un pequeño padding para que el contenido no quede pegado a la izquierda */
+    padding-top: 10px; /* Ajusta la posición hacia abajo en mobile */
+    padding-bottom: 10px;
+}
+/*himalayan*/
+#header2.model5{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    padding-left: 10px; /* Añadir un pequeño padding para que el contenido no quede pegado a la izquierda */
+    padding-bottom: 10px; /* Ajusta la posición hacia abajo en mobile */
+}
+
+/*classic*/
+#header2.model7{
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+    height: 90vh;
+    padding-bottom: 10px; /* Ajusta la posición hacia abajo en mobile */
+}
+
+
+.header2-content {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-align: left;
+   
+}
+
+
+#description-header2 {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#logo-header2 {
+    max-width: 150px;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 901px) {
+    /*shotgun*/
+    #header2.model1 {
+        background-position: center bottom;
+        justify-content: flex-start;
+        padding-left: 50px; /* Ajusta el padding en pantallas grandes */
+        height: 80vh;
+    }
+
+      /*continental*/
+      #header2.model2 {
+        background-position: center bottom ;
+        justify-content: flex-start;
+        padding-left: 50px; /* Ajusta el padding en pantallas grandes */
+        height: 100vh;
+    }
+
+    #header2.model3{
+        background-position: center bottom;
+        height: 100vh;
+    }
+    #header2.model4{
+        background-position:  right;
+        justify-content: flex-start;
+        height: 100vh;
+        padding-top: 50px; 
+    }
+
+    #header2.model5{
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
+        height: 100vh;
+        padding-left: 10px; /* Añadir un pequeño padding para que el contenido no quede pegado a la izquierda */
+        padding-bottom: 10px; /* Ajusta la posición hacia abajo en mobile */
+    }
+
+    /*classic*/
+#header2.model7{
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 10px; /* Ajusta la posición hacia abajo en mobile */
+}
+
+
+
+.header2-content {
+        width: 30%;
+        text-align: left;
+        align-items: flex-start; /* Mantén el contenido alineado a la izquierda */
+    }
+
+    #logo-header2 {
+        max-width: 300px; /* Tamaño del logo en pantallas grandes */
+        padding-bottom: 5px;
+    }
+
+    #description-header2 {
+        display: block;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+}
+
+
+
+
 /*------------------estilos Seccion 1 - Header ----------------------------- */
 p{
     color: var(--blanco);
@@ -37,27 +283,6 @@ p{
     font-size: 1.2em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra del texto */
 }
-
-/* Placeholder para la imagen del header */
-.placeholder {
-    width: 100%;
-    height: auto;
-    background-color: #e0e0e0; /* Fondo gris claro mientras carga */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.placeholder img {
-    display: none; /* Oculta la imagen hasta que se cargue */
-}
-
-/* Cuando la imagen está cargada, se muestra */
-img.loaded {
-    display: block;
-}
-
-
 
 #header {
     position: relative;

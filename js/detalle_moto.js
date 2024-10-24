@@ -39,12 +39,32 @@ document.addEventListener('DOMContentLoaded', function () {
 function mostrarDetallesMoto(moto) {
     // Cambiar el título de la página
     document.title = `${moto.nombre} - Royal Enfield Tandil`;
-    // Actualizar el logo, descripción e imagen de la moto
-    document.getElementById('logo-header').src = moto.logo; // Cambia el logo dinámicamente
-    document.getElementById('descripcion-header').textContent = moto.descripcion;
-    document.getElementById('imagen-header').src = moto.imagenHeader;
-    // Cambiar la imagen de fondo del header (si tienes uno)
-    document.getElementById('header').style.backgroundImage = `url(${moto.fondoHeader})`;
+    // Header - Actualizar el logo, descripción e imagen de la moto
+   // document.getElementById('logo-header').src = moto.logo; // Cambia el logo dinámicamente
+  //  document.getElementById('descripcion-header').textContent = moto.descripcion;
+ //   document.getElementById('imagen-header').src = moto.imagenHeader;
+  //  document.getElementById('header').style.backgroundImage = `url(${moto.fondoHeader})`;
+   
+    //header 2-----------------------
+
+ // Cambiar la clase del header2 según el modelo de moto
+    const header = document.getElementById('header2');
+    
+    // Elimina cualquier clase de modelo previa (por si cambian de moto)
+    header.classList.remove('model1', 'model2', 'model3', 'model4', 'model5', 'model6', 'model7', 'model8', 'model9');
+
+    // Agrega la nueva clase correspondiente al modelo actual
+   
+    header.classList.add(`model${moto.id}`);
+    const imageUrl = moto.fondoHeader2; // Supongo que `moto.imagen` contiene la URL de la imagen de fondo
+
+// Aplica tanto el gradiente como la imagen dinámica al mismo tiempo
+
+header.style.backgroundImage = `linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(${imageUrl})`;
+
+    document.getElementById('logo-header2').src = moto.logo;
+  //  header.style.backgroundImage = `url(${moto.fondoHeader2})`;
+    document.getElementById('description-header2').textContent = moto.descripcion;
     // Seccion ficha técnica
     // Actualizar el botón de ficha técnica
     const pdfFicha = document.getElementById('pdf-ficha');
