@@ -897,9 +897,8 @@
             "id": 8,
             "nombre": "Meteor 350",
             "logo": "../img/gama/logo-meteor-350-blanco.png",
-            "imagenHeader": "../img/header-modelo/scram.png",
-            "fondoHeader": "../img/gama/fondo-borroso-velocidad.jpg",
-            "fondoHeader2": "../img/header/Meteor350.jpg",
+           
+            "fondoHeader2": "../img/header/Meteor.jpg",
             "descripcion": "La Meteor representa la esencia del puro motociclismo, con contorno clásico y un diseño atemporal. Es una auténtica cruiser.",
             "fichaTecnica": "../pdf/Meteor 350.pdf",
             "imagenFicha": "../img/detalle/meteor_350.webp",
@@ -1014,17 +1013,18 @@
                 }
             ],
             "wallpapers": [
-                "../img/galeria/meteor/galeria_2.webp",
+                "../img/galeria/meteor/gallery-1.jpg",
                 "../img/galeria/meteor/galeria-1.webp",
-                "../img/galeria/meteor/galeria-3.jpg",
                 "../img/galeria/meteor/galeria-4.jpg",
-                "../img/galeria/meteor/galeria-5.jpg",
-               
-                "../img/galeria/meteor/gallery-11.jpg",
                 "../img/galeria/meteor/gallery-13.jpg",
-                "../img/galeria/meteor/gallery-12.jpg",
+                "../img/galeria/meteor/galeria-5.jpg",
                 "../img/galeria/meteor/gallery-9.webp",
-                "../img/galeria/meteor/galeria-6.jpeg"
+                "../img/galeria/meteor/galeria-6.jpeg",
+                "../img/galeria/meteor/gallery-6.jpg",
+               
+                "../img/galeria/meteor/galeria-3.jpg",
+                "../img/galeria/meteor/gallery-2.jpg"
+
             ]
         },
         {
