@@ -39,32 +39,82 @@ document.addEventListener('DOMContentLoaded', function () {
 function mostrarDetallesMoto(moto) {
     // Cambiar el título de la página
     document.title = `${moto.nombre} - Royal Enfield Tandil`;
-    // Header - Actualizar el logo, descripción e imagen de la moto
-   // document.getElementById('logo-header').src = moto.logo; // Cambia el logo dinámicamente
-  //  document.getElementById('descripcion-header').textContent = moto.descripcion;
- //   document.getElementById('imagen-header').src = moto.imagenHeader;
-  //  document.getElementById('header').style.backgroundImage = `url(${moto.fondoHeader})`;
-   
-    //header 2-----------------------
-
- // Cambiar la clase del header2 según el modelo de moto
-    const header = document.getElementById('header2');
+    /*header 2-----------------------
+ 
+  // Cambiar la clase del header2 según el modelo de moto
+     const header = document.getElementById('header2');
+     
+     // Elimina cualquier clase de modelo previa (por si cambian de moto)
+     header.classList.remove('model1', 'model2', 'model3', 'model4', 'model5', 'model6', 'model7', 'model8', 'model9');
+ 
+     // Agrega la nueva clase correspondiente al modelo actual
     
-    // Elimina cualquier clase de modelo previa (por si cambian de moto)
-    header.classList.remove('model1', 'model2', 'model3', 'model4', 'model5', 'model6', 'model7', 'model8', 'model9');
+     header.classList.add(`model${moto.id}`);
+     const imageUrl = moto.fondoHeader2; // Supongo que `moto.imagen` contiene la URL de la imagen de fondo
+ 
+     // Aplica tanto el gradiente como la imagen dinámica al mismo tiempo
+ 
+     header.style.backgroundImage = `linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(${imageUrl})`;
+ 
+     document.getElementById('logo-header2').src = moto.logo;
+   //  header.style.backgroundImage = `url(${moto.fondoHeader2})`;
+     document.getElementById('description-header2').textContent = moto.descripcion;*/
+   // Obtener el header y logo
+const header = document.getElementById('header2');
+const logoImg = document.getElementById('logo-header2');
 
-    // Agrega la nueva clase correspondiente al modelo actual
-   
-    header.classList.add(`model${moto.id}`);
-    const imageUrl = moto.fondoHeader2; // Supongo que `moto.imagen` contiene la URL de la imagen de fondo
+// Añadir clase "loading" para mostrar un estado de carga inicial
+header.classList.add('loading');
 
-// Aplica tanto el gradiente como la imagen dinámica al mismo tiempo
+// Eliminar cualquier clase de modelo previa (para evitar conflictos)
+header.classList.remove('model1', 'model2', 'model3', 'model4', 'model5', 'model6', 'model7', 'model8', 'model9');
 
-header.style.backgroundImage = `linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(${imageUrl})`;
+// Agregar la nueva clase correspondiente al modelo actual
+header.classList.add(`model${moto.id}`);
 
-    document.getElementById('logo-header2').src = moto.logo;
-  //  header.style.backgroundImage = `url(${moto.fondoHeader2})`;
-    document.getElementById('description-header2').textContent = moto.descripcion;
+// Verificar que la imagen de fondo y logo existan
+const imageUrl = moto.fondoHeader2 || '';  // Imagen predeterminada si no hay fondo
+const logoUrl = moto.logo || '';  // Logo predeterminado si no hay logo
+
+// Función para manejar la carga de imágenes de fondo y logo
+function cargarImagen(src, callback) {
+    const img = new Image();
+    img.src = src;
+    img.onload = callback;
+    img.onerror = function() {
+        console.error('Error cargando imagen:', src);
+        callback();  // Continuar incluso si hay un error
+    };
+}
+
+// Si existe una imagen de fondo, la pre-cargamos
+if (imageUrl) {
+    cargarImagen(imageUrl, function() {
+        // Aplicar la imagen de fondo una vez cargada
+        header.style.backgroundImage = `linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(${imageUrl})`;
+        header.style.backgroundColor = '';  // Eliminar fondo gris
+        header.classList.remove('loading');  // Remover el estado de carga
+    });
+} else {
+    // Si no hay imagen de fondo, aplicar el fondo gris inmediatamente
+    header.style.backgroundImage = '';
+    header.style.backgroundColor = '#f0f0f0';  // Fondo gris por defecto
+    header.classList.remove('loading');
+}
+
+// Si hay un logo, lo pre-cargamos
+if (logoUrl) {
+    cargarImagen(logoUrl, function() {
+        logoImg.src = logoUrl;
+        logoImg.style.display = 'block';  // Mostrar logo después de que cargue
+    });
+} else {
+    logoImg.style.display = 'none';  // Ocultar logo si no hay
+}
+
+// Cambiar la descripción del header dinámicamente
+document.getElementById('description-header2').textContent = moto.descripcion || 'Descripción predeterminada';
+
     // Seccion ficha técnica
     // Actualizar el botón de ficha técnica
     const pdfFicha = document.getElementById('pdf-ficha');
@@ -130,7 +180,7 @@ function generarWallpapers(moto) {
     closeModal.addEventListener('click', function () {
         modal.style.display = 'none'; // Cerrar el modal cuando se hace clic en el botón de cierre
     });
-    
+
     modal.addEventListener('click', function (e) {
         if (e.target !== modalImage) {
             modal.style.display = 'none'; // Cerrar el modal cuando se hace clic fuera de la imagen

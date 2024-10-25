@@ -4,8 +4,6 @@
             "id": 1,
             "nombre": "Shotgun 650",
             "logo": "../img/gama/logo-shotgun-blanco.png",
-            "imagenHeader": "../img/hero/Shotgun 650 - Stencil White(6).webp",
-            "fondoHeader": "../img/gama/fondo-borroso-velocidad.jpg",
             "fondoHeader2":"../img/header/Shotgun.jpg" ,
             "descripcion": "La Shotgun 650 escapa a cualquier intento de categorización, tanto en la forma como en el fondo.",
             "fichaTecnica": "../pdf/ficha-shotgun.pdf",
@@ -80,8 +78,6 @@
             "id": 2,
             "nombre": "Continental GT 650",
             "logo": "../img/gama/logo-continental.svg",
-            "imagenHeader": "../img/header-modelo/continental_green2.png",
-            "fondoHeader": "../img/header-modelo/fondo-night.jpg",
             "fondoHeader2": "../img/header/continental.webp",
             "descripcion": "La original Royal Enfield British café racer. Una joya clásica con gran tecnología, que se luce en estética y performance.",
             "fichaTecnica": "../pdf/ficha-Continental.pdf",
@@ -217,8 +213,6 @@
             "id": 3,
             "nombre": "Super Meteor 650",
             "logo": "../img/gama/logo-super-meteor-blanco.png",
-            "imagenHeader": "../img/header-modelo/super-meteor-grey.png",
-            "fondoHeader": "../img/header-modelo/fondo-night.jpg",
             "fondoHeader2": "../img/header/super-meteor-2.jpg",
             "descripcion": "La Super Meteor 650 es el fiel legado de Royal Enfield en su afán por crear motocicletas cruiser extraordinarias.",
             "fichaTecnica": "../pdf/ficha-Super Meteor 650.pdf",
@@ -366,10 +360,7 @@
             "id": 4,
             "nombre": "Interceptor 650",
             "logo": "../img/gama/logo_interceptor.png",
-            "imagenHeader": "../img/header-modelo/interceptor.png",
-            "fondoHeader": "../img/gama/fondo-borroso-velocidad.jpg",
             "fondoHeader2": "../img/header/interceptor.jpg",
-         
             "descripcion": "Su diseño único y atemporal captura todas las miradas donde quiera que vayas. Una moto que siempre estará vigente.",
             "fichaTecnica": "../pdf/Interceptor 650.pdf",
             "imagenFicha": "../img/detalle/interceptor.webp",
@@ -503,9 +494,7 @@
             "id": 5,
             "nombre": "Himalayan 450",
             "logo": "../img/gama/logo-himalayan-blanco.png",
-            "imagenHeader": "../img/header-modelo/Himalayan.png",
-            "fondoHeader": "../img/header-modelo/fondo-night.jpg",
-            "fondoHeader2": "../img/header/himalayan.jpg",
+           "fondoHeader2": "../img/header/himalayan.jpg",
             "descripcion": "La Himalayan de Royal Enfield es la motocicleta perfecta, conserva una apariencia clásica y detalles originales que la hacen única.",
             "fichaTecnica": "../pdf/Himalayan 450.pdf",
             "imagenFicha": "../img/detalle/himalayan.webp",
@@ -894,13 +883,255 @@
                 "../img/galeria/classic/galeria_12.webp",
                 "../img/galeria/classic/galeria-2.jpg",
                 "../img/galeria/classic/galeria-3.jpg",
-                "../img/galeria/classic/galeria-6.jpg",
                 "../img/galeria/classic/galeria-8.webp",
+                "../img/galeria/classic/galeria-6.jpg",
+               
                 "../img/galeria/classic/gallery-1.jpg",
                 "../img/galeria/classic/gallery-2.jpg",
                 "../img/galeria/classic/gallery-3.jpg",
                 "../img/galeria/classic/gallery-7.jpg",
                 "../img/galeria/classic/gallery-8.jpg"
+            ]
+        },
+        {
+            "id": 8,
+            "nombre": "Meteor 350",
+            "logo": "../img/gama/logo-meteor-350-blanco.png",
+            "imagenHeader": "../img/header-modelo/scram.png",
+            "fondoHeader": "../img/gama/fondo-borroso-velocidad.jpg",
+            "fondoHeader2": "../img/header/Meteor350.jpg",
+            "descripcion": "La Meteor representa la esencia del puro motociclismo, con contorno clásico y un diseño atemporal. Es una auténtica cruiser.",
+            "fichaTecnica": "../pdf/Meteor 350.pdf",
+            "imagenFicha": "../img/detalle/meteor_350.webp",
+            "descripcionFicha": "La Meteor representa la esencia de la conducción, el espíritu de la travesía, con un diseño clásico y atemporal. La Meteor está preparada para que sea tu moto en el día a día y para esos viajes del fin de semana.",
+            "potencia": "20. 2 BHP @6100 RPM",
+            "cilindrada": "349 CC MONOCILÍNDRICO",
+            "sistema": "Antibloqueo de Frenos",
+            "luces": "Encendido automático",
+            "imagenForm": "../img/form/meteor350.jpg",
+            "video": "https://www.youtube.com/embed/F8v-jMFcOMQ?si=Ins1HaVklE5S4Ac_",
+            "logoGira": "../img/gama/logo-meteor-350.png",
+            "descripcionGira": "En el corazón de la Meteor se encuentra el nuevo motor de 349 cc SOHC, refrigerado por aire y aceite, con una característica carrera larga y un sistema de inyección electrónica que produce una potencia suave y manejable y un excelente torque. Continuando con la leyenda de los sencillos, el nuevo motor posee un escape característico de Royal Enfield.",
+            "colores": [
+                {
+                    "nombre": "Fireball Red",
+                    "imagenes": [
+                        "../img/giro/meteor/fireball_red_001.webp",
+                        "../img/giro/meteor/fireball_red_008.webp",
+                        "../img/giro/meteor/fireball_red_012.webp",
+                        "../img/giro/meteor/fireball_red_015.webp",
+                        "../img/giro/meteor/fireball_red_017.webp",
+                        "../img/giro/meteor/fireball_red_020.webp",
+                        "../img/giro/meteor/fireball_red_022.webp",
+                        "../img/giro/meteor/fireball_red_025.webp",
+                        "../img/giro/meteor/fireball_red_028.webp",
+                        "../img/giro/meteor/fireball_red_030.webp"
+                    ],
+                    "tanque": "../img/giro/meteor/red-tank.png"
+                },
+                {
+                    "nombre": "Fireball Matt Green ",
+                    "imagenes": [
+                       "../img/giro/meteor/fireball_matt_green_001.webp",
+                       "../img/giro/meteor/fireball_matt_green_008.webp",
+                       "../img/giro/meteor/fireball_matt_green_011.webp",
+                       "../img/giro/meteor/fireball_matt_green_014.webp",
+                       "../img/giro/meteor/fireball_matt_green_017.webp",
+                       "../img/giro/meteor/fireball_matt_green_021.webp",
+                       "../img/giro/meteor/fireball_matt_green_024.webp",
+                       "../img/giro/meteor/fireball_matt_green_027.webp",
+                       "../img/giro/meteor/fireball_matt_green_029.webp"
+                    ],
+                    "tanque": "../img/giro/meteor/matt-green.png"
+                },
+                {
+                    "nombre": "Fireball Black ",
+                    "imagenes": [
+                        "../img/giro/meteor/fireball_black_001.webp",
+                        "../img/giro/meteor/fireball_black_008.webp",
+                        "../img/giro/meteor/fireball_black_011.webp",
+                        "../img/giro/meteor/fireball_black_014.webp",
+                        "../img/giro/meteor/fireball_black_017.webp",
+                        "../img/giro/meteor/fireball_black_021.webp",
+                        "../img/giro/meteor/fireball_black_024.webp",
+                        "../img/giro/meteor/fireball_black_027.webp",
+                        "../img/giro/meteor/fireball_black_029.webp"
+                      
+                    ],
+                    "tanque": "../img/giro/meteor/fireball-black.png"
+                    
+                },
+                {
+                    "nombre": "Aurora Blue",
+                    "imagenes": [
+                        "../img/giro/meteor/aurora-blue_001.webp",
+                        "../img/giro/meteor/aurora-blue_008.webp",
+                        "../img/giro/meteor/aurora-blue_011.webp",
+                        "../img/giro/meteor/aurora-blue_013.webp",
+                        "../img/giro/meteor/aurora-blue_015.webp",
+                        "../img/giro/meteor/aurora-blue_018.webp",
+                        "../img/giro/meteor/aurora-blue_022.webp",
+                        "../img/giro/meteor/aurora-blue_025.webp",
+                        "../img/giro/meteor/aurora-blue_027.webp",
+                        "../img/giro/meteor/aurora-blue_029.webp"
+                       
+                    ],
+                    "tanque": "../img/giro/meteor/aurora-blue.png"
+                },
+                {
+                    "nombre": "Aurora Green",
+                    "imagenes": [
+                        "../img/giro/meteor/aurora-green_001.webp",
+                        "../img/giro/meteor/aurora-green_008.webp",
+                        "../img/giro/meteor/aurora-green_012.webp",
+                        "../img/giro/meteor/aurora-green_015.webp",
+                        "../img/giro/meteor/aurora-green_017.webp",
+                        "../img/giro/meteor/aurora-green_021.webp",
+                        "../img/giro/meteor/aurora-green_024.webp",
+                        "../img/giro/meteor/aurora-green_027.webp",
+                        "../img/giro/meteor/aurora-green_030.webp"
+                       
+                       
+                    ],
+                    "tanque": "../img/giro/meteor/Aurora Green.png"
+                },
+                {
+                    "nombre": "Aurora Black",
+                    "imagenes": [
+                        "../img/giro/meteor/aurora-black_002.webp",
+                        "../img/giro/meteor/aurora-black_007.webp",
+                        "../img/giro/meteor/aurora-black_011.webp",
+                        "../img/giro/meteor/aurora-black_014.webp",
+                        "../img/giro/meteor/aurora-black_016.webp",
+                        "../img/giro/meteor/aurora-black_021.webp",
+                        "../img/giro/meteor/aurora-black_024.webp",
+                        "../img/giro/meteor/aurora-black_027.webp",
+                        "../img/giro/meteor/aurora-black_029.webp"
+                        
+                       
+                    ],
+                    "tanque": "../img/giro/meteor/Aurora_Black-2.png"
+                }
+            ],
+            "wallpapers": [
+                "../img/galeria/meteor/galeria_2.webp",
+                "../img/galeria/meteor/galeria-1.webp",
+                "../img/galeria/meteor/galeria-3.jpg",
+                "../img/galeria/meteor/galeria-4.jpg",
+                "../img/galeria/meteor/galeria-5.jpg",
+               
+                "../img/galeria/meteor/gallery-11.jpg",
+                "../img/galeria/meteor/gallery-13.jpg",
+                "../img/galeria/meteor/gallery-12.jpg",
+                "../img/galeria/meteor/gallery-9.webp",
+                "../img/galeria/meteor/galeria-6.jpeg"
+            ]
+        },
+        {
+            "id": 9,
+            "nombre": "HNTR 350",
+            "logo": "../img/gama/logo-hntr-blanco.png",
+            "imagenHeader": "../img/header-modelo/scram.png",
+            "fondoHeader": "../img/gama/fondo-borroso-velocidad.jpg",
+            "fondoHeader2": "../img/header/HNTR1.jpg",
+            "descripcion": "La HNTR 350 ha sido diseñada para brindarte una experiencia de manejo única y divertida.",
+            "fichaTecnica": "../pdf/HNTR 350.pdf",
+            "imagenFicha": "../img/detalle/HNTR.jpg",
+            "descripcionFicha": "Perfecta para aventurarte en la jungla urbana, este nuevo modelo logra integrar estilo, poder y diversión en un paquete asequible que se ajusta a todo piloto. Animate a recorrer la ciudad en una HNTR!",
+            "potencia": "14,87 kW a 6100 rpm",
+            "cilindrada": "349 CC MONOCILÍNDRICO",
+            "sistema": "ABS DUAL-CHANNEL",
+            "luces": "Encendido automático",
+            "imagenForm": "../img/form/hntr.webp",
+            "video": "https://www.youtube.com/embed/uTzk_SyOgBQ?si=nW22Naw5wi9_3cqM",
+            "logoGira": "../img/gama/logo-hntr-2.png",
+            "descripcionGira": "Logramos integrar perfectamente el diseño clásico con las prestaciones modernas, la HNTR cuenta con un velocímetro de estilo retro junto con una pantalla LCD digital que indica todo lo que necesitas saber y es compatible con el sistema de navegación Royal Enfield Tripper.",
+            "colores": [
+                {
+                    "nombre": "Dapper Grey",
+                    "imagenes": [
+                        "../img/giro/hntr/grey-1.png",
+                        "../img/giro/hntr/grey-2.png",
+                        "../img/giro/hntr/grey-3.png",
+                        "../img/giro/hntr/grey-4.png",
+                        "../img/giro/hntr/grey-5.png",
+                        "../img/giro/hntr/grey-6.png",
+                        "../img/giro/hntr/grey-7.png",
+                        "../img/giro/hntr/grey-8.png"
+                       
+
+                    ],
+                    "tanque": "../img/giro/hntr/dapper-grey.png"
+                },
+                {
+                    "nombre": "Rebel Blue",
+                    "imagenes": [
+                       "../img/giro/hntr/blue-1.png",
+                       "../img/giro/hntr/blue-8.png",
+                       "../img/giro/hntr/blue-9.png",
+                       "../img/giro/hntr/blue-10.png",
+                       "../img/giro/hntr/blue-11.png",
+                       "../img/giro/hntr/blue-12.png",
+                       "../img/giro/hntr/blue-13.png",
+                       "../img/giro/hntr/blue-14.png",
+                       "../img/giro/hntr/blue-15.png",
+                       "../img/giro/hntr/blue-16.png"
+                      
+                       
+                       
+                    ],
+                    "tanque": "../img/giro/hntr/rebel-blue.png"
+                },
+                {
+                    "nombre":  "Rebel Black",
+                    "imagenes": [
+                        "../img/giro/hntr/black-0.png",
+                        "../img/giro/hntr/black-1.png",
+                        "../img/giro/hntr/black-2.jpg",
+                        "../img/giro/hntr/black-3.png",
+                        "../img/giro/hntr/black-4.png",
+                        "../img/giro/hntr/black-5.png",
+                        "../img/giro/hntr/black-7.jpg",
+                        "../img/giro/hntr/black-9.png"
+                       
+
+                 
+                      
+                    ],
+                    "tanque": "../img/giro/hntr/rebel-black.png"
+                    
+                },
+                {
+                    "nombre": "Rebel Red",
+                    "imagenes": [
+                        "../img/giro/hntr/red-1.png",
+                        "../img/giro/hntr/red-2.png",
+                        "../img/giro/hntr/red-3.png",
+                        "../img/giro/hntr/red-5.png",
+                        "../img/giro/hntr/red-6.png",
+                        "../img/giro/hntr/red-7.png",
+                        "../img/giro/hntr/red-8.png",
+                        "../img/giro/hntr/red-9.png"
+                     
+
+                        
+                       
+                    ],
+                    "tanque": "../img/giro/hntr/rebel-red.png"
+                }
+            ],
+            "wallpapers": [
+                "../img/galeria/hntr/galeria-1.webp",
+                "../img/galeria/hntr/galeria-2.webp",
+                "../img/galeria/hntr/galeria-3.jpg",
+                "../img/galeria/hntr/galeria-4.webp",
+                "../img/galeria/hntr/galeria-5.webp",
+                "../img/galeria/hntr/galeria-6.jpg",
+                "../img/galeria/hntr/galeria-7.jpg",
+                "../img/galeria/hntr/gallery-7.jpg",
+                "../img/galeria/hntr/gallery-8.jpg",
+                "../img/galeria/hntr/gallery-10.jpg"
+                
             ]
         }
     ]

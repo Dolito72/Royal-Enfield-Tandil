@@ -1392,9 +1392,9 @@ iframe {
         /* Elimina el espacio extra entre secciones en desktop */
     }
 
-    .social-media-icons {
+    div.social-media-icons {
         padding-top: 30px;
-        padding-right: 260px;
+        padding-right: 300px;
     }
 
     .footer-bottom {

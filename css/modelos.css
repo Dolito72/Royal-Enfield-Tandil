@@ -30,7 +30,18 @@
 }
 
 /* Estilos base para el header 2 prueba------------------(Mobile First) */
+/* Un spinner o indicativo de carga temporal */
+#header2.loading {
+    background-color: #f0f0f0;
+    background-image: none;
+}
 
+#header2.loading::before {
+  
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
 
 /* shotgun*/
 #header2.model1{
@@ -102,10 +113,33 @@
     padding-bottom: 10px; /* Ajusta la posición hacia abajo en mobile */
 }
 
+/*meteor*/
+#header2.model8{
+    background-size: cover;
+    background-position: 75% center;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: flex-start; /* Alinear el contenido a la izquierda */
+    padding-left: 10px; /* Añadir un pequeño padding para que el contenido no quede pegado a la izquierda */
+    padding-bottom: 10px; /* Ajusta la posición hacia abajo en mobile */
+}
+
+/*hntr*/
+#header2.model9{
+    background-size: cover;
+    background-position: right bottom;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: flex-start; /* Alinear el contenido a la izquierda */
+    padding-left: 10px; /* Añadir un pequeño padding para que el contenido no quede pegado a la izquierda */
+    padding-bottom: 60px; /* Ajusta la posición hacia abajo en mobile */
+}
 
 
-
-/* Asegúrate de que el contenido esté sobre el gradiente */
 .header2-content {
     z-index: 2;
     display: flex; /* Usa flexbox para organizar el logo y la descripción */
@@ -181,7 +215,31 @@
     height: 90vh;
     padding-bottom: 10px; /* Ajusta la posición hacia abajo en mobile */
 }
+/*meteor*/
+#header2.model8{
+   
+    background-position: 90% center;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: flex-start; /* Alinear el contenido a la izquierda */
+    padding-left: 10px; /* Añadir un pequeño padding para que el contenido no quede pegado a la izquierda */
+    padding-bottom: 10px; /* Ajusta la posición hacia abajo en mobile */
+}
 
+/*hntr*/
+#header2.model9{
+ 
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: flex-start; /* Alinear el contenido a la izquierda */
+    padding-left: 10px; /* Añadir un pequeño padding para que el contenido no quede pegado a la izquierda */
+    padding-bottom: 10px; /* Ajusta la posición hacia abajo en mobile */
+}
 
 .header2-content {
     display: flex;
@@ -252,7 +310,26 @@
     padding-bottom: 10px; /* Ajusta la posición hacia abajo en mobile */
 }
 
+ /*meteor*/
+ #header2.model8{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    padding-bottom: 10px; /* Ajusta la posición hacia abajo en mobile */
+}
 
+/*hntr*/
+#header2.model9{
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: flex-start; /* Alinear el contenido a la izquierda */
+    padding-left: 10px; /* Añadir un pequeño padding para que el contenido no quede pegado a la izquierda */
+    padding-bottom: 10px; /* Ajusta la posición hacia abajo en mobile */
+}
 
 .header2-content {
         width: 30%;
