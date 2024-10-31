@@ -1,0 +1,197 @@
+:root {
+    --font: 'Lato', sans-serif;
+    /* Colores predominantes */
+    --rojo: #FF0000;
+    /* Rojo principal */
+    --rojo-claro: #FF4C4C;
+    /* Rojo más claro */
+    --rojo-oscuro: #C00000;
+    /* Rojo más oscuro */
+    --negro: #121111;
+    --blanco: #f1eeee;
+    --gris-scroll: rgba(0, 0, 0, 0.1);
+    /* Gris más transparente al hacer scroll */
+    /* Colores adicionales */
+    --gris: rgba(0, 0, 0, 0.39);
+    /* Gris semitransparente */
+    --amarillo: #e8d532;
+    --gris-oscuro: #5E5E5D;
+
+
+    /*----gama colores ----*/
+
+    --rojo-intenso: #D32F2F;
+    --amarillo-intenso: #FFC107;
+    --negro-2: #212121;
+    --gris-medio: #9E9E9E;
+    --negro: #121111;
+
+}
+
+/* .----------------------seccion 1 HEADER--------------------*/
+
+#header-eventos {
+    height: 350px;
+    background-color: #212121;
+    margin-bottom: 5px;
+}
+
+.header-content {
+    background-image: url('../img/eventos/header-tandil.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+
+}
+
+/* -----------------SECCION 3 - CARDS ----Estilos generales para la card */
+/* Fondo y texto de la sección */
+.card-section {
+    /*background-color:; /* Fondo negro */
+    padding: 20px;
+    text-align: center;
+}
+
+.section-title {
+    color: var(--blanco); /* Texto blanco */
+    font-size: 2em;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+.card-container {
+    display: grid;
+    gap: 10px;/* Espacio entre las cards */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 10px;
+    /* Espacio alrededor de las cards */
+  
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--negro-2);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Cambiar solo el box-shadow y el fondo */
+    cursor: pointer; /* Cambia el cursor a manito */
+}
+
+
+/* Overlay de esfumado */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+    opacity: 0; /* Empieza invisible */
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Permite que los clics pasen a través del overlay */
+}
+
+/* Al hacer hover, se activa el esfumado */
+.card:hover .card-overlay {
+    opacity: 1; /* Se hace visible el overlay */
+}
+
+
+/* Al hacer hover, cambiar el box-shadow y el color de fondo */
+.card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Aumentar sombra en hover */
+    background-color: rgb(46, 45, 45); /* Cambiar color de fondo si lo deseas */
+}
+
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    width: 100%; /* Ajusta al ancho de la card */
+    height: 450px; /* Ajusta la altura fija */
+    object-fit: cover; /* Recorta para llenar el espacio sin distorsión */
+   /* height: auto;*/
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--gris-oscuro);
+    /* Línea divisoria debajo de la imagen */
+}
+.card a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Usa el color heredado del contenedor */
+}
+
+.card-title {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-top: 20px;
+    color: var(--blanco);
+}
+
+    
+
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+
+    /*-----------------------SECCION 1 HEADER-----------------*/
+    #header-eventos {
+        height: 350px;
+    }
+
+    .header-content {
+        height: 350px;
+    }
+
+    /* seccion 3 CARDS ------------------------*/
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (min-width: 901px) {
+
+    /*---------------------SECCION 1 HEADER-------------------------    */
+    #header-eventos {
+        height: 500px;
+    }
+
+    .header-content {
+        height: 500px;
+    }
+
+    /* seccion 3 CARDS ------------------------*/
+    .card-container {
+        grid-template-columns: repeat(4, 1fr);
+        
+
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+
+      /* Centrar las últimas dos cards en desktop */
+    
+  /* Centrar las dos últimas cards */
+  .card-container .card:nth-last-child(2) {
+    grid-column-start: 2;
+}
+
+.card-container .card:nth-last-child(1) {
+    grid-column-start: 3;
+}
+}

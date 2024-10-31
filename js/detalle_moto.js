@@ -91,7 +91,7 @@ function cargarImagen(src, callback) {
 if (imageUrl) {
     cargarImagen(imageUrl, function() {
         // Aplicar la imagen de fondo una vez cargada
-        header.style.backgroundImage = `linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(${imageUrl})`;
+        header.style.backgroundImage = `linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url(${imageUrl})`;
         header.style.backgroundColor = '';  // Eliminar fondo gris
         header.classList.remove('loading');  // Remover el estado de carga
     });
