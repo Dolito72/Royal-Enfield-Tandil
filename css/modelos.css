@@ -29,7 +29,15 @@
     
 }
 
-/* Estilos base para el header 2 prueba------------------(Mobile First) */
+p{
+    color: var(--blanco);
+    line-height: 1.4; /* Ajusta el interlineado */
+    font-weight: 400;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra del texto */
+}
+
+/* Estilos base para el header ------------------(Mobile First) */
 /* Estilos temporales para el estado "loading" */
 #header2.loading {
     background-color: #f0f0f0; /* Fondo gris inicial */
@@ -348,78 +356,6 @@
 
 
 
-
-/*------------------estilos Seccion 1 - Header ----------------------------- */
-p{
-    color: var(--blanco);
-    line-height: 1.4; /* Ajusta el interlineado */
-    font-weight: 400;
-    font-size: 1.2em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra del texto */
-}
-
-#header {
-    position: relative;
-    background-color: var(--gris-oscuro);
-    background-size: cover;
-    background-position: center ;   
-    height: 70vh; /* Toma el alto completo de la pantalla */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-   
-    padding: 20px;
-    color: var(--blanco);
-    overflow: hidden; /* Para evitar que el pseudo-elemento salga del contenedor */
-}
-
-.header-content{
-    flex-direction: column; /* Para alinear el logo y la descripción en columna */
-    justify-content: center; /* Centrar verticalmente */
-    align-items: center; /* Centrar horizontalmente */
-    text-align: center; /* Para centrar el texto también */
-    
-}
-
-
-/* Estilo para el logo */
-#logo-header {
-    width: 150px; /* Tamaño del logo */
-    margin-bottom: 10px;
-    padding-top: 40px;
-}
-
-/* Descripción */
-#descripcion-header {
-    text-align: justify;
-    font-weight: 400;
-    font-size: 1.1em;
-    margin-bottom: 20px;
-    max-width: 90%;
-    flex-direction: column; /* Para alinear el logo y la descripción en columna */
-    justify-content: center; /* Centrar verticalmente */
-    align-items: center; /* Centrar horizontalmente */
-    text-align: center; /* Para centrar el texto también */
-  
-   /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Resplandor blanco */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra del texto */
-    /*text-shadow: 
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px 1px 0 #000,
-         1px 1px 0 #000; /* Sombra negra alrededor del texto */
-}
-
-/* Imagen de la moto */
-#imagen-header {
-    width: 100%;
-    max-width: 300px;
-   
-}
-#descripcion-header{
-    text-align: justify;
-}
-
 /* ---------------Estilos generales seccion 2 ficha tecnica---------- */
 /* Estilos base para mobile-first */
 .descripcion-ficha {
@@ -537,15 +473,7 @@ p{
    /* animation: mover-flecha 2s infinite alternate;*/
 }
 
-.texto-flecha {
-    font-size: 14px;
-    color: var(--gris-medio);
-    margin-right: 8px;
-}
 
-.flecha-animada {
-    stroke: var(--gris-medio); /* Cambia el color de la flecha si es necesario */
-}
 
 /* Estilos para el contenedor de los tanques de colores */
 
@@ -586,6 +514,8 @@ p{
 }
 .tanque-color {
     width: 150px; /* Ajusta el tamaño de los tanques según sea necesario */
+    object-fit: cover; /* Recorta para llenar el espacio sin distorsión */
+    /* height: auto;*/
     height: auto; /* Mantiene la proporción de la imagen */
     cursor: pointer; /* Muestra un puntero al pasar sobre la imagen */
     padding-bottom: 5px;
@@ -894,6 +824,9 @@ p{
         height: auto;
     }
     #logo-gira{
+        width: 55%;
+        height: auto;
+        object-fit: cover;
         padding: 30px;
        
     }

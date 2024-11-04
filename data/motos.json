@@ -89,11 +89,11 @@
             "luces": "ENCENDIDO AUTOMÁTICO",
             "imagenForm": "../img/form/continental.jpg",
             "video": "https://www.youtube.com/embed/M9AKbbls7BA?si=WolZM7VJdYfYVl0b",
-            "logoGira": "../img/gama/logo-continental.svg",
+            "logoGira": "../img/giro/continental/logo_continental.webp",
             "descripcionGira": "La época en la que hombres y mujeres personalizaban sus motocicletas para hacer carreras de café a café mientras sonaba una canción. La Continental GT 650 celebra este un estilo único.",
             "colores": [
                 {
-                    "nombre": "Br Green",
+                    "nombre": "British Racing Green",
                     "imagenes": [
                         "../img/giro/continental/green (1).png",
                         "../img/giro/continental/green (2).png",
@@ -224,7 +224,7 @@
             "luces": "ENCENDIDO AUTOMÁTICO",
             "imagenForm": "../img/form/super-meteor.webp",
             "video": "https://www.youtube.com/embed/79sbEGokDV4?si=61fUg607LGQjPY1E",
-            "logoGira": "../img/gama/logo_super_meteor.png",
+            "logoGira": "../img/giro/super-meteor/logo_super_meteor.webp",
             "descripcionGira": "Su motor, flexible y suave como la seda, tiene par de sobra, ofrece transiciones de marcha perfectas y una fuerte aceleración de gama baja, a la vez que su inequívoco estilo retro lleva estampado el inconfundible ADN de Royal Enfield.",
             "colores": [
                 {
@@ -368,10 +368,10 @@
             "potencia": "34.9KW @ 7250 RPM",
             "cilindrada": "648 CC BICILÍNDRICO EN LÍNEA",
             "sistema": "ANTIBLOQUEO DE FRENOS",
-            "luces": "ENCENDIDO AUTOMÁTICO",
+            "luces": "LED DELANTERAS",
             "imagenForm": "../img/form/interceptor.jpg",
             "video": "https://www.youtube.com/embed/rWDy8ql1K9g?si=7RNXCjcV432cF5lP",
-            "logoGira": "../img/gama/logo_interceptor.png",
+            "logoGira": "../img/giro/interceptor/logo_interceptor.webp",
             "descripcionGira": "Un cuerpo de aceleración doble, conectado al sistema de Inyección Electrónica Bosch de alta precisión, resulta una gran respuesta de aceleración en todo el régimen de revoluciones.",
             "colores": [
                 {
@@ -505,7 +505,7 @@
             "luces": " LUZ DE FRENO E INTERMITENTES TRASEROS INTEGRADOS",
             "imagenForm": "../img/form/Himalayan.webp",
             "video": "https://www.youtube.com/embed/AGX3eZrGNao?si=HxbMjXi5hpJxvmd3",
-            "logoGira": "../img/gama/logo-himalayan.png",
+            "logoGira": "../img/giro/himalayan/logo-himalayan.webp",
             "descripcionGira": "Con un equilibrio perfecto entre diseño y capacidad de usabilidad, la nueva Himalayan 450 es la única moto que se adapta sin esfuerzo al terreno, los elementos y al conductor, lo que la convierte en el modelo ideal para quienes disfrutan del turismo aventura.",
             "colores": [
                 {
@@ -745,7 +745,7 @@
             "luces": "Frontal y trasera vintage",
             "imagenForm": "../img/form/classic.webp",
             "video": "https://www.youtube.com/embed/6AqNLRxiWHc?si=FVrSXfLrjRMynDsC",
-            "logoGira": "../img/gama/logo-classic-350-red.png",
+            "logoGira": "../img/giro/classic/logo_classic.webp",
             "descripcionGira": "La Classic 350 es el significado perfecto de diseño, estilo, comodidad, y resistencia. Faros delanteros con forma de ojo de tigre y luces traseras vintage para un diseño clásico que se suman a su estilo.",
             "colores": [
                 {
@@ -909,7 +909,7 @@
             "luces": "Encendido automático",
             "imagenForm":"../img/form/meteor-2.jpg",
             "video": "https://www.youtube.com/embed/F8v-jMFcOMQ?si=Ins1HaVklE5S4Ac_",
-            "logoGira": "../img/gama/logo-meteor-350.png",
+            "logoGira": "../img/giro/meteor/logo_meteor.webp",
             "descripcionGira": "En el corazón de la Meteor se encuentra el nuevo motor de 349 cc SOHC, refrigerado por aire y aceite, con una característica carrera larga y un sistema de inyección electrónica que produce una potencia suave y manejable y un excelente torque. Continuando con la leyenda de los sencillos, el nuevo motor posee un escape característico de Royal Enfield.",
             "colores": [
                 {
@@ -926,7 +926,7 @@
                         "../img/giro/meteor/fireball_red_028.webp",
                         "../img/giro/meteor/fireball_red_030.webp"
                     ],
-                    "tanque": "../img/giro/meteor/red-tank.png"
+                    "tanque": "../img/giro/meteor/red-tank-6.png"
                 },
                 {
                     "nombre": "Fireball Matt Green ",
@@ -941,7 +941,7 @@
                        "../img/giro/meteor/fireball_matt_green_027.webp",
                        "../img/giro/meteor/fireball_matt_green_029.webp"
                     ],
-                    "tanque": "../img/giro/meteor/matt-green.png"
+                    "tanque": "../img/giro/meteor/matt-green-6.png"
                 },
                 {
                     "nombre": "Fireball Black ",
@@ -957,7 +957,7 @@
                         "../img/giro/meteor/fireball_black_029.webp"
                       
                     ],
-                    "tanque": "../img/giro/meteor/fireball-black.png"
+                    "tanque": "../img/giro/meteor/fire-ball-black-6.png"
                     
                 },
                 {
@@ -975,7 +975,7 @@
                         "../img/giro/meteor/aurora-blue_029.webp"
                        
                     ],
-                    "tanque": "../img/giro/meteor/aurora-blue.png"
+                    "tanque": "../img/giro/meteor/aurora-blue-6.png"
                 },
                 {
                     "nombre": "Aurora Green",
@@ -992,7 +992,7 @@
                        
                        
                     ],
-                    "tanque": "../img/giro/meteor/Aurora Green.png"
+                    "tanque": "../img/giro/meteor/aurora-green-6.png"
                 },
                 {
                     "nombre": "Aurora Black",
@@ -1009,7 +1009,7 @@
                         
                        
                     ],
-                    "tanque": "../img/giro/meteor/Aurora_Black-2.png"
+                    "tanque": "../img/giro/meteor/aurora-black-6.png"
                 }
             ],
             "wallpapers": [
@@ -1044,7 +1044,7 @@
             "luces": "Encendido automático",
             "imagenForm": "../img/form/hntr.webp",
             "video": "https://www.youtube.com/embed/uTzk_SyOgBQ?si=nW22Naw5wi9_3cqM",
-            "logoGira": "../img/gama/logo-hntr-2.png",
+            "logoGira": "../img/giro/hntr/logo_hunter_350.webp",
             "descripcionGira": "Logramos integrar perfectamente el diseño clásico con las prestaciones modernas, la HNTR cuenta con un velocímetro de estilo retro junto con una pantalla LCD digital que indica todo lo que necesitas saber y es compatible con el sistema de navegación Royal Enfield Tripper.",
             "colores": [
                 {

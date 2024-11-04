@@ -889,13 +889,17 @@ iframe {
      .eventos-item {
         width: 38%; /* Tres ítems por fila en desktop */
         height: 400px; /* Altura específica para video en desktop */
+        position: relative;
+        overflow: hidden; /* Oculta cualquier contenido adicional */
     }
-    .eventos-video {
-        width: 100%;
-        height: 400px; /* Altura específica para video en desktop */
-    }
-     
 
+  
+    .eventos-item img, 
+.eventos-video {
+    width: 100%; /* Asegura que la imagen y el video ocupen todo el ancho del contenedor */
+    height: 100%; /* Mantiene la altura del contenedor */
+    object-fit: cover; /* Asegura que la imagen o video se ajuste al tamaño del contenedor sin distorsión */
+}
   
      
 
@@ -1337,13 +1341,19 @@ iframe {
         flex-direction: row; /* Alinear imágenes horizontalmente en pantallas grandes */
      }
      .eventos-item {
-        width: 38%; /* Tres ítems por fila en desktop */
-        height: 600px; /* Altura específica para video en desktop */
+        width: 34%; /* Tres elementos por fila en desktop, ajustando los márgenes */
+        height: 730px; /* Altura fija para que todos los elementos sean uniformes */
+        position: relative;
+        overflow: hidden; /* Oculta cualquier contenido adicional */
     }
-    .eventos-video {
-        width: 100%;
-        height: 600px; /* Altura específica para video en desktop */
-    }
+  
+    .eventos-item img, 
+.eventos-video {
+    width: 100%; /* Asegura que la imagen y el video ocupen todo el ancho del contenedor */
+    height: 100%; /* Mantiene la altura del contenedor */
+    object-fit: cover; /* Asegura que la imagen o video se ajuste al tamaño del contenedor sin distorsión */
+}
+
      .section-eventos-title{
          font-weight: 900;
          font-size: 2rem;
