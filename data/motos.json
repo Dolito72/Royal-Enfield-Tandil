@@ -5,18 +5,47 @@
             "nombre": "Shotgun 650",
             "logo": "../img/gama/logo-shotgun-blanco.png",
             "fondoHeader2":"../img/header/Shotgun.jpg" ,
-            "descripcion": "La Shotgun 650 escapa a cualquier intento de categorización, tanto en la forma como en el fondo.",
+            "descripcion": "La personalización en la sangre, la Shotgun 650 escapa a cualquier intento de categorización, tanto en la forma como en el fondo.",
             "fichaTecnica": "../pdf/ficha-shotgun.pdf",
             "imagenFicha": "../img/detalle/shotgun.webp",
-            "descripcionFicha": "Esta moto encarna nuestro más puro ADN motero, cuenta con capacidades modulares y luce una estética neomodernista con colores exclusivos que se salen de lo común para redefinir los límites donde Royal Enfield puede llegar.",
+            "descripcionFicha": "La Shotgun 650 escapa a cualquier intento de categorización, tanto en la forma como en el fondo. Su diseño modular le permite adoptar hasta tres configuraciones (monoplaza, biplaza y tourer con espacio para equipaje) con total facilidad. Cada una de sus variantes de colores bebe de la cultura custom y ofrece un lienzo en blanco para que tanto fabricantes expertos como motoristas principiantes den rienda suelta a su imaginación.",
             "potencia": "34.6KW @7250RPM",
             "cilindrada": "648 CM3",
             "sistema": "Antibloqueo de Frenos",
             "luces": "Full Led",
             "imagenForm": "../img/form/shotgun.webp",
             "video": "https://www.youtube.com/embed/wBjtalKpsJ0",
+            "imagenTooltip":"../img/gama/Shotgun 650 - Green Drill(3).webp",
+            "fondoTooltip":"../img/gama/logo_shotgun.png",
+            "detalles": [
+                {
+                    "nombre": "INSTRUMENTOS",
+                    "descripcion": "Cuadro de Instrumentos Analógico-Digitales con Navegación Tripper: El grupo de instrumentos analógico-digitales con navegador Tripper de la Shotgun está diseñado para proporcionarte toda la información que necesites en tus viajes.",
+                    "posicion": { "top": "32%", "left": "57%" }
+                },
+                {
+                    "nombre": "LUCES",
+                    "descripcion": "Faros LED: El faro LED con protector, integrado en una carcasa hecha a medida en estilo neomodernista, ofrece una visibilidad mejorada en todo tipo de carreteras.",
+                    "posicion": { "top": "45%", "left": "60%" }
+                },
+                {
+                    "nombre": "SUSPENSIÓN",
+                    "descripcion": "Suspensión delantera con Horquilla Invertida: La horquilla invertida Showa SF-BPF y el doble amortiguador trasero en suspensión con ajuste en precarga en 5 puntos ofrecen una conducción suave en todo tipo de terrenos, incluso cuando la moto va cargada.",
+                    "posicion": { "top": "60%", "left": "65%" }
+                },
+                {
+                    "nombre": "MOTOR",
+                    "descripcion": "Motor bicilíndrico paralelo de 648 cc",
+                    "posicion": { "top": "70%", "left": "45%" }
+                },
+                {
+                    "nombre": "LLANTAS",
+                    "descripcion": "Llantas de Aleación Tubeless: Gracias a las llantas de aleación con neumáticos tubeless, tus viajes nunca se verán interrumpidos por pinchazos inoportunos.",
+                    "posicion": { "top": "80%", "left": "30%" }
+                }
+            ],
             "logoGira": "../img/gama/logo_shotgun.png",
-            "descripcionGira": "Bajo el inquebrantable espinazo de acero de la Shotgun 650 late nuestro motor bicilíndrico paralelo de 648 cc, diseñado para enfrentarse al mundo real gracias a su sólida respuesta en el rango medio de revoluciones y un par motor sobrado en todas las marchas.",
+            "descripcionGira": "Bajo el inquebrantable espinazo de acero de la Shotgun 650 late nuestro motor bicilíndrico paralelo de 648 cc, diseñado para enfrentarse al mundo real gracias a su sólida respuesta en el rango medio de revoluciones y un par motor sobrado en todas las marchas para que el motorista no deje nunca de divertirse.",
             "colores": [
                 {
                     "nombre": "Metal Grey",
@@ -82,15 +111,35 @@
             "descripcion": "La original Royal Enfield British café racer. Una joya clásica con gran tecnología, que se luce en estética y performance.",
             "fichaTecnica": "../pdf/ficha-Continental.pdf",
             "imagenFicha": "../img/detalle/continental.webp",
-            "descripcionFicha": "La nueva Continental GT 650 es una evolución del Continental GT 535. Impulsada por el nuevo motor 650 Twin, se parece en todo a su predecesor y funciona aún mucho mejor.",
+            "descripcionFicha": "La nueva Continental GT 650 es una evolución del Continental GT 535, que a su vez, fue una evolución del Continental GT 250 – La original Royal Enfield British café racer. Impulsada por el nuevo motor 650 Twin, se parece en todo a su predecesor y funciona aún mucho mejor. Una joya clásica con gran tecnología.",
             "potencia": "34.9 kW a 7250 RPM",
             "cilindrada": "648 CC BICILÍNDRICO EN PARALELO",
             "sistema": "ANTIBLOQUEO DE FRENOS",
             "luces": "ENCENDIDO AUTOMÁTICO",
             "imagenForm": "../img/form/continental.jpg",
             "video": "https://www.youtube.com/embed/M9AKbbls7BA?si=WolZM7VJdYfYVl0b",
+            "imagenTooltip":"../img/gama/Continental-650-mr_clean_000.png",
+            "fondoTooltip":"../img/gama/logo-continental.svg",
+            "detalles": [
+                {
+                    "nombre": "FRENOS",
+                    "descripcion": "La combinación de un freno de disco flotante de doble pistón delantero, desarrollados por Brembo Bybre, junto con un sistema de frenos ABS de doble canal controlado por Bosch, aseguran una frenada progresiva extremadamente segura. Las llantas Pirelli Phantom ayudan a tomar esas curvas pronunciadas con mayor agarre.",
+                    "posicion": { "top": "25%", "left": "60%" }
+                },
+                {
+                    "nombre": "DISEÑO",
+                    "descripcion": "Los reposapiés tirados hacia atrás y los escapes elevados permiten mejores ángulos de inclinación, para una conducción más deportiva.",
+                    "posicion": { "top": "35%", "left": "40%" }
+                },
+                {
+                    "nombre": "MOTOR",
+                    "descripcion": "Motor refrigerado por aire y aceite brindando potencia y torque suficientes para la verdadera capacidad en la carretera, suspensión frontal telescópica con 110mm de recorrido, absorbe los golpes y asegura un viaje cómodo.",
+                    "posicion": { "top": "60%", "left": "50%" }
+                }
+               
+            ],
             "logoGira": "../img/giro/continental/logo_continental.webp",
-            "descripcionGira": "La época en la que hombres y mujeres personalizaban sus motocicletas para hacer carreras de café a café mientras sonaba una canción. La Continental GT 650 celebra este un estilo único.",
+            "descripcionGira": "La época en la que hombres y mujeres personalizaban sus motocicletas para hacer carreras de café a café mientras sonaba una canción, es así como nace la cultura café racer, La #ContinentalGT 650 celebra este un estilo único que jamás va a desaparecer",
             "colores": [
                 {
                     "nombre": "British Racing Green",
@@ -217,15 +266,57 @@
             "descripcion": "La Super Meteor 650 es el fiel legado de Royal Enfield en su afán por crear motocicletas cruiser extraordinarias.",
             "fichaTecnica": "../pdf/ficha-Super Meteor 650.pdf",
             "imagenFicha": "../img/detalle/super-meteor.webp",
-            "descripcionFicha": "La práctica y nada intimidatoria naturaleza de la Super Meteor 650 queda reflejada en su silueta cruiser de pura raza, caracterizada por la posición baja y suntuosa del asiento y una cintura estrecha que, combinadas, te permitirán disfrutar de la brisa mientras va devorando kilómetros.",
+            "descripcionFicha": " Seis décadas de ADN CRUISER en una motocicleta. La Super Meteor 650 se ha construido sobre nuestra firme creencia de que las personas y los viajes no pueden limitarse a horas o kilómetros.",
             "potencia": "34,6 kW @ 7250 rpm",
             "cilindrada": "648 CC BICILÍNDRICO PARALELO",
             "sistema": "ABS DE DOS CANALES",
             "luces": "ENCENDIDO AUTOMÁTICO",
             "imagenForm": "../img/form/super-meteor.webp",
             "video": "https://www.youtube.com/embed/79sbEGokDV4?si=61fUg607LGQjPY1E",
+            "imagenTooltip":"../img/tooplist/super_meteor.webp",
+            "fondoTooltip":"../img/tooplist/logo_super_meteor.webp",
+            "detalles": [
+                {
+                    "nombre": "INSTRUMENTOS",
+                    "descripcion": "Un panel de instrumentos digital analógico de inspiración retro con una pantalla LCD flotante brinda toda la información que necesita, de día o de noche.",
+                    "posicion": { "top": "25%", "left": "55%" }
+                },
+
+
+                {
+                    "nombre": "FAROS LED",
+                    "descripcion": "Un faro delantero completamente nuevo combina la estética de la vieja escuela con luces LED modernas para reducir el consumo de energía y aumentar la visibilidad, sin importar hacia dónde te dirijas.",
+                    "posicion": { "top": "30%", "left": "62%" }
+                },
+                {
+                    "nombre": "TANQUE",
+                    "descripcion": "El espacioso depósito en forma de lágrima de la Super Meteor 650 puede contener hasta 15,7 litros de combustible, lo que garantiza que incluso los viajes más largos continúen sin interrupciones.",
+                    "posicion": { "top": "40%", "left": "50%" }
+                },
+                
+                {
+                    "nombre": "ASIENTOS",
+                    "descripcion": "Un asiento ancho y bajo y una postura de conducción relajada hacen que la conducción sea una experiencia cómoda, sin importar cuántos kilómetros te queden atrás y cuántos te queden por delante.",
+                    "posicion": { "top": "45%", "left": "40%" }
+                },
+                
+                
+                {
+                    "nombre": "SUSPENSION",
+                    "descripcion": "Las horquillas invertidas en la suspensión delantera prometen total confianza y control en carreteras abiertas, calles concurridas y todo lo demás.",
+                    "posicion": { "top": "70%", "left": "65%" }
+                },
+                
+                
+                {
+                    "nombre": "LLANTAS",
+                    "descripcion": "Las llamativas llantas de aleación con neumáticos sin cámara aseguran que nada pueda arruinar tus planes, mientras que un neumático trasero más ancho garantiza una mejor tracción y estabilidad, incluso a las velocidades más altas.",
+                    "posicion": { "top": "70%", "left": "25%" }
+                }
+               
+            ],
             "logoGira": "../img/giro/super-meteor/logo_super_meteor.webp",
-            "descripcionGira": "Su motor, flexible y suave como la seda, tiene par de sobra, ofrece transiciones de marcha perfectas y una fuerte aceleración de gama baja, a la vez que su inequívoco estilo retro lleva estampado el inconfundible ADN de Royal Enfield.",
+            "descripcionGira": "Un universo de colores totalmente nuevo. La Super Meteor 650 se ha construido sobre nuestra firme creencia de que las personas y los viajes no pueden limitarse a horas o kilómetros.",
             "colores": [
                 {
                     "nombre": "Astral Black",
@@ -361,18 +452,40 @@
             "nombre": "Interceptor 650",
             "logo": "../img/gama/logo_interceptor.png",
             "fondoHeader2": "../img/header/interceptor.jpg",
-            "descripcion": "Su diseño único y atemporal captura todas las miradas donde quiera que vayas. Una moto que siempre estará vigente.",
+            "descripcion": "INTERCEPTOR 650 captura todas las miradas dondequiera que vayas. Una moto que siempre estará vigente.",
             "fichaTecnica": "../pdf/Interceptor 650.pdf",
             "imagenFicha": "../img/detalle/interceptor.webp",
-            "descripcionFicha": "Este nuevo motor bicilíndrico, es el propulsor de la nueva Interceptor 650. Con suficiente potencia como para sacarte una sonrisa en las autopistas y rutas, y con la maniobrabilidad ideal para interactuar en el tráfico urbano con facilidad. ",
+            "descripcionFicha": "Su diseño único y atemporal captura todas las miradas donde quiera que vayas, te ofrece la maniobrabilidad ideal para interactuar en el tráfico urbano con facilidad y la suficiente potencia como para sacarte una sonrisa en las autopistas y rutas.",
             "potencia": "34.9KW @ 7250 RPM",
             "cilindrada": "648 CC BICILÍNDRICO EN LÍNEA",
             "sistema": "ANTIBLOQUEO DE FRENOS",
             "luces": "LED DELANTERAS",
             "imagenForm": "../img/form/interceptor.jpg",
             "video": "https://www.youtube.com/embed/rWDy8ql1K9g?si=7RNXCjcV432cF5lP",
+            "imagenTooltip":"../img/tooplist/interceptor.webp",
+            "fondoTooltip":"../img/tooplist/logo_interceptor.png",
+            "detalles": [
+                {
+                    "nombre": "FRENOS",
+                    "descripcion": "Frenos ABS doble canal, llantas Pirelli Phantom, Frenos Brembo ByBre y embrague anti-rebote (slipper clutch), una gran noticia es que el Motor es refrigerado por aire, el propulsor cumple con los estándares de emisiones de la ‘Environmental Protection Agency’ – EPA y Euro 4.",
+                    "posicion": { "top": "12%", "left": "58%" }
+                },
+
+
+                {
+                    "nombre": "DISEÑO",
+                    "descripcion": "No escatimamos en ningún detalle con las Twins, incluimos un cuerpo de aceleración Mikuni, y un motor con contrabalanceador, y árbol de levas en la cabeza para operar las 4 válvulas por cilindro que tiene este nuevo motor.",
+                    "posicion": { "top": "30%", "left": "42%" }
+                },
+                {
+                    "nombre": "MOTOR",
+                    "descripcion": "El motor tiene una potencia de 47 Hp y un torque de 52 Nm. Vas a poder disfrutar toda esta potencia y torque desde que abres el acelerador.",
+                    "posicion": { "top": "45%", "left": "50%" }
+                }
+               
+            ],
             "logoGira": "../img/giro/interceptor/logo_interceptor.webp",
-            "descripcionGira": "Un cuerpo de aceleración doble, conectado al sistema de Inyección Electrónica Bosch de alta precisión, resulta una gran respuesta de aceleración en todo el régimen de revoluciones.",
+            "descripcionGira": "Este nuevo motor bicilíndrico, es el propulsor de la nueva Interceptor 650. Nos inspiramos en la Interceptor 700cc de 1960, y construimos la Interceptor desde cero. Gracias a su diseño único y atemporal, es una moto que siempre estará vigente, se robará todas las miradas a donde quiera que vayas, con suficiente potencia como para sacarte una sonrisa en las autopistas y rutas, y con la maniobrabilidad ideal para interactuar en el tráfico urbano con facilidad. Un cuerpo de aceleración doble, conectado al sistema de Inyección Electrónica Bosch de alta precisión, resulta una gran respuesta de aceleración en todo el régimen de revoluciones.",
             "colores": [
                 {
                     "nombre": "Canyon Red",
@@ -498,15 +611,42 @@
             "descripcion": "La Himalayan de Royal Enfield es la motocicleta perfecta, conserva una apariencia clásica y detalles originales que la hacen única.",
             "fichaTecnica": "../pdf/Himalayan 450.pdf",
             "imagenFicha": "../img/detalle/himalayan.webp",
-            "descripcionFicha": " Es una de las motos de Royal Enfield más vendidas a nivel mundial, la diseñamos para recorrer el mundo entero, es perfecta para esos aventureros que necesitan moverse en el día a día a sus lugares de trabajo o para recorrer paisajes.",
+            "descripcionFicha": "Una motocicleta con un amplio historial de aventuras a sus espaldas que sigue siendo fiel a nuestro concepto de Motociclismo Puro. La nueva Himalayan te ofrece la capacidad, la versatilidad y las habilidades necesarias para ir hacia donde te lleve la aventura. Todo lo que necesitas, y solo lo que necesitas, para estos tiempos cambiantes.",
             "potencia": "40.02 PS @8000RPM",
             "cilindrada": "451.65 CC MONOCILÍNDRICO",
             "sistema": "ENCENDIDO ELÉCTRICO",
             "luces": " LUZ DE FRENO E INTERMITENTES TRASEROS INTEGRADOS",
             "imagenForm": "../img/form/Himalayan.webp",
             "video": "https://www.youtube.com/embed/AGX3eZrGNao?si=HxbMjXi5hpJxvmd3",
+            "imagenTooltip":"../img/tooplist/himalayan.webp",
+            "fondoTooltip":"../img/tooplist/logo-himalayan.png",
+            "detalles": [
+                {
+                    "nombre": "JOYSTICK",
+                    "descripcion": "El joystick de control, integrado en el salpicadero de fácil manejo, te permite reproducir música, hacer llamadas y leer mensajes sin apartar tus manos del manillar. Si sientes la imperiosa necesidad de escuchar música en mitad de una ascensión dificultosa, lo podrás hacer sin problema.",
+                    "posicion": { "top": "28%", "left": "62%" }
+                },
+
+
+                {
+                    "nombre": "LUCES",
+                    "descripcion": "Al integrar las luces traseras y los intermitentes traseros se reduce el peso de la moto y se le da un aspecto más despejado a la parte trasera. Las luces LED son más fiables y ofrecen una mayor visibilidad en la ciudad, una vez regreses de tu aventura.",
+                    "posicion": { "top": "40%", "left": "25%" }
+                },
+                {
+                    "nombre": "DEPÓSITO COMBUSTIBLE",
+                    "descripcion": "Los 17 litros del depósito de combustible y la excelente economía de combustible de la moto te permiten disfrutar de más kilómetros de exploración ininterrumpida. Además que sea más estrecho y más cómodo es un detalle.",
+                    "posicion": { "top": "45%", "left": "50%" }
+                },
+                {
+                    "nombre": "DEPÓSITO COMBUSTIBLE",
+                    "descripcion": "La Himalayan cuenta con un sofisticado sistema de ABS para velar por tu seguridad si se te cruza un animal o un camión fuera de control. Naturalmente lo puedes desconectar en la rueda trasera para sacar el máximo partido cuando quieras poner a prueba tus habilidades de conducción en terrenos arenosos o firmes sueltos. Algo así como activar el modo derrape.",
+                    "posicion": { "top": "65%", "left": "30%" }
+                }
+               
+            ],
             "logoGira": "../img/giro/himalayan/logo-himalayan.webp",
-            "descripcionGira": "Con un equilibrio perfecto entre diseño y capacidad de usabilidad, la nueva Himalayan 450 es la única moto que se adapta sin esfuerzo al terreno, los elementos y al conductor, lo que la convierte en el modelo ideal para quienes disfrutan del turismo aventura.",
+            "descripcionGira": "Viajar en la Himalayan es una experiencia totalmente impredecible. No existía ni una sola máquina diseñada para una aventura así... hasta ahora. La nueva Himalayan, creada para el desafío #AllRoadsNoRoads.",
             "colores": [
                 {
                     "nombre": "Slate Himalayan Salt",
@@ -738,15 +878,35 @@
             "descripcion": "La nueva Classic 350 personifica las tradiciones del pasado. Elegante y con una excepcional fabricación, irradia belleza.",
             "fichaTecnica": "../pdf/Classic 350.pdf",
             "imagenFicha": "../img/detalle/classic_350.webp",
-            "descripcionFicha": "Un auténtico diseño británico, una moto inspirada en la época de la posguerra, gráficos y colores clásicos de la época dorada del motociclismo británico.",
+            "descripcionFicha": "Un auténtico diseño británico, una moto inspirada en la época de la posguerra. Detalles auténticos de la posguerra, gráficos y colores clásicos de la época dorada del motociclismo británico.",
             "potencia": "14.87KW @ 6100 RPM",
             "cilindrada": "349 CC MONOCILÍNDRICO",
             "sistema": "Antibloqueo de Frenos",
             "luces": "Frontal y trasera vintage",
             "imagenForm": "../img/form/classic.webp",
             "video": "https://www.youtube.com/embed/6AqNLRxiWHc?si=FVrSXfLrjRMynDsC",
+            "imagenTooltip":"../img/tooplist/classic_350.webp",
+            "fondoTooltip":"../img/tooplist/logo_classic.webp",
+            "detalles": [
+                {
+                    "nombre": "FRENOS",
+                    "descripcion": "Freno de disco de 280 mm, pinza delantera de 2 pistones. ABS doble canal, te permite un frenado altamente preciso y eficiente.",
+                    "posicion": { "top": "20%", "left": "58%" }
+                },
+                {
+                    "nombre": "DISEÑO",
+                    "descripcion": "Depósito de combustible con almohadillas típicas de la posguerra. Neumáticos delanteros de 19 “y neumáticos traseros de 18” que son aptos para las carreteras pavimentadas o destapados suaves.",
+                    "posicion": { "top": "40%", "left": "45%" }
+                },
+                {
+                    "nombre": "MOTOR",
+                    "descripcion": "Gran torque a bajas revoluciones, lo que permite subir lomas y hacer sobrepasos sin esfuerzo. Ideal para tráfico pesado.",
+                    "posicion": { "top": "65%", "left": "50%" }
+                }
+               
+            ],
             "logoGira": "../img/giro/classic/logo_classic.webp",
-            "descripcionGira": "La Classic 350 es el significado perfecto de diseño, estilo, comodidad, y resistencia. Faros delanteros con forma de ojo de tigre y luces traseras vintage para un diseño clásico que se suman a su estilo.",
+            "descripcionGira": "La Classic 350 EFI es el significado perfecto de diseño, estilo, comodidad, y resistencia. Faros delanteros con forma de ojo de tigre y luces traseras vintage para un diseño clásico que se suman a su estilo.",
             "colores": [
                 {
                     "nombre": "Halycon Black",
@@ -899,7 +1059,7 @@
             "logo": "../img/gama/logo-meteor-350-blanco.png",
            
             "fondoHeader2": "../img/header/Meteor.jpg",
-            "descripcion": "La Meteor representa la esencia del puro motociclismo, con contorno clásico y un diseño atemporal. Es una auténtica cruiser.",
+            "descripcion": "Experimenta la increíble sensación de conducir este nuevo motor. Es una auténtica cruiser.",
             "fichaTecnica": "../pdf/Meteor 350.pdf",
             "imagenFicha": "../img/detalle/meteor_350.webp",
             "descripcionFicha": "La Meteor representa la esencia de la conducción, el espíritu de la travesía, con un diseño clásico y atemporal. La Meteor está preparada para que sea tu moto en el día a día y para esos viajes del fin de semana.",
@@ -909,6 +1069,26 @@
             "luces": "Encendido automático",
             "imagenForm":"../img/form/meteor-2.jpg",
             "video": "https://www.youtube.com/embed/F8v-jMFcOMQ?si=Ins1HaVklE5S4Ac_",
+            "imagenTooltip":"../img/tooplist/meteor.webp",
+            "fondoTooltip":"../img/tooplist/logo_meteor.webp",
+            "detalles": [
+                {
+                    "nombre": "FRENOS",
+                    "descripcion": "Frenos ABS doble canal que incorporan un nuevo módulo de la marca Bosch, discos de mayor diámetro de 300 mm adelante y 270 mm atrás que generan una mayor eficiencia de frenado. Caliper flotante de doble pistón en el freno delantero y caliper flotante de un solo pistón para el freno trasero. La Meteor 350 viene equipada con lineas aceradas en el sistema de frenos",
+                    "posicion": { "top": "15%", "left": "53%" }
+                },
+                {
+                    "nombre": "DISEÑO",
+                    "descripcion": "La Meteor 350 viene preparada para adaptar un sistema de navegación Tripper™, el primero de la historia en una Royal Enfield. Con tecnología de Google Maps y la aplicación de Royal Enfield que conecta tu celular con la motocicleta a través de Bluetooth. *Accesorio adicional, no incluido en la motocicleta",
+                    "posicion": { "top": "20%", "left": "62%" }
+                },
+                {
+                    "nombre": "MOTOR",
+                    "descripcion": "En el corazón de la Meteor se encuentra el nuevo motor Serie J de 349cc SOHC de carrera larga, refrigerado por aire y aceite, capáz de entregar la potencia muy suave y un gran torque a bajas revoluciones. El sistema de inyección de combustible (EFI), asegura una entrega de potencia lineal desde que aceleras y durante todo el rango de revoluciones.",
+                    "posicion": { "top": "65%", "left": "50%" }
+                }
+               
+            ],
             "logoGira": "../img/giro/meteor/logo_meteor.webp",
             "descripcionGira": "En el corazón de la Meteor se encuentra el nuevo motor de 349 cc SOHC, refrigerado por aire y aceite, con una característica carrera larga y un sistema de inyección electrónica que produce una potencia suave y manejable y un excelente torque. Continuando con la leyenda de los sencillos, el nuevo motor posee un escape característico de Royal Enfield.",
             "colores": [
@@ -1034,16 +1214,36 @@
             "imagenHeader": "../img/header-modelo/scram.png",
             "fondoHeader": "../img/gama/fondo-borroso-velocidad.jpg",
             "fondoHeader2": "../img/header/HNTR1.jpg",
-            "descripcion": "La HNTR 350 ha sido diseñada para brindarte una experiencia de manejo única y divertida.",
+            "descripcion": "Juvenil, cómoda y divertida, así es la nueva HNTR 350",
             "fichaTecnica": "../pdf/HNTR 350.pdf",
             "imagenFicha": "../img/detalle/HNTR.jpg",
-            "descripcionFicha": "Perfecta para aventurarte en la jungla urbana, este nuevo modelo logra integrar estilo, poder y diversión en un paquete asequible que se ajusta a todo piloto. Animate a recorrer la ciudad en una HNTR!",
+            "descripcionFicha": "La HNTR 350 ha sido diseñada para brindarte una experiencia de manejo única y divertida, perfecta para aventurarte en la ciudad. Esta moto te ofrece estilo, poder y diversión pura. ¡Anímate a descubrir tu ciudad en una HNTR 350!",
             "potencia": "14,87 kW a 6100 rpm",
             "cilindrada": "349 CC MONOCILÍNDRICO",
             "sistema": "ABS DUAL-CHANNEL",
             "luces": "Encendido automático",
             "imagenForm": "../img/form/hntr.webp",
             "video": "https://www.youtube.com/embed/uTzk_SyOgBQ?si=nW22Naw5wi9_3cqM",
+            "imagenTooltip":"../img/tooplist/hntr.webp",
+            "fondoTooltip":"../img/tooplist/logo-hntr-2.png",
+            "detalles": [
+                {
+                    "nombre": "DESEMPEÑO",
+                    "descripcion": "Con una distancia más corta entre ejes, un peso ligero y un diseño estrecho; el bastidor de la HNTR 350  está equipado con un juego de llantas supermaniobrable, una estética retro-moderna y un motor J de 350 cc que entrega potencia adicional para cada camino.",
+                    "posicion": { "top": "30%", "left": "53%" }
+                },
+                {
+                    "nombre": "DISEÑO",
+                    "descripcion": "La ergonomía del sillín, la posición de manejo y el bajo centro de gravedad de la HNTR 350 se han diseñado para permitirte maniobrar sin esfuerzo por el paisaje urbano.",
+                    "posicion": { "top": "38%", "left": "36%" }
+                },
+                {
+                    "nombre": "MOTOR",
+                    "descripcion": "En el corazón de la HNTR 350  late un motor J de 350 cc de carrera larga con inyección de combustible que ofrece una conducción más suave, RPM más altas y una gran cantidad de torque. La Hunter 350 brinda la cantidad perfecta de potencia y precisión, ya sea que estés maniobrando por las calles de la ciudad o acelerando por la autopista.",
+                    "posicion": { "top": "65%", "left": "50%" }
+                }
+               
+            ],
             "logoGira": "../img/giro/hntr/logo_hunter_350.webp",
             "descripcionGira": "Logramos integrar perfectamente el diseño clásico con las prestaciones modernas, la HNTR cuenta con un velocímetro de estilo retro junto con una pantalla LCD digital que indica todo lo que necesitas saber y es compatible con el sistema de navegación Royal Enfield Tripper.",
             "colores": [

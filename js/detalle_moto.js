@@ -39,81 +39,61 @@ document.addEventListener('DOMContentLoaded', function () {
 function mostrarDetallesMoto(moto) {
     // Cambiar el título de la página
     document.title = `${moto.nombre} - Royal Enfield Tandil`;
-    /*header 2-----------------------
- 
-  // Cambiar la clase del header2 según el modelo de moto
-     const header = document.getElementById('header2');
-     
-     // Elimina cualquier clase de modelo previa (por si cambian de moto)
-     header.classList.remove('model1', 'model2', 'model3', 'model4', 'model5', 'model6', 'model7', 'model8', 'model9');
- 
-     // Agrega la nueva clase correspondiente al modelo actual
-    
-     header.classList.add(`model${moto.id}`);
-     const imageUrl = moto.fondoHeader2; // Supongo que `moto.imagen` contiene la URL de la imagen de fondo
- 
-     // Aplica tanto el gradiente como la imagen dinámica al mismo tiempo
- 
-     header.style.backgroundImage = `linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(${imageUrl})`;
- 
-     document.getElementById('logo-header2').src = moto.logo;
-   //  header.style.backgroundImage = `url(${moto.fondoHeader2})`;
-     document.getElementById('description-header2').textContent = moto.descripcion;*/
-   // Obtener el header y logo
-const header = document.getElementById('header2');
-const logoImg = document.getElementById('logo-header2');
 
-// Añadir clase "loading" para mostrar un estado de carga inicial
-header.classList.add('loading');
+    const header = document.getElementById('header2');
+    const logoImg = document.getElementById('logo-header2');
 
-// Eliminar cualquier clase de modelo previa (para evitar conflictos)
-header.classList.remove('model1', 'model2', 'model3', 'model4', 'model5', 'model6', 'model7', 'model8', 'model9');
+    // Añadir clase "loading" para mostrar un estado de carga inicial
+    header.classList.add('loading');
 
-// Agregar la nueva clase correspondiente al modelo actual
-header.classList.add(`model${moto.id}`);
+    // Eliminar cualquier clase de modelo previa (para evitar conflictos)
+    header.classList.remove('model1', 'model2', 'model3', 'model4', 'model5', 'model6', 'model7', 'model8', 'model9');
 
-// Verificar que la imagen de fondo y logo existan
-const imageUrl = moto.fondoHeader2 || '';  // Imagen predeterminada si no hay fondo
-const logoUrl = moto.logo || '';  // Logo predeterminado si no hay logo
+    // Agregar la nueva clase correspondiente al modelo actual
+    header.classList.add(`model${moto.id}`);
 
-// Función para manejar la carga de imágenes de fondo y logo
-function cargarImagen(src, callback) {
-    const img = new Image();
-    img.src = src;
-    img.onload = callback;
-    img.onerror = function() {
-        console.error('Error cargando imagen:', src);
-        callback();  // Continuar incluso si hay un error
-    };
-}
+    // Verificar que la imagen de fondo y logo existan
+    const imageUrl = moto.fondoHeader2 || '';  // Imagen predeterminada si no hay fondo
+    const logoUrl = moto.logo || '';  // Logo predeterminado si no hay logo
 
-// Si existe una imagen de fondo, la pre-cargamos
-if (imageUrl) {
-    cargarImagen(imageUrl, function() {
-        // Aplicar la imagen de fondo una vez cargada
-        header.style.backgroundImage = `linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url(${imageUrl})`;
-        header.style.backgroundColor = '';  // Eliminar fondo gris
-        header.classList.remove('loading');  // Remover el estado de carga
-    });
-} else {
-    // Si no hay imagen de fondo, aplicar el fondo gris inmediatamente
-    header.style.backgroundImage = '';
-    header.style.backgroundColor = '#f0f0f0';  // Fondo gris por defecto
-    header.classList.remove('loading');
-}
+    // Función para manejar la carga de imágenes de fondo y logo
+    function cargarImagen(src, callback) {
+        const img = new Image();
+        img.src = src;
+        img.onload = callback;
+        img.onerror = function () {
+            console.error('Error cargando imagen:', src);
+            callback();  // Continuar incluso si hay un error
+        };
+    }
 
-// Si hay un logo, lo pre-cargamos
-if (logoUrl) {
-    cargarImagen(logoUrl, function() {
-        logoImg.src = logoUrl;
-        logoImg.style.display = 'block';  // Mostrar logo después de que cargue
-    });
-} else {
-    logoImg.style.display = 'none';  // Ocultar logo si no hay
-}
+    // Si existe una imagen de fondo, la pre-cargamos
+    if (imageUrl) {
+        cargarImagen(imageUrl, function () {
+            // Aplicar la imagen de fondo una vez cargada
+            header.style.backgroundImage = `linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url(${imageUrl})`;
+            header.style.backgroundColor = '';  // Eliminar fondo gris
+            header.classList.remove('loading');  // Remover el estado de carga
+        });
+    } else {
+        // Si no hay imagen de fondo, aplicar el fondo gris inmediatamente
+        header.style.backgroundImage = '';
+        header.style.backgroundColor = '#f0f0f0';  // Fondo gris por defecto
+        header.classList.remove('loading');
+    }
 
-// Cambiar la descripción del header dinámicamente
-document.getElementById('description-header2').textContent = moto.descripcion || 'Descripción predeterminada';
+    // Si hay un logo, lo pre-cargamos
+    if (logoUrl) {
+        cargarImagen(logoUrl, function () {
+            logoImg.src = logoUrl;
+            logoImg.style.display = 'block';  // Mostrar logo después de que cargue
+        });
+    } else {
+        logoImg.style.display = 'none';  // Ocultar logo si no hay
+    }
+
+    // Cambiar la descripción del header dinámicamente
+    document.getElementById('description-header2').textContent = moto.descripcion || 'Descripción predeterminada';
 
     // Seccion ficha técnica
     // Actualizar el botón de ficha técnica
@@ -146,7 +126,8 @@ document.getElementById('description-header2').textContent = moto.descripcion ||
     generarWallpapers(moto);
 
 
-
+ // Cambiar tooltips de la moto
+    generarTooltips(moto);
 
 
 
@@ -234,6 +215,52 @@ function mostrarMotoGira(moto, colorIndex) {
     nuevaImagenMoto.addEventListener('click', function () {
         indiceImagenActual = (indiceImagenActual + 1) % moto.colores[colorIndex].imagenes.length;
         nuevaImagenMoto.src = moto.colores[colorIndex].imagenes[indiceImagenActual];
+    });
+}
+
+function generarTooltips(moto) {
+    document.getElementById('moto-imagen').src = moto.imagenTooltip;
+    
+    // Genera los puntos interactivos según la información de 'moto'
+    const container = document.querySelector('.moto-tooltip-container');
+    container.innerHTML = ''; // Limpia los puntos previos
+
+    // Inserta las imágenes nuevamente
+    container.innerHTML += `
+        <img id="logo-fondo" src="${moto.fondoTooltip}" alt="Logo de fondo" class="logo-fondo">
+        <img id="moto-imagen" src="${moto.imagenTooltip}" alt="Imagen de la moto" class="moto-imagen">
+         <div id="puntos-interactivos"></div> 
+        `;
+    
+    const puntosContainer = document.getElementById('puntos-interactivos');
+    puntosContainer.innerHTML = ''; // Limpiar puntos interactivos anteriores
+
+    moto.detalles.forEach(detalle => {
+        const puntoInteractivo = document.createElement('div');
+        puntoInteractivo.classList.add('punto-interactivo');
+        puntoInteractivo.style.top = detalle.posicion.top;
+        puntoInteractivo.style.left = detalle.posicion.left;
+        puntoInteractivo.dataset.text = detalle.descripcion;
+
+        const tooltip = document.createElement('div');
+        tooltip.classList.add('tooltip');
+        tooltip.textContent = detalle.nombre;
+
+        puntoInteractivo.appendChild(tooltip);
+        puntosContainer.appendChild(puntoInteractivo);
+    });
+
+    // Agregar eventos de tooltip
+    document.querySelectorAll('.punto-interactivo').forEach(punto => {
+        punto.addEventListener('mouseenter', function () {
+            const tooltip = this.querySelector('.tooltip');
+            tooltip.textContent = this.dataset.text;
+            tooltip.style.display = 'block';  // Muestra el tooltip
+        });
+        punto.addEventListener('mouseleave', function () {
+            const tooltip = this.querySelector('.tooltip');
+            tooltip.style.display = 'none';  // Oculta el tooltip cuando no se esté en hover
+        });
     });
 }
 

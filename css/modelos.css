@@ -1,3 +1,12 @@
+html, body {
+    margin: 0;
+    padding: 0;
+
+   
+}
+
+
+
 :root {
     --font: 'Lato', sans-serif;
 
@@ -28,6 +37,9 @@
     --negro: #121111;
     
 }
+
+
+
 
 p{
     color: var(--blanco);
@@ -391,10 +403,119 @@ p{
     margin-top: 15px;
 }
 
+/*--------------------------seccion 4 detalle moto ---------------------*/
+.moto-tooltip-container {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    margin: 0;
+    margin-top: 2px;
+    padding: 0;
+    background-color: var(--blanco);
+    display: flex; /* Agregado */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+   
+}
 
-/*--------------------------seccion 4 moto gira---------------------*/
+.logo-fondo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Ajusta el tamaño del logo al 90% del contenedor */
+    opacity: 0.1; /* Controla la transparencia del logo */
+    z-index: 1;
+    max-width: 100%; /* Asegura que el logo no supere el ancho del contenedor */
+    max-height: 100%; 
+    object-fit: contain;
+}
+
+.moto-imagen {
+  position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+
+  
+}
+
+.punto-interactivo {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--rojo);
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    animation: glow 1.5s infinite alternate; /* Efecto de brillo intermitente */
+    z-index: 3;
+}
+
+.punto-interactivo::before {
+    content: "+";
+    color: white;
+    font-weight: bold;
+}
+
+@keyframes glow {
+  
+
+        0% { 
+           
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 0, 0, 0.3); 
+        }
+        50% { 
+            /* Aumenta el tamaño para simular la explosión */
+            box-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 0, 0, 0.6); 
+        }
+        100% { 
+         
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 0, 0, 0.3); 
+        }
+    }
+
+
+
+
+.tooltip {
+    position: absolute;
+    bottom: 35px; /* Ajusta según el tamaño del punto */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    white-space: pre-line;
+    text-align: center;
+    min-width: 250px; /* Ajusta el tamaño mínimo de la tooltip */
+    max-width: calc(100% - 18px); /* Evita que el tooltip se corte en dispositivos móviles */
+ 
+}
+
+.punto-interactivo:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+ 
+}
+
+
+
+
+/*--------------------------seccion 5 moto gira---------------------*/
 .section-gira{
     background-color:  var(--blanco);
+    margin: 0;
+    padding: 0;
+  
 }
 
 /* Diseño por defecto para mobile-first (column layout) */
@@ -403,7 +524,7 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px 0 ;
+    margin: 0 ;
   
 }
 .moto-imagen-container,
@@ -706,6 +827,16 @@ p{
       /* Tamaño máximo para no exceder en pantallas más grandes */
         height:300px ;
     }
+/*----SECCION 4 TOOLTIP--------------------------------------------*/
+    .moto-tooltip-container {
+        position: relative;
+        width: 100%;
+        height: 300px;
+    }
+    .moto-imagen{
+        width: 85%;
+    }
+
     /*--------------------wallpapers--------------------------*/
     #close-modal {
    
@@ -786,7 +917,33 @@ p{
     .btn-ficha {
         align-self: center; /* Mantiene el botón alineado a la izquierda */
     }
-/*----------------------------------SECCION 4 MOTO GIRA-------------------------*/
+
+/*----------------------------------SECCION 4 detalle-------------------------*/
+.moto-tooltip-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+.moto-imagen {
+    padding: 30px;
+    width: 80%;
+    height: auto;
+   
+}
+
+.punto-interactivo {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+.tooltip{
+    font-size: 1.1rem;
+    width: 500px;
+    min-width: 600px; /* Ajusta el tamaño mínimo de la tooltip */
+    max-width: 700px;
+}
+
+/*----------------------------------SECCION 5 MOTO GIRA-------------------------*/
     .moto-giratoria {
         flex-direction: row; /* Cambia a diseño en fila para pantallas más grandes */
         align-items: center;
@@ -809,7 +966,8 @@ p{
         flex: 0 0 40%; /* El texto ocupa el 40% */
         padding-left: 50px; /* Aumentar el padding para separar más el texto */
         padding-right: 50px;
-        padding-top: 20px; /* Agregar padding adicional si lo deseas */
+        padding-top: 30px; /* Agregar padding adicional si lo deseas */
+        margin-top: 10px;
         padding-bottom: 20px;
         display: flex;
     flex-direction: column; /* Para alinear el logo y la descripción en columna */
@@ -824,7 +982,7 @@ p{
         height: auto;
     }
     #logo-gira{
-        width: 55%;
+        width: 40%;
         height: auto;
         object-fit: cover;
         padding: 30px;
@@ -894,7 +1052,10 @@ p{
 }
 
 
-
+.wallpapers-title{
+    font-size: 2.4rem ;
+    font-weight: 900;
+}
 #modal-image {
     max-width: 90%;
     max-height: 90%;
