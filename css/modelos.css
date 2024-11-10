@@ -1,11 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-
-   
 }
-
-
 
 :root {
     --font: 'Lato', sans-serif;
@@ -392,11 +388,13 @@ p{
 #texto-ficha{
     text-align: justify;
     padding: 15px;
+    font-size: 1.2rem;
 }
 #imagen-ficha {
     width: 100%; /* Ajusta según el tamaño que necesites para mobile */
     max-width: 420px; /* Tamaño máximo para no exceder en pantallas más grandes */
- 
+    height: auto;
+    object-fit: cover;   
 }
 
 .btn-ficha {
@@ -521,7 +519,7 @@ p{
 /* Diseño por defecto para mobile-first (column layout) */
 .moto-giratoria {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;;
     align-items: center;
     justify-content: center;
     margin: 0 ;
@@ -537,7 +535,11 @@ p{
 }
 
 #moto-nombre{
+    text-align: center;
+   
+    padding-top: 20px;
     font-weight: 700;
+    display: none;
 }
  #moto-descripcion{
     text-align: justify;
@@ -545,11 +547,13 @@ p{
     font-weight: 500;
     text-shadow: 2px 2px 4px rgba(198, 198, 198, 0.6); /* Sombra del texto */
     padding-top: 15px;
+    display: none;
 }
 
 #logo-gira{
     width: 250px;
-    padding-left: 40px;
+    padding-left: 0;
+    margin-top: 10px;
 }
 
 
@@ -569,11 +573,7 @@ p{
 
     
 }
-#moto-nombre{
-    text-align: center;
-    font-weight: 900;
-    padding-top: 20px;
-}
+
 
 
 #imagen-moto-giratoria{
@@ -591,61 +591,65 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-   /* animation: mover-flecha 2s infinite alternate;*/
+ 
 }
 
 
 
 /* Estilos para el contenedor de los tanques de colores */
+/* Contenedor de la sección de tanques */
+.tanques {
+    text-align: center; /* Centra el título */
+    margin-bottom: 20px;
+}
+
+
+#titulo-tanque{
+    font-weight: bold;
+    padding-top: 20px;
+    font-size: 1.6rem;
+}
 
 #color-container {
     display: flex;
-    flex-wrap: wrap; /* Permitir que los elementos se envuelvan a una nueva fila si no caben */
-    justify-content: center; /* Centrar los tanques horizontalmente */
-    align-items: center; /* Centrar verticalmente si es necesario */
-    gap: 15px; /* Espacio entre los tanques */
-   /* Espacio superior e inferior alrededor del contenedor */
-    color:var(--negro-2) ;
-}
-.titulo-tanques{
-    display: flex;
-    justify-content: center; /* Centrar los tanques horizontalmente */
-    align-items: center; /* Centrar verticalmente si es necesario */
+    flex-wrap: wrap; /* Permitir que los elementos pasen a una nueva fila si no caben */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    gap: 15px; /* Espacio entre las opciones en mobile */
     color: var(--negro-2);
-
-   
-}
-
-#titulo-tanques{
-    font-weight: 800;
 }
 
 .color-option {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2px;
+    text-align: center;
+    width: 45%; /* 2 por fila en mobile */
+    margin-bottom: 10px;
+    padding: 5px;
 }
 
 .color-nombre {
-    margin-top: 0px;
-    padding-bottom: 20px;
-    font-size: 1.1em;
-    text-align: center;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    font-size: 0.6 rem;
+    font-weight: 600;
+    word-wrap: break-word; /* Permite que los nombres largos pasen a la siguiente línea */
+    white-space: normal; /* Rompe la línea si es necesario */
 }
+
 .tanque-color {
-    width: 150px; /* Ajusta el tamaño de los tanques según sea necesario */
-    object-fit: cover; /* Recorta para llenar el espacio sin distorsión */
-    /* height: auto;*/
-    height: auto; /* Mantiene la proporción de la imagen */
-    cursor: pointer; /* Muestra un puntero al pasar sobre la imagen */
-    padding-bottom: 5px;
-    transition: transform 0.3s ease; /* Animación suave al pasar el mouse */
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding-bottom: 10px;
 }
 
 .tanque-color:hover {
-    transform: scale(1.2); /* Aumenta el tamaño del tanque al pasar el mouse */
+    transform: scale(1.1); /* Efecto hover */
 }
+
 
 /*----------------------Seccion 5 formulario contacto -------------------*/
 .moto-detail-section .spec-item {
@@ -672,6 +676,11 @@ p{
     padding: 5px;
  
 }
+#imagen-form{
+    height: auto;          /* Mantener la proporción de la imagen */
+object-fit: cover;
+}
+ 
 
 .form-container{
     background-color: var(--rojo-intenso);
@@ -680,10 +689,8 @@ p{
 }
 
 
-.moto-image-container img {
-    max-width: 100%; /* Ajusta el tamaño de la imagen según sea necesario */
-    height: 330px;
-}
+
+
 
 /* Espaciado entre los campos del formulario */
 .moto-detail-section .form-control, 
@@ -714,14 +721,16 @@ p{
 /* Estilos base para la galería */
 .wallpaper-grid {
     display: grid;
-    gap: 10px; /* Espacio entre las imágenes */
+    gap: 8px; /* Espacio entre las imágenes */
     grid-template-columns: 1fr; /* Una sola columna por defecto en mobile */
     justify-items: center; /* Centrar las imágenes dentro de sus celdas */
+    padding: 0 20px; /* Añade espacio en los lados izquierdo y derecho */
 }
 
 .wallpaper-img {
     width: 100%;
     height: auto;
+    padding-left: 3px;
     border-radius: 5px; /* Bordes redondeados */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar un efecto elegante */
     cursor: pointer; /* Indicar que se puede hacer clic */
@@ -768,45 +777,12 @@ p{
 
 
 
-/* Estilos para pantallas landscape (horizontal) */
-@media (min-width: 768px) {
-    .wallpaper-grid {
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas en landscape */
-    }
-}
-
-
 
 
 /*--------Hasta 900px para cubrir todo tipo de móviles (vertical y horizontal).------------------*/
 /* Landscape para dispositivos con ancho mayor a 480px y en modo horizontal */
 @media only screen and (max-width: 900px) and (orientation: landscape) {
 
-    #header {
-        display: flex;
-        flex-direction: row; /* Los elementos en fila */
-        justify-content: space-between;
-        align-items: center;
-        background-position: center ;
-        padding: 20px;
-        height: 100vh; /* Aumenta la altura para landscape */
-    }
-
-    #logo-header {
-        width: 180px;
-    }
-
-    #descripcion-header {
-        font-size: 1.1em;
-     
-        padding: 10px;
-        padding-bottom: 15px;
-    }
-
-    #imagen-header {
-        max-width: 500px;
-        padding-bottom: 2px;
-    }
 
 
       /*--------------------seccion 2------------------------*/
@@ -817,9 +793,9 @@ p{
     }
 
     #texto-ficha {
-        padding-top: 30px;
+        padding-top: 20px;
         margin-bottom: 2px; /* Espacio entre el texto y el botón */
-        font-size: 0.9 rem;
+        font-size: 1.2rem;
     }
 
     #imagen-ficha {
@@ -834,12 +810,101 @@ p{
         height: 300px;
     }
     .moto-imagen{
-        width: 85%;
+        padding-top: 20px;
+        width: 80%;
     }
 
-    /*--------------------wallpapers--------------------------*/
-    #close-modal {
+    .tooltip {
+        min-width: 400px;
+    }
+
+    /*---------------SECCION 5-------------------------*/
+    #titulo-tanque{
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    #color-container {
+        flex-direction: row; /* En desktop, los tanques vuelven a estar en fila */
+       gap: 15px;
+    }
+
+    .color-option {
+        width: 15%; /* Permitir 4 elementos por fila en desktop */
+
+    }
+    
    
+    
+    .color-nombre {
+        margin-top: 5px;
+        padding-bottom: 10px;
+        font-size: 1.1rem; /* Tamaño de fuente más grande para pantallas grandes */
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .tanque-color {
+        width: 100%; /* Ajusta el tamaño para ocupar más espacio en la fila */
+        height: auto;
+        object-fit: cover;
+        cursor: pointer;
+        padding-bottom: 10px;
+        transition: transform 0.3s ease;
+    }
+
+/*--------------------------SECCION FORM ------------------------*/
+
+
+
+    /* Imagen: Ocupa el 100% de la altura del contenedor */
+    .moto-image-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 10px;
+    }
+
+    #imagen-form {
+        width: 110%;             /* Ocupar todo el ancho del contenedor de imagen */
+        height: 110%;            /* Igualar la altura al formulario */
+        object-fit: cover;       /* Ajustar la imagen sin distorsión */
+        border-radius: 2px;      /* Opcional: esquinas redondeadas */
+    }
+
+    /* Formulario: ocupando el 100% del alto disponible */
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;            /* Ajusta la altura al contenedor principal */
+        padding: 20px;           /* Espaciado interno del formulario */
+        background-color: var(--rojo-intenso);
+        border-radius: 2px;      /* Opcional: esquinas redondeadas */
+    }
+
+    /* Ajustes para el botón en pantallas grandes */
+    .form-container button {
+        width: 50%;              /* Ancho del botón en desktop */
+        align-self: center;
+    }
+
+
+
+
+    /*--------------------wallpapers--------------------------*/
+    .wallpaper-grid {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en landscape */
+    }
+
+    .wallpaper-img {
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho de la celda */
+        height: 340px; /* Establece una altura fija para todas las imágenes */
+        object-fit: cover; /* Asegura que la imagen cubra el área disponible sin distorsionarse */
+        border-radius: 5px; /* (opcional) bordes redondeados para las imágenes */
+    }
+
+    #close-modal {
         top: 20px;
         right: 210px;
         font-size: 36px;
@@ -909,11 +974,12 @@ p{
         align-items: flex-start;
     }
 
-    #texto-ficha {
-        margin-bottom: 15px; /* Espacio entre el texto y el botón */
-        font-size: 1.4 rem;
-    }
 
+#texto-ficha{
+    text-align: justify;
+    padding: 15px;
+    font-size: 1.6rem;
+}
     .btn-ficha {
         align-self: center; /* Mantiene el botón alineado a la izquierda */
     }
@@ -950,8 +1016,12 @@ p{
         justify-content: space-between;
     }
 
-  
     
+    #moto-nombre, #moto-descripcion{
+        
+        display: block;
+    }
+  
     .moto-imagen-container,
     .moto-detalle-container {
         flex: 1;
@@ -988,20 +1058,82 @@ p{
         padding: 30px;
        
     }
+
+
+    #titulo-tanque{
+        font-size: 2rem;
+        font-weight: 800;
+    }
     #color-container {
         flex-direction: row; /* En desktop, los tanques vuelven a estar en fila */
-      
+        gap: 5px;
+        margin: 25px ;
     }
 
-    .tanque-color {
-        width: 200px; /* Tamaño más pequeño en mobile */
-        margin: 10px;
-        padding: 10px;
-        padding-bottom: 10px; /* Reduce el espacio inferior */
+    .color-option {
+        width: 15%; /* Permitir 4 elementos por fila en desktop */
     }
+    
+   
+    
+    .color-nombre {
+        margin-top: 5px;
+        padding-bottom: 10px;
+        font-size: 1.3rem; /* Tamaño de fuente más grande para pantallas grandes */
+        font-weight: 600;
+        text-align: center;
+    }
+    
+    .tanque-color {
+        width: 80%; /* Ajusta el tamaño para ocupar más espacio en la fila */
+        height: auto;
+        object-fit: cover;
+        cursor: pointer;
+        padding-bottom: 10px;
+        transition: transform 0.3s ease;
+    }
+    
+    .tanque-color:hover {
+        transform: scale(1.1); /* Efecto hover */
+    }
+
 
 
 /*------------------seccion 5 form-----------------------*/
+
+
+    /* Imagen: Ocupa el 100% de la altura del contenedor */
+    .moto-image-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 10px;
+    }
+
+    #imagen-form {
+        width: 100%;             /* Ocupar todo el ancho del contenedor de imagen */
+        height: 100%;            /* Igualar la altura al formulario */
+        object-fit: cover;       /* Ajustar la imagen sin distorsión */
+        border-radius: 2px;      /* Opcional: esquinas redondeadas */
+    }
+
+    /* Formulario: ocupando el 100% del alto disponible */
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;            /* Ajusta la altura al contenedor principal */
+        padding: 10px;           /* Espaciado interno del formulario */
+        background-color: var(--rojo-intenso);
+        border-radius: 2px;      /* Opcional: esquinas redondeadas */
+    }
+
+    /* Ajustes para el botón en pantallas grandes */
+    .form-container button {
+        width: 50%;              /* Ancho del botón en desktop */
+        align-self: center;
+    }
 
 
 
@@ -1016,21 +1148,6 @@ p{
    
 }
 
-.form-container{
-    margin-top: 6px;
-    height: 500px;
-}
-.moto-image-container img {
-    max-width: 110%; /* Ajusta el tamaño de la imagen según sea necesario */
-    height: 500px;
-}
-
-
-
-.moto-detail-section .form-container button {
-    margin-top: 40px; /* Reducir el margen superior del botón */
-    font-size: 1.1 rem;
-}
 
 /* Estilos para wallpapers pantallas desktop --------------------------*/
 

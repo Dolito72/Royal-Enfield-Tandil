@@ -1,8 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Agregar la clase "active" cuando el slide cambia
+    // Selecciona el carrusel por ID
     var carousel = document.querySelector('#novedadesCarousel');
+
+    // Detecta el cambio de slide en el evento 'slide.bs.carousel'
     carousel.addEventListener('slide.bs.carousel', function (e) {
-        // Eliminar la animación en todos los items
+        // Elimina la animación de los elementos activos previos
         var items = document.querySelectorAll('.carousel-hero');
         items.forEach(function (item) {
             item.querySelector('.moto-hero').classList.remove('active');
@@ -11,11 +13,13 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
 
-        // Añadir la animación al nuevo item activo
+        // Activa la animación para el nuevo slide
         var nextItem = e.relatedTarget;
         nextItem.querySelector('.moto-hero').classList.add('active');
         nextItem.querySelectorAll('.animated-text').forEach(function (text) {
             text.classList.add('active');
         });
+
+       
     });
 });
