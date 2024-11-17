@@ -67,10 +67,50 @@
                     <li class="nav-item"><a class="nav-link" href="./pages/eventos.html">Eventos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
                     <li class="nav-item"><a class=" btn-nav" href="#form">Contacto</a></li>
+                    <li id="testRideBtn" class="nav-item"><a class=" btn-nav" href="#">Test Ride</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    
+    <!-- Contenedor del formulario pop-up test ride-------------------------------------------->
+
+    <!-- Pop-up Overlay con el formulario -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-content ">
+            <span class="close-btn" id="closeFormButton">&times;</span>
+            <h2>Test Ride</h2>
+            <form id="testRideForm"  action="https://formspree.io/f/xjkbqeld" method="POST">
+              
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="modelo">Selecciona el modelo que te gustaría probar:</label>
+                <select id="modelo" name="modelo" required>
+                    <option value="" disabled selected>Selecciona un modelo</option>
+                    <option value="test-HNTR">HNTR</option>
+                    <option value="test-Meteor">Meteor</option>
+                    <option value="test-Super Meteor">Super Meteor</option>
+                    <option value="test-Himalayan">Himalayan</option>
+                </select>
+
+                <button type="submit" class="submit-btn">Enviar</button>
+            </form>
+            <!-- Contenedor de mensaje -->
+            <div id="messageContainer"></div>
+        </div>
+    </div>
+
 
     <!---------------- Hero con Carrusel de Novedades -->
     <section class="hero">
@@ -112,91 +152,103 @@
             </button>
         </div>
     </section>
+       <!-- gama motos------------------------------------- -->
+
+
     <!-- Carrousel de motos. ---------------------------->
-    <section class="custom-carousel">
+    <section id="motos" class="custom-carousel">
         <div class="slider-wrapper">
             <div class="slider-container">
-                <!-- Tarjeta 1 -->
-                <a href="#" class="slider-item" data-id="1" data-nombre="Shotgun">
 
-                    <div id="shotgun" class="content">
-                        <img src="./img/gama/logo-shotgun-blanco.png" alt="Logo Shotgun" class="logo">
-                        <img src="./img/gama/Shotgun 650 - Green Drill(3).webp" alt="Moto Shotgun" class="gama-moto">
-                    </div>
-                </a>
-                <!-- Tarjeta 2 -->
-                <a href="#" class="slider-item" data-id="2" data-nombre="Continental GT 650">
-
-                    <div id="continental" class="content">
-                        <img src="img/gama/logo_continental.png" alt="Logo Moto 2" class="logo">
-                        <img src="./img/gama/Continental-650-mr_clean_000.png" alt="Moto Continental 650"
-                            class="gama-moto">
-                    </div>
-                </a>
-                <!-- Tarjeta 3 -->
-                <a href="#" class="slider-item" data-id="3" data-nombre="Super Meteor 650">
-                    <div id="super_meteor" class="content">
-                        <img src="./img/gama/logo-super-meteor-blanco.png" alt="Logo Super Meteor" class="logo">
-                        <img src="./img/gama/super-meteor-650-2.webp" alt="Moto Super Meteor 650" class="gama-moto">
-                    </div>
-                </a>
-                <!-- Tarjeta 4 -->
-                <a href="#" class="slider-item" data-id="4" data-nombre="Interceptor 650">
-
-                    <div id="interceptor" class="content">
-                        <img src="./img/gama/logo_interceptor.png" alt="Logo Interceptor" class="logo">
-                        <img src="./img/gama/Interceptor-RavishingBlk_000.webp" alt="Moto Interceptor"
-                            class="gama-moto">
-                    </div>
-                </a>
-                <!-- Continúan los items... -->
-                <!-- Tarjeta 5 -->
-                <a href="#" class="slider-item" data-id="5" data-nombre="Himalayan 450">
-
-
-                    <div id="himalayan" class="content">
-                        <img src="./img/gama/logo-himalayan-blanco.png" alt="Logo Himalayan" class="logo">
-                        <img src="./img/gama/All-new Himalayan - Kamet White - Right Profile.webp" alt="Moto Himalayan"
-                            class="gama-moto">
-                    </div>
-                </a>
-                <!-- Tarjeta 6 
-                <a href="#" class="slider-item" data-id="6" data-nombre="Scram 411">
-                    <div id="scram" class="content">
-                        <img src="./img/gama/logo-scram.png" alt="Logo Scram" class="logo">
-                        <img src="./img/gama/Scram_Red_000.webp" alt="Moto Scram" class="gama-moto">
-                    </div>
-                </a>-->
-                <!-- Tarjeta 7 -->
                 <a href="#" class="slider-item" data-id="7" data-nombre="Classic 350">
-
                     <div id="classic" class="content">
-                        <img src="./img/gama/logo-classic-marron.png" alt="Logo Classic" class="logo">
+                        <div class="logo-contain">
+                            <img src="./img/gama/logo-classic-marron.png" alt="Logo Classic" class="logo">
+                        </div>
                         <img src="./img/gama/Classic_350_SignalsDessert_000.webp" alt="Moto Classic 350"
                             class="gama-moto">
                     </div>
                 </a>
-                <!-- Tarjeta 8 -->
+
                 <a href="#" class="slider-item" data-id="8" data-nombre="Meteor 350">
                     <div id="meteor" class="content">
-                        <img src="./img/gama/logo-meteor-350-blanco.png" alt="Logo Meteor 350" class="logo">
+                        <div class="logo-contain">
+                            <img src="./img/gama/meteor-logo.png" alt="Logo Meteor 350" class="logo">
+                        </div>
                         <img src="./img/gama/meteor_350.png" alt="Moto Meteor 350" class="gama-moto">
                     </div>
                 </a>
-                <!-- Tarjeta 9 -->
 
                 <a href="#" class="slider-item" data-id="9" data-nombre="HNTR 350">
                     <div id="hunter" class="content">
-                        <img src="./img/gama/logo-hntr-blanco.png" alt="Logo HNTR" class="logo">
+                        <div class="logo-contain">
+                            <img src="./img/gama/logo-hntr-blanco.png" alt="Logo HNTR" class="logo">
+                        </div>
                         <img src="./img/gama/HNTR_GTred_000.webp" alt="Moto HNTR" class="gama-moto">
                     </div>
                 </a>
+
+
+                <a href="#" class="slider-item" data-id="5" data-nombre="Himalayan 450">
+                    <div id="himalayan" class="content">
+                        <div class="logo-contain">
+                            <img src="./img/gama/logo-himalayan-blanco.png" alt="Logo Himalayan" class="logo">
+                        </div>
+                        <img src="./img/gama/All-new Himalayan - Kamet White - Right Profile.webp" alt="Moto Himalayan"
+                            class="gama-moto">
+                    </div>
+
+                    <a href="#" class="slider-item" data-id="2" data-nombre="Continental GT 650">
+                        <div id="continental" class="content">
+                            <div class="logo-contain">
+                                <img src="img/gama/logo_continental.png" alt="Logo Moto 2" class="logo">
+                            </div>
+                            <img src="./img/gama/Continental-650-mr_clean_000.png" alt="Moto Continental 650"
+                                class="gama-moto">
+                        </div>
+                    </a>
+
+                    <a href="#" class="slider-item" data-id="1" data-nombre="Shotgun">
+                        <div id="shotgun" class="content">
+                            <div class="logo-contain">
+                                <img src="./img/gama/logo-shotgun-blanco.png" alt="Logo Shotgun" class="logo">
+                            </div>
+                            <img src="./img/gama/Shotgun 650 - Green Drill(3).webp" alt="Moto Shotgun"
+                                class="gama-moto">
+                        </div>
+                    </a>
+
+
+                    <a href="#" class="slider-item" data-id="3" data-nombre="Super Meteor 650">
+                        <div id="super_meteor" class="content">
+                            <div class="logo-contain">
+                                <img src="./img/gama/super-meteor-logo.png" alt="Logo Super Meteor" class="logo">
+                            </div>
+                            <img src="./img/gama/super-meteor-650-2.webp" alt="Moto Super Meteor 650" class="gama-moto">
+                        </div>
+                    </a>
+                    <!-- Tarjeta 4 -->
+                    <a href="#" class="slider-item" data-id="4" data-nombre="Interceptor 650">
+                        <div id="interceptor" class="content">
+                            <div class="logo-contain">
+                                <img src="./img/gama/logo_interceptor.png" alt="Logo Interceptor" class="logo">
+                            </div>
+                            <img src="./img/gama/Interceptor-RavishingBlk_000.webp" alt="Moto Interceptor"
+                                class="gama-moto">
+                        </div>
+                    </a>
+
+
+
             </div>
+
         </div>
         <!-- Botones de navegación -->
+
         <button class="custom-prev" onclick="prevSlide()">❮</button>
         <button class="custom-next" onclick="nextSlide()">❯</button>
     </section>
+
 
     <!-- Eventos-------------------------------------------------------- -->
     <section id="eventos" class="section-eventos">
@@ -363,7 +415,7 @@
                     <h4 class="footer-title">Contacto</h4>
                     <p><i class="fas fa-envelope"></i> Email: royal.tandil.store@gmail.com</p>
                     <p><i class="fas fa-phone"></i> Teléfono: (249) 460-6345</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Dirección: 9 de Julio 864, Tandil</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Dirección: Calle 9 de Julio 864 - Tandil, Buenos Aires</p>
                 </div>
             </div>
         </div>
@@ -383,6 +435,7 @@
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/pop-up.js"></script>
     <script src="js/hero.js"></script>
     <script src="js/form.js"></script>
     <script src="js/carrousel.js"></script>

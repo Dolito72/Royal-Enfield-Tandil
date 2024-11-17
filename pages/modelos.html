@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Royal Enfied Tandil</title>
     <link rel="shortcut icon" href="../img/nav/logo_red.png">
     <meta name="description" content="Distribuidores oficiales de Royal Enfield en la ciudad de Tandil. 
     Concesionario, concept store y servicio oficial de la mítica marca, donde podrás encontrar su gama completa de motos,
@@ -67,10 +67,49 @@
                     <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
                     <li class="nav-item"><a class="nav-link" href="../#ubicacion">Ubicación</a></li>
                     <li class="nav-item"><a class=" btn-nav" href="#myForm">Contacto</a></li>
+                    <li id="testRideBtn" class="nav-item"><a class=" btn-nav" href="#">Test Ride</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+     <!-- Contenedor del formulario pop-up test ride-------------------------------------------->
+
+    <!-- Pop-up Overlay con el formulario -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-content ">
+            <span class="close-btn" id="closeFormButton">&times;</span>
+            <h2>Test Ride</h2>
+            <form id="testRideForm"  action="https://formspree.io/f/xjkbqeld" method="POST">
+              
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="modelo">Selecciona el modelo que te gustaría probar:</label>
+                <select id="modelo" name="modelo" required>
+                    <option value="" disabled selected>Selecciona un modelo</option>
+                    <option value="test-HNTR">HNTR</option>
+                    <option value="test-Meteor">Meteor</option>
+                    <option value="test-Super Meteor">Super Meteor</option>
+                    <option value="test-Himalayan">Himalayan</option>
+                </select>
+
+                <button type="submit" class="submit-btn">Enviar</button>
+            </form>
+            <!-- Contenedor de mensaje -->
+            <div id="messageContainer"></div>
+        </div>
+    </div>
+
     <!---------------------------Sección 1 - Header ----------------------------->
 
     <header id="header2"  style="background-color: #f0f0f0;"  loading=”lazy” >
@@ -298,7 +337,7 @@
                     <h4 class="footer-title">Contacto</h4>
                     <p><i class="fas fa-envelope"></i> Email: royal.tandil.store@gmail.com</p>
                     <p><i class="fas fa-phone"></i> Teléfono: (249) 460-6345</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Dirección: 9 de Julio 864, Tandil</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Dirección:Calle 9 de Julio 864 - Tandil, Buenos Aires</p>
                 </div>
             </div>
         </div>
@@ -318,7 +357,7 @@
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="../js/pop-up.js"></script>
     <script src="../js/detalle_moto.js"></script> <!-- Script JavaScript actualizado -->
     <script src="../js/form.js"></script>
     <script src="../js/footer.js"></script>
