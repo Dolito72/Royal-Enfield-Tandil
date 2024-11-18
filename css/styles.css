@@ -573,6 +573,7 @@ form input, form select {
     width: 100%; /* Video se ajusta al contenedor */
     height: auto; /* Mantiene la proporción */
     display: block; /* Elimina el espacio en la parte inferior */
+    
 }
 
 .play-button {
@@ -624,13 +625,20 @@ form input, form select {
 
 /* Efecto de hover en la imagen */
 .eventos-item:hover img {
-    transform: scale(1.2); /* Agrandar la imagen al hacer hover */
+    transform: scale(1.1
+    ); /* Agrandar la imagen al hacer hover */
 }
 
-.eventos-item:hover .eventos-title {
-    opacity: 1; /* Mostrar el título al hacer hover */
-}
 
+
+/* Mostrar el título al hacer hover */
+.eventos-item:hover .eventos-title,
+.video-container:hover .eventos-title {
+    opacity: 1; /* Mostrar el título */
+}
+.video-container:hover .eventos-title {
+    opacity: 1;
+}
 
 /*------------------Seccion form y contacto---------------------------------------------------------------------------*/
 .contact-section {
@@ -1323,7 +1331,7 @@ iframe {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.5);
         /* Negro con 70% de transparencia */
         z-index: 1;
     }
