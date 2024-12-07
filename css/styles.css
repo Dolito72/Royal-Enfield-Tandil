@@ -4,6 +4,8 @@
 
     /* Colores predominantes */
     --rojo: #FF0000;
+   /* --rojo2: #ff310e;*/
+    --rojo2: rgba(255, 49, 14, 0.8);
     /* Rojo principal */
     --rojo-claro: #FF4C4C;
     /* Rojo más claro */
@@ -150,7 +152,8 @@ body {
 
 .popup-content {
     /*background-color: var(--rojo);*/
-    background-color: rgba(220, 53, 69, 0.8);
+   /* background-color: rgba(220, 53, 69, 0.8);*/
+    background-color: var(--rojo2);
     color: var(--blanco);
     padding: 40px;
     border-radius: 8px;
@@ -654,7 +657,8 @@ form input, form select {
 
 
 .form-container {
-    background-color: rgba(220, 53, 69, 0.8);
+   /* background-color: rgba(220, 53, 69, 0.8);*/
+    background-color: var(--rojo2);
     /* Fondo rojo translúcido */
     padding: 30px;
     /* Más espacio dentro del formulario */
@@ -964,12 +968,12 @@ iframe {
     .slider-item {
         flex-direction: row;
         /* Coloca el contenido (logo y moto) en fila */
-        justify-content: space-between;
+        justify-content: flex-start;
         /* Asegura que el logo y la moto se separen */
         align-items: center;
         /* Alinea logo y moto verticalmente */
 
-        padding: 0 20px;
+        padding: 0 10px;
         /* Añade espacio a los lados */
         height: 80vh;
         /* Ajusta la altura en landscape si es necesario */
@@ -977,15 +981,15 @@ iframe {
 
     /* Ajusta la imagen de la moto para landscape */
     .gama-moto {
-        flex-basis: 70%;
+        flex-basis: 75%;
         /* La moto ocupará el 70% del espacio disponible */
-        width: 70%;
+        width: 65%;
         /* Tamaño adecuado de la moto en landscape */
         max-height: 100%;
         /* Para que no sobrepase la altura del contenedor */
         margin-top: 0;
         /* Elimina márgenes superiores */
-        padding-bottom: 8%;
+        padding-bottom: 5%;
         align-self: center;
 
     }
@@ -1054,7 +1058,8 @@ iframe {
 
 
     .form-container {
-        background-color: rgba(220, 53, 69, 0.8);
+       /* background-color: rgba(220, 53, 69, 0.8);*/
+        background-color: var(--rojo2);
         /* Fondo rojo translúcido */
         padding: 30px;
         /* Más espacio dentro del formulario */

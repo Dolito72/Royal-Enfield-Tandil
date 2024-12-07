@@ -8,6 +8,7 @@ html, body {
 
     /* Colores predominantes */
     --rojo: #FF0000;
+    --rojo2: rgba(255, 49, 14, 0.8);
     /* Rojo principal */
     --rojo-claro: #FF4C4C;
     /* Rojo más claro */
@@ -1124,7 +1125,7 @@ object-fit: cover;
         flex-direction: column;
         justify-content: center;
         height: 100%;            /* Ajusta la altura al contenedor principal */
-        padding: 10px;           /* Espaciado interno del formulario */
+        padding: 20px;           /* Espaciado interno del formulario */
         background-color: var(--rojo-intenso);
         border-radius: 2px;      /* Opcional: esquinas redondeadas */
     }
@@ -1143,7 +1144,7 @@ object-fit: cover;
 .moto-detail-section .form-select, 
 .moto-detail-section textarea {
     font-size: 1.1rem;
-    margin: 10px;
+    margin: 5px;
     padding: 10px; /* Mantener un padding compacto */
    
 }
