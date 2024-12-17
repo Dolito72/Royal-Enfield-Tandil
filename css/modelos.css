@@ -686,7 +686,7 @@ object-fit: cover;
 
 .form-container{
     background-color: var(--rojo-intenso);
-   
+    padding: 15px;
    
 }
 
@@ -699,7 +699,7 @@ object-fit: cover;
 .moto-detail-section .form-select, 
 .moto-detail-section textarea {
     padding-top: 20px;
-    padding: 5px; /* Mantener un padding compacto */
+    padding: 2px; /* Mantener un padding compacto */
     margin-bottom: 10px; /* Añadir un margen inferior para espaciar los campos */
     font-size: 0.9rem; /* Tamaño de fuente más pequeño para reducir el tamaño del campo */
 }
