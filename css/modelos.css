@@ -395,7 +395,8 @@ p{
     width: 100%; /* Ajusta según el tamaño que necesites para mobile */
     max-width: 420px; /* Tamaño máximo para no exceder en pantallas más grandes */
     height: auto;
-    object-fit: cover;   
+    object-fit: cover;  
+    display: none;
 }
 
 .btn-ficha {
@@ -800,6 +801,7 @@ object-fit: cover;
     }
 
     #imagen-ficha {
+        display: block;
         width: 100%; /* Ajusta según el tamaño que necesites para mobile */
       /* Tamaño máximo para no exceder en pantallas más grandes */
         height:300px ;
@@ -963,6 +965,7 @@ object-fit: cover;
         text-align: center;
     }
     #imagen-ficha{
+        display: block;
         width: 100%;
         max-width: 700px; 
     }
