@@ -113,11 +113,23 @@ p{
     padding-left: 10px; /* Añadir un pequeño padding para que el contenido no quede pegado a la izquierda */
     padding-bottom: 100px; /* Ajusta la posición hacia abajo en mobile */
 }
+/*grr*/
+#header2.model6{
+    background-size: cover;
+    background-position: 10% bottom;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: flex-start; /* Alinear el contenido a la izquierda */
+    padding-left: 20px; /* Añadir un pequeño padding para que el contenido no quede pegado a la izquierda */
+    padding-top: 10px; /* Ajusta la posición hacia abajo en mobile */
+}
 
 /*classic*/
 #header2.model7{
     background-size: cover;
-    background-position: 80% center;
+    background-position: 93% center;
     width: 100%;
     height: 50vh;
     display: flex;
@@ -220,6 +232,14 @@ p{
     padding-left: 10px; /* Añadir un pequeño padding para que el contenido no quede pegado a la izquierda */
     padding-bottom: 10px; /* Ajusta la posición hacia abajo en mobile */
 }
+/*grr*/
+ #header2.model6 {
+        background-position: center 80%;
+        justify-content: flex-start;
+        height: 90vh;
+
+}
+
 
 /*classic*/
 #header2.model7{
@@ -314,6 +334,15 @@ p{
         padding-left: 10px; /* Añadir un pequeño padding para que el contenido no quede pegado a la izquierda */
         padding-bottom: 10px; /* Ajusta la posición hacia abajo en mobile */
     }
+        /*grr*/
+#header2.model6{
+    background-size: cover;
+    background-position:  bottom;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 10px; /* Ajusta la posición hacia abajo en mobile */
+    
+}
 
     /*classic*/
 #header2.model7{
@@ -358,7 +387,7 @@ p{
 
     #description-header2 {
         display: block;
-        font-size: 20px;
+        font-size: 25px;
         margin-top: 10px;
     }
 }
@@ -402,6 +431,8 @@ p{
 .btn-ficha {
     margin-top: 15px;
 }
+
+/*-------------------------seccion 3 video --------------------------------------*/
 
 /*--------------------------seccion 4 detalle moto ---------------------*/
 .moto-tooltip-container {
@@ -1075,7 +1106,7 @@ object-fit: cover;
     }
 
     .color-option {
-        width: 15%; /* Permitir 4 elementos por fila en desktop */
+        width: 20%; /* Permitir 4 elementos por fila en desktop */
     }
     
    
@@ -1083,7 +1114,7 @@ object-fit: cover;
     .color-nombre {
         margin-top: 5px;
         padding-bottom: 10px;
-        font-size: 1.3rem; /* Tamaño de fuente más grande para pantallas grandes */
+        font-size: 1.5rem; /* Tamaño de fuente más grande para pantallas grandes */
         font-weight: 600;
         text-align: center;
     }

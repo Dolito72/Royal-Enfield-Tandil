@@ -747,145 +747,182 @@
                 "../img/galeria/himalayan/himalayan-52.jpg"
             ]
         },
-        {
+       {
             "id": 6,
-            "nombre": "Scram 411",
-            "logo": "../img/gama/logo-scram.png",
-            "imagenHeader": "../img/header-modelo/scram.png",
-            "fondoHeader": "../img/gama/fondo-borroso-velocidad.jpg",
-            "descripcion": "Una motocicleta hecha para el mundo en el que vivimos. Oportunidades y obstáculos, trabajar y descansar, día y noche, carretera y off-road, rápido y lento. La nueva scram 411 es ideal para cualquier situación.",
-            "fichaTecnica": "../pdf/ficha-Scram.pdf",
-            "imagenFicha": "../img/detalle/scram.webp",
-            "descripcionFicha": "La Scram 411 ofrece las capacidades de una moto de aventura y la diversión y accecibilidad de una scrambler. Sus detalles como la placa con emblema, moderno cuadro de instrumentos y sus colores, te indican que no es cualquier moto.",
-            "potencia": "34.6KW @7250RPM",
-            "cilindrada": "648 CM3",
+            "nombre": "GRR 450",
+            "logo": "../img/gama/logo-blanco-grr450.png",
+            "fondoHeader2":"../img/header/grr-3.jpg",
+            "descripcion": "Hecha para la calle, hecha de poder. ",
+            "fichaTecnica": "../pdf/ficha-shotgun.pdf",
+            "imagenFicha": "../img/detalle/grr.jpg",
+            "descripcionFicha": "Los roadsters modernos parecen genéricos, suenan sintéticos y se sienten plásticos. GRR 450 es una declaración de independencia de este conformismo abrumador. En una época en la que la automatización ha embotado las sensaciones, los algoritmos han sofocado la imaginación y los conjuntos de características han reemplazado al alma, GRR se mantiene desafiantemente aparte.",
+            "potencia": "40 NM @ 5500 RPM",
+            "cilindrada": "452 CC Monocilíndrico",
             "sistema": "Antibloqueo de Frenos",
-            "luces": "Full Led",
-            "imagenForm": "../img/form/scram_2.webp",
-            "video": "https://www.youtube.com/embed/GgsvtESQab0?si=xr8Zxq5gGcqD-h2E",
-            "logoGira": "../img/gama/logo-scram.png",
-            "descripcionGira": "La Scram 411 es fruto del ADN aventurero que durante años ha desarrollado Royal Enfield. Una moto pensada para la aventura urbana que el tránsito de la ciudades nos plantea día a dia. Su nuevo motor permite una mejor salida y mayor elasticidad. ",
+            "luces": "Encendido automático",
+            "imagenForm": "../img/form/grr.jpg",
+            "video": "https://royal2.losdemarketing.com/Videos/grr-450.mp4",
+            "imagenTooltip":"../img/giro/grr/black-1.png",
+            "fondoTooltip":"../img/gama/logo_gira-grr-Black.png",
+            "detalles": [
+                {
+                    "nombre": "SWITCH MOODS. SWITCH MODES.",
+                    "descripcion": "Pase del modo Performance al modo Eco en cuestión de segundos, cortesía de un sistema EMS de respuesta ultrarrápida, que viene con la ventaja adicional de una mayor economía de combustible.",
+                    "posicion": { "top": "22%", "left": "57%" }
+                },
+                  {
+                    "nombre": "ERGONOMÍA INTUITIVA.",
+                    "descripcion": "Un asiento bajo, estriberas intermedias y una postura erguida. La ergonomía de la GRR 450 se adapta a tu estilo de conducción y te permite manejar todo, desde el tráfico hasta las curvas cerradas.",
+                    "posicion": { "top": "42%", "left": "42%" }
+                },
+                {
+                    "nombre": "TRIPPER DASH",
+                    "descripcion": "Accede a tu música, mensajes, mapas y más sin sacar tu teléfono con el Tripper Dash de Royal Enfield GRR 450, que incluye Google Maps y un chipset Wifi 5 de 2,4/5 Ghz.",
+                    "posicion": { "top": "30%", "left": "62%" }
+                },
+                {
+                    "nombre": "SHERPA",
+                    "descripcion": "Con nuestro motor Sherpa de 452 cc refrigerado por líquido, con 40 CV y ​​40 Nm de par, la Royal Enfield GRR 450 está ajustada para ofrecer potencia en todo el rango de revoluciones, en cualquier situación.",
+                    "posicion": { "top": "60%", "left": "52%" }
+                },
+                {
+                    "nombre": "CHASIS Y SUSPENSIÓN",
+                    "descripcion": "Con su bastidor de acero de doble viga, que utiliza el motor como miembro estresado, suspensión delantera telescópica de 43 mm y suspensión trasera monoamortiguador tipo varillaje de Showa, la GRR 450 está diseñada para manejarse desde el corazón.",
+                    "posicion": { "top": "60%", "left": "44%" }
+                },
+                {
+                    "nombre": "NEUMÁTICOS SIN CÁMARA DE PERFIL ANCHO",
+                    "descripcion": "Las ruedas de 17 pulgadas de GRR 450, 120/70 delante y 160/60 detrás, neumáticos sin cámara de perfil ancho con dibujo personalizado te mantienen en control en todas las velocidades y en todas las situaciones.",
+                    "posicion": { "top": "80%", "left": "30%" }
+                }
+            ],
+            "logoGira": "../img/gama/logo_gira-grr-Black.png",
+            "descripcionGira": "Los roadsters modernos parecen genéricos, suenan sintéticos y se sienten plásticos. GRR 450 es una declaración de independencia de este conformismo abrumador. En una época en la que la automatización ha embotado las sensaciones, los algoritmos han sofocado la imaginación y los conjuntos de características han reemplazado al alma, GRR se mantiene desafiantemente aparte.",
             "colores": [
                 {
-                    "nombre": "Blazing Black",
+                    "nombre": "Brava Blue",
                     "imagenes": [
-                        "../img/giro/scram/blazing-1.png",
-                        "../img/giro/scram/blazing-2.png",
-                        "../img/giro/scram/blazing-3.png",
-                        "../img/giro/scram/blazing-4.png",
-                        "../img/giro/scram/blazing-5.png",
-                        "../img/giro/scram/blazing-6.png",
-                        "../img/giro/scram/blazing-7.png",
-                        "../img/giro/scram/blazing-8.png",
-                        "../img/giro/scram/blazing-9.png",
-                        "../img/giro/scram/blazing-10.png",
-                        "../img/giro/scram/blazing-11.png"
+                        "../img/giro/grr/blue-1.png",
+                        "../img/giro/grr/blue-2.png",
+                        "../img/giro/grr/blue-3.png",
+                        "../img/giro/grr/blue-4.png",
+                        "../img/giro/grr/blue-5.png",
+                        "../img/giro/grr/blue-6.png",
+                        "../img/giro/grr/blue-7.png",
+                        "../img/giro/grr/blue-8.png",
+                        "../img/giro/grr/blue-9.png",
+                        "../img/giro/grr/blue-10.png"
                     ],
-                    "tanque": "../img/giro/scram/blazing-black.png"
+                    "tanque": "../img/giro/grr/tanque-bravaBlue.webp"
+                },
+                
+               
+                 {
+                    "nombre": "Yellow Ribbon",
+                    "imagenes": [
+                        "../img/giro/grr/yellow-1.png",
+                        "../img/giro/grr/yellow-2.png",
+                        "../img/giro/grr/yellow-3.png",
+                        "../img/giro/grr/yellow-4.png",
+                        "../img/giro/grr/yellow-5.png",
+                        "../img/giro/grr/yellow-6.png",
+                        "../img/giro/grr/yellow-7.png",
+                        "../img/giro/grr/yellow-8.png"
+                    ],
+                    "tanque": "../img/giro/grr/tanque_yellowRibbon.webp"
+                },
+               
+                 {
+                    "nombre": "Gold Dip",
+                    "imagenes": [
+                        "../img/giro/grr/gold-1.png",
+                        "../img/giro/grr/gold-2.png",
+                        "../img/giro/grr/gold-3.png",
+                        "../img/giro/grr/gold-4.png",
+                        "../img/giro/grr/gold-5.png",
+                        "../img/giro/grr/gold-6.png",
+                        "../img/giro/grr/gold-7.png",
+                        "../img/giro/grr/gold-8.png",
+                        "../img/giro/grr/gold-9.png"
+                    ],
+                    "tanque": "../img/giro/grr/tanque-goldDip.webp"
                 },
                 {
-                    "nombre": "Silver Spirit",
+                    "nombre": "Smoke Silver",
                     "imagenes": [
-                       "../img/giro/scram/silver-1.png",
-                       "../img/giro/scram/silver-2.png",
-                       "../img/giro/scram/silver-3.png",
-                     
-                       "../img/giro/scram/silver-5.png",
-                       "../img/giro/scram/silver-7.png",
-                       "../img/giro/scram/silver-8.png",
-                       "../img/giro/scram/silver-9.png",
-                       "../img/giro/scram/silver-10.png",
-                       "../img/giro/scram/silver-11.png"
-                    ],
-                    "tanque": "../img/giro/scram/silver-spirit.png"
-                },
-                {
-                    "nombre": "White Flame",
-                    "imagenes": [
-                        "../img/giro/scram/white-1.png",
-                        "../img/giro/scram/white-2.png",
-                        "../img/giro/scram/white-3.png",
-                        "../img/giro/scram/white-4.png",
-                        "../img/giro/scram/white-5.png",
-                        "../img/giro/scram/white-7.png",
-                        "../img/giro/scram/white-8.png",
-                        "../img/giro/scram/white-9.png",
-                        "../img/giro/scram/white-10.png",
-                        "../img/giro/scram/white-11.png",
-                        "../img/giro/scram/white-12.png"
-                    ],
-                    "tanque": "../img/giro/scram/white-flame.png"
-                    
-                },
-                {
-                    "nombre": "Graphite yellow",
-                    "imagenes": [
-                        "../img/giro/scram/yellow-1.png",
-                        "../img/giro/scram/yellow-2.png",
-                        "../img/giro/scram/yellow-3.png",
-                        "../img/giro/scram/yellow-4.png",
-                        "../img/giro/scram/yellow-5.png",
-                        "../img/giro/scram/yellow-6.png",
-                        "../img/giro/scram/yellow-7.png",
-                        "../img/giro/scram/yellow-8.png",
-                        "../img/giro/scram/yellow-9.png",
-                        "../img/giro/scram/yellow-10.png"
-                       
-                    ],
-                       
-                    
-                    "tanque": "../img/giro/scram/graphite-yellow.png"
-                },
-                {
-                    "nombre": "Graphite Red",
-                    "imagenes": [
-                        "../img/giro/scram/red-1.png",
-                        "../img/giro/scram/red-2.png",
-                        "../img/giro/scram/red-3.png",
-                        "../img/giro/scram/red-4.png",
-                        "../img/giro/scram/red-5.png",
-                        "../img/giro/scram/red-6.png",
-                        "../img/giro/scram/red-7.png",
-                        "../img/giro/scram/red-8.png",
-                        "../img/giro/scram/red-9.png",
-                        "../img/giro/scram/red-10.png"
+                        "../img/giro/grr/silver-1.png",
+                        "../img/giro/grr/silver-2.png",
+                        "../img/giro/grr/silver-3.png",
+                        "../img/giro/grr/silver-4.png",
+                        "../img/giro/grr/silver-5.png",
+                        "../img/giro/grr/silver-6.png",
+                        "../img/giro/grr/silver-7.png",
+                        "../img/giro/grr/silver-8.png"
                         
-                     
                     ],
-                    "tanque": "../img/giro/scram/graphite_red.png"
+                    "tanque": "../img/giro/grr/tanque-smokeSilver.webp"
+                },
+                {
+                    "nombre": "Peix Bronze",
+                    "imagenes": [
+                        "../img/giro/grr/peix-1.png",
+                        "../img/giro/grr/peix-2.png",
+                        "../img/giro/grr/peix-3.png",
+                        "../img/giro/grr/peix-4.png",
+                        "../img/giro/grr/peix-5.png",
+                        "../img/giro/grr/peix-6.png",
+                        "../img/giro/grr/peix-7.png",
+                        "../img/giro/grr/peix-8.png"
+                    ],
+                    "tanque": "../img/giro/grr/tanque-peixBronze.webp"
+                },
+                {
+                    "nombre": "Playa Black",
+                    "imagenes": [
+                        "../img/giro/grr/black-1.png",
+                        "../img/giro/grr/black-2.png",
+                        "../img/giro/grr/black-3.png",
+                        "../img/giro/grr/black-4.png",
+                        "../img/giro/grr/black-5.png",
+                        "../img/giro/grr/black-6.png",
+                        "../img/giro/grr/black-7.png",
+                        "../img/giro/grr/black-8.png"
+                    ],
+                    "tanque": "../img/giro/grr/tanque-playaBlack.webp"
                 }
             ],
             "wallpapers": [
-                "../img/galeria/scram/scram_1.webp",
-                "../img/galeria/scram/scram_3.webp",
-                "../img/galeria/scram/scram_4.webp",
-                "../img/galeria/scram/scram_5.webp",
-                "../img/galeria/scram/scram_6.webp",
-                "../img/galeria/scram/gallery-7.jpg",
-                "../img/galeria/scram/gallery-2.jpg",
-                "../img/galeria/scram/gallery-3.jpg",
-                "../img/galeria/scram/gallery-4.jpg",
-                "../img/galeria/scram/gallery-5.jpg"
+                "../img/galeria/grr/gallery-1.jpg",
+                "../img/galeria/grr/gallery-2.jpg",
+                "../img/galeria/grr/grr-2.jpg",
+                "../img/galeria/grr/grr-450-3.jpg",
+                "../img/galeria/grr/grr-450-2.jpg",
+                "../img/galeria/grr/grr-450-7.jpg",
+                "../img/galeria/grr/grr-450-8.jpg",
+                "../img/galeria/grr/grr-450-10.jpg",
+                "../img/galeria/grr/grr-450-11.jpg",
+                "../img/galeria/grr/grr-450-12.jpg"
             ]
         },
+              
         {
             "id": 7,
             "nombre": "Classic 350",
             "logo": "../img/gama/logo-classic-350.png",
-            "imagenHeader": "../img/header-modelo/scram.png",
+           
             "fondoHeader": "../img/gama/fondo-borroso-velocidad.jpg",
-            "fondoHeader2": "../img/header/classic.png",
+            "fondoHeader2": "../img/header/classic-2.png",
             "descripcion": "La nueva Classic 350 personifica las tradiciones del pasado. Elegante y con una excepcional fabricación, irradia belleza.",
             "fichaTecnica": "../pdf/Classic 350.pdf",
-            "imagenFicha": "../img/detalle/classic_350.webp",
+            "imagenFicha": "../img/detalle/classic-nueva.jpg",
             "descripcionFicha": "Un auténtico diseño británico, una moto inspirada en la época de la posguerra. Detalles auténticos de la posguerra, gráficos y colores clásicos de la época dorada del motociclismo británico.",
             "potencia": "14.87KW @ 6100 RPM",
             "cilindrada": "349 CC MONOCILÍNDRICO",
             "sistema": "ANTIBLOQUEO DE FRENOS",
             "luces": "FRONTAL Y TRASERA VINTAGE",
-            "imagenForm": "../img/form/classic.webp",
+            "imagenForm": "../img/form/classic.jpg",
             "video": "https://www.youtube.com/embed/6AqNLRxiWHc?si=FVrSXfLrjRMynDsC",
-            "imagenTooltip":"../img/tooplist/classic_350.webp",
+            "imagenTooltip":"../img/tooplist/classic.png",
             "fondoTooltip":"../img/tooplist/logo_classic.webp",
             "detalles": [
                 {
@@ -909,148 +946,96 @@
             "descripcionGira": "La Classic 350 EFI es el significado perfecto de diseño, estilo, comodidad, y resistencia. Faros delanteros con forma de ojo de tigre y luces traseras vintage para un diseño clásico que se suman a su estilo.",
             "colores": [
                 {
-                    "nombre": "Halycon Black",
+                    "nombre": "Medallion Bronze",
                     "imagenes": [
-                        "../img/giro/classic/1-halycon-black.png",
-                        "../img/giro/classic/08-halycon-black.jpg",
-                        "../img/giro/classic/11-halycon-black.jpg",
-                        "../img/giro/classic/14-halycon-black.jpg",
-                        "../img/giro/classic/16-halycon-black.jpg",
-                        "../img/giro/classic/18-halycon-black.jpg",
-                        "../img/giro/classic/21-halycon-black.jpg",
-                        "../img/giro/classic/24-halycon-black.jpg",
-                        "../img/giro/classic/27-halycon-black.jpg",
-                        "../img/giro/classic/29-halycon-black.jpg",
-                        "../img/giro/classic/31-halycon-black.jpg"
+                        "../img/giro/classic/1-bronze.png",
+                        "../img/giro/classic/2-bronze.png",
+                        "../img/giro/classic/3-bronze.png",
+                        "../img/giro/classic/4-bronze.png",
+                        "../img/giro/classic/5-bronze.png",
+                        "../img/giro/classic/6-bronze.png",
+                        "../img/giro/classic/7-bronze.png",
+                        "../img/giro/classic/8-bronze.png"
+                        
                         
                     ],
-                    "tanque": "../img/giro/classic/Halycon-Black.png"
+                    "tanque": "../img/giro/classic/tanque_medallion_bronze.webp"
                 },
                 {
-                    "nombre": "Halycon Green",
+                    "nombre": "Commando Sand",
                     "imagenes": [
-                       "../img/giro/classic/HalyconForestGreen_000.jpg",
-                       "../img/giro/classic/HalyconForestGreen_002.jpg",
-                       "../img/giro/classic/HalyconForestGreen_3.png",
-                       "../img/giro/classic/HalyconForestGreen_4.png",
-                       "../img/giro/classic/HalyconForestGreen_5.png",
-                       "../img/giro/classic/HalyconForestGreen_6.png",
-                       "../img/giro/classic/HalyconForestGreen_7.png",
-                       "../img/giro/classic/HalyconForestGreen_8.png"
+                       "../img/giro/classic/1-sand.png",
+                       "../img/giro/classic/2-sand.png",
+                       "../img/giro/classic/3-sand.png",
+                       "../img/giro/classic/4-sand.png",
+                       "../img/giro/classic/5-sand.png",
+                       "../img/giro/classic/6-sand.png",
+                       "../img/giro/classic/7-sand.png",
+                       "../img/giro/classic/8-sand.png"
 
                     ],
-                    "tanque":  "../img/giro/classic/Halycon-Green.png"
+                    "tanque":  "../img/giro/classic/tanque_commando_sand.webp"
                 },
                 {
-                    "nombre": "Signals Desert Sand",
+                    "nombre": "Esmerald Green",
                     "imagenes": [
-                        "../img/giro/classic/signals-sandstorm-01.jpg",
-                        "../img/giro/classic/signals-sandstorm-8.jpg",
-                        "../img/giro/classic/signals-sandstorm-12.jpg",
-                        "../img/giro/classic/signals-sandstorm-15.jpg",
-                        "../img/giro/classic/signals-sandstorm-17.jpg",
-                        "../img/giro/classic/signals-sandstorm-20.jpg",
-                        "../img/giro/classic/signals-sandstorm-21.jpg",
-                        "../img/giro/classic/signals-sandstorm-25.jpg",
-                        "../img/giro/classic/signals-sandstorm-28.jpg",
-                        "../img/giro/classic/signals-sandstorm-30.jpg"
+                        "../img/giro/classic/1-green.png",
+                        "../img/giro/classic/2-green.png",
+                        "../img/giro/classic/3-green.png",
+                        "../img/giro/classic/4-green.png",
+                        "../img/giro/classic/5-green.png",
+                        "../img/giro/classic/6-green.png",
+                        "../img/giro/classic/7-green.png",
+                        "../img/giro/classic/8-green.png"
                        
                       
                     ],
-                    "tanque": "../img/giro/classic/Signals-Desert-Sand.png"
+                    "tanque": "../img/giro/classic/tanque_esmerald.webp"
                     
                 },
                 {
-                    "nombre": "Signals Marsh Grey",
+                    "nombre": "Gun Grey",
                     "imagenes": [
-                        "../img/giro/classic/signals-marsh-grey-1.jpg",
-                        "../img/giro/classic/signals-marsh-grey-9.jpg",
-                        "../img/giro/classic/signals-marsh-grey-14.jpg",
-                        "../img/giro/classic/signals-marsh-grey-16.jpg",
-                        "../img/giro/classic/signals-marsh-grey-18.jpg",
-                        "../img/giro/classic/signals-marsh-grey-20.jpg",
-                        "../img/giro/classic/signals-marsh-grey-23.jpg",
-                        "../img/giro/classic/signals-marsh-grey-26.jpg",
-                        "../img/giro/classic/signals-marsh-grey-30.jpg",
-                        "../img/giro/classic/signals-marsh-grey-31.jpg"
+                        "../img/giro/classic/1-grey.png",
+                        "../img/giro/classic/2-grey.png",
+                        "../img/giro/classic/3-grey.png",
+                        "../img/giro/classic/4-grey.png",
+                        "../img/giro/classic/5-grey.png",
+                        "../img/giro/classic/6-grey.png",
+                        "../img/giro/classic/7-grey.png",
+                        "../img/giro/classic/8-grey.png"
+
                     ],
-                    "tanque": "../img/giro/classic/signals-marsh-grey.png"
+                    "tanque": "../img/giro/classic/tanque_GunGrey.webp"
                 },
                 {
-                    "nombre": "Dark Gunmetal Grey",
+                    "nombre": "Stealth Black",
                     "imagenes": [
-                        "../img/giro/classic/gunmetal-grey-1.jpg",
-                        "../img/giro/classic/gunmetal-grey-8.jpg",
-                        "../img/giro/classic/gunmetal-grey-12.jpg",
-                        "../img/giro/classic/gunmetal-grey-16.jpg",
-                        "../img/giro/classic/gunmetal-grey-19.jpg",
-                        "../img/giro/classic/gunmetal-grey-23.jpg",
-                        "../img/giro/classic/gunmetal-grey-26.jpg",
-                        "../img/giro/classic/gunmetal-grey-29.jpg"
+                        "../img/giro/classic/1-black.png",
+                        "../img/giro/classic/2-black.png",
+                        "../img/giro/classic/3-black.png",
+                        "../img/giro/classic/4-black.png",
+                        "../img/giro/classic/5-black.png",
+                        "../img/giro/classic/6-black.png",
+                        "../img/giro/classic/7-black.png",
+                        "../img/giro/classic/8-black.png"
                     ],
-                    "tanque": "../img/giro/classic/Gun-metal-Grey.png"
-                },
-                {
-                    "nombre": "Dark Stealth Black",
-                    "imagenes": [
-                        "../img/giro/classic/dark-stealth-black-1.jpg",
-                        "../img/giro/classic/dark-stealth-black-8.jpg",
-                        "../img/giro/classic/dark-stealth-black-12.jpg",
-                        "../img/giro/classic/dark-stealth-black-15.jpg",
-                        "../img/giro/classic/dark-stealth-black-17.jpg",
-                        "../img/giro/classic/dark-stealth-black-20.jpg",
-                        "../img/giro/classic/dark-stealth-black-23.jpg",
-                        "../img/giro/classic/dark-stealth-black-26.jpg",
-                        "../img/giro/classic/dark-stealth-black-29.jpg",
-                        "../img/giro/classic/dark-stealth-black-31.jpg"
-                        
-                    ],
-                    "tanque": "../img/giro/classic/Dark-Stealth-Black.png"
-                },
-                {
-                    "nombre": "Chrome Red",
-                    "imagenes": [
-                        "../img/giro/classic/chrome-red-01.jpg",
-                        "../img/giro/classic/chrome-red-10.jpg",
-                        "../img/giro/classic/chrome-red-16.jpg",
-                        "../img/giro/classic/chrome-red-19.jpg",
-                        "../img/giro/classic/chrome-red-23.jpg",
-                        "../img/giro/classic/chrome-red-26.jpg",
-                        "../img/giro/classic/chrome-red-29.jpg",
-                        "../img/giro/classic/chrome-red-31.jpg"
-                        
-                    ],
-                    "tanque": "../img/giro/classic/ChromeRed.png"
-                },
-                {
-                    "nombre": "Chrome Bronze",
-                    "imagenes": [
-                        "../img/giro/classic/chrome-bronze-01.jpg",
-                        "../img/giro/classic/chrome-bronze-08.jpg",
-                        "../img/giro/classic/chrome-bronze-12.jpg",
-                        "../img/giro/classic/chrome-bronze-16.jpg",
-                        "../img/giro/classic/chrome-bronze-19.jpg",
-                        "../img/giro/classic/chrome-bronze-22.jpg",
-                        "../img/giro/classic/chrome-bronze-25.jpg",
-                        "../img/giro/classic/chrome-bronze-28.jpg",
-                        "../img/giro/classic/chrome-bronze-31.jpg"
-                    
-                    ],
-                    "tanque": "../img/giro/classic/Chrome-Bronze.png"
+                    "tanque": "../img/giro/classic/tanque_stealthBlack.webp"
                 }
+               
             ],
             "wallpapers": [
-                "../img/galeria/classic/galeria_12.webp",
-                "../img/galeria/classic/galeria-2.jpg",
-                "../img/galeria/classic/galeria-3.jpg",
-                "../img/galeria/classic/galeria-8.webp",
-                "../img/galeria/classic/galeria-6.jpg",
+                "../img/galeria/classic/nueva-1.jpg",
+                "../img/galeria/classic/nueva-2.jpg",
+                "../img/galeria/classic/nueva-3.jpg",
+                "../img/galeria/classic/nueva-4.jpg",
+                "../img/galeria/classic/nueva-5.jpg",
                
-                "../img/galeria/classic/gallery-1.jpg",
-                "../img/galeria/classic/gallery-2.jpg",
-                "../img/galeria/classic/gallery-3.jpg",
-                "../img/galeria/classic/gallery-7.jpg",
-                "../img/galeria/classic/gallery-8.jpg"
+                "../img/galeria/classic/nueva-2.jpg",
+                "../img/galeria/classic/nueva-7.jpg",
+                "../img/galeria/classic/nueva-3.jpg",
+                "../img/galeria/classic/nueva-6.jpg",
+                "../img/galeria/classic/nueva-8.jpg"
             ]
         },
         {

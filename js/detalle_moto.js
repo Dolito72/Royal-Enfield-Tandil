@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Buscar la moto seleccionada
             const moto = data.motos.find(m => m.id === Number(motoSeleccionada)); // Asegúrate de comparar números
             if (moto) {
+                
                 mostrarDetallesMoto(moto);
                 generarOpcionesDeColor(moto);
 
@@ -107,7 +108,7 @@ function mostrarDetallesMoto(moto) {
     document.getElementById("sistema").textContent = moto.sistema;
     document.getElementById("luces").textContent = moto.luces;
     document.getElementById('imagen-form').src = moto.imagenForm;
-    const iframe = document.getElementById('video');
+    /*const iframe = document.getElementById('video');
     console.log('Iframe encontrado:', iframe); // Esto debería imprimir el iframe si está presente
 
     if (iframe) {
@@ -115,7 +116,36 @@ function mostrarDetallesMoto(moto) {
         iframe.src = moto.video; // Asigna la URL al iframe
     } else {
         console.error('El iframe no se encuentra en el DOM');
-    }
+    }*/
+   //seccion video
+    // Verificar si el video es de YouTube o un archivo .mp4
+    
+    const container = document.getElementById('video-container'); 
+    container.innerHTML = ''; // Limpiamos el contenedor por si ya había algo
+    if (moto.video.includes('youtube.com') || moto.video.includes('youtu.be')) {
+    const iframe = document.createElement('iframe');
+    iframe.src = moto.video;
+    iframe.width = '100%';
+    iframe.height = '415';
+    iframe.title = 'YouTube video player';
+   
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen = true;
+    container.appendChild(iframe);
+} else if (moto.video.endsWith('.mp4')) {
+    const video = document.createElement('video');
+    video.src = moto.video;
+    video.controls = true;
+   
+    video.loop = true;
+    video.style.width = '100%';
+    video.style.height = '415px';
+    video.style.objectFit = 'cover';
+    container.appendChild(video);
+} else {
+    container.innerHTML = '<p>Formato de video no compatible</p>';
+}
+
     // seccion moto q gira
     // Configuración inicial de la imagen de la moto y sus detalles
     mostrarMotoGira(moto, 0); // Mostrar la primera imagen del primer color por defecto
@@ -240,11 +270,11 @@ function generarTooltips(moto) {
         puntoInteractivo.classList.add('punto-interactivo');
         puntoInteractivo.style.top = detalle.posicion.top;
         puntoInteractivo.style.left = detalle.posicion.left;
-        puntoInteractivo.dataset.text = detalle.descripcion;
-
+        puntoInteractivo.dataset.descripcion = detalle.descripcion;
+        puntoInteractivo.dataset.nombre = detalle.nombre;
         const tooltip = document.createElement('div');
         tooltip.classList.add('tooltip');
-        tooltip.textContent = detalle.nombre;
+        //tooltip.textContent = detalle.nombre;
 
         puntoInteractivo.appendChild(tooltip);
         puntosContainer.appendChild(puntoInteractivo);
@@ -254,7 +284,8 @@ function generarTooltips(moto) {
     document.querySelectorAll('.punto-interactivo').forEach(punto => {
         punto.addEventListener('mouseenter', function () {
             const tooltip = this.querySelector('.tooltip');
-            tooltip.textContent = this.dataset.text;
+            //tooltip.textContent = this.dataset.text;
+            tooltip.innerHTML = `<strong>${this.dataset.nombre}</strong><br>${this.dataset.descripcion}`;
             tooltip.style.display = 'block';  // Muestra el tooltip
         });
         punto.addEventListener('mouseleave', function () {
