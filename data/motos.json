@@ -908,7 +908,7 @@
         {
             "id": 7,
             "nombre": "Classic 350",
-            "logo": "../img/gama/logo-classic-350.png",
+            "logo": "../img/gama/logo-classic-blanco.png",
            
             "fondoHeader": "../img/gama/fondo-borroso-velocidad.jpg",
             "fondoHeader2": "../img/header/classic-2.png",
@@ -923,7 +923,7 @@
             "imagenForm": "../img/form/classic.jpg",
             "video": "https://www.youtube.com/embed/6AqNLRxiWHc?si=FVrSXfLrjRMynDsC",
             "imagenTooltip":"../img/tooplist/classic.png",
-            "fondoTooltip":"../img/tooplist/logo_classic.webp",
+            "fondoTooltip":"../img/tooplist/logo-classic-nuevo-negro.png",
             "detalles": [
                 {
                     "nombre": "FRENOS",
@@ -942,7 +942,7 @@
                 }
                
             ],
-            "logoGira": "../img/giro/classic/logo_classic.webp",
+            "logoGira": "../img/giro/classic/logo-classic-nuevo-negro.png",
             "descripcionGira": "La Classic 350 EFI es el significado perfecto de diseño, estilo, comodidad, y resistencia. Faros delanteros con forma de ojo de tigre y luces traseras vintage para un diseño clásico que se suman a su estilo.",
             "colores": [
                 {
@@ -1033,8 +1033,8 @@
                
                 "../img/galeria/classic/nueva-2.jpg",
                 "../img/galeria/classic/nueva-7.jpg",
-                "../img/galeria/classic/nueva-3.jpg",
                 "../img/galeria/classic/nueva-6.jpg",
+                "../img/galeria/classic/nueva-3.jpg",
                 "../img/galeria/classic/nueva-8.jpg"
             ]
         },
@@ -1207,7 +1207,7 @@
             "cilindrada": "349 CC MONOCILÍNDRICO",
             "sistema": "ABS DUAL-CHANNEL",
             "luces": "Encendido automático",
-            "imagenForm": "../img/form/hntr.webp",
+            "imagenForm": "../img/form/hntr-2.webp",
             "video": "https://www.youtube.com/embed/uTzk_SyOgBQ?si=nW22Naw5wi9_3cqM",
             "imagenTooltip":"../img/tooplist/hntr.webp",
             "fondoTooltip":"../img/tooplist/logo-hntr-2.png",
@@ -1285,36 +1285,18 @@
                     ],
                     "tanque": "../img/giro/hntr/rebel-black.png"
                     
-                },
-                {
-                    "nombre": "Rebel Red",
-                    "imagenes": [
-                        "../img/giro/hntr/red-1.png",
-                        "../img/giro/hntr/red-2.png",
-                        "../img/giro/hntr/red-3.png",
-                        "../img/giro/hntr/red-5.png",
-                        "../img/giro/hntr/red-6.png",
-                        "../img/giro/hntr/red-7.png",
-                        "../img/giro/hntr/red-8.png",
-                        "../img/giro/hntr/red-9.png"
-                     
-
-                        
-                       
-                    ],
-                    "tanque": "../img/giro/hntr/rebel-red.png"
                 }
             ],
             "wallpapers": [
                 "../img/galeria/hntr/galeria-1.webp",
-                "../img/galeria/hntr/galeria-2.webp",
+                "../img/galeria/hntr/galeria-7.webp",
                 "../img/galeria/hntr/galeria-3.jpg",
                 "../img/galeria/hntr/galeria-4.webp",
                 "../img/galeria/hntr/galeria-5.webp",
                 "../img/galeria/hntr/galeria-6.jpg",
                 "../img/galeria/hntr/galeria-7.jpg",
                 "../img/galeria/hntr/gallery-7.jpg",
-                "../img/galeria/hntr/gallery-8.jpg",
+                "../img/galeria/hntr/galeria-6.webp",
                 "../img/galeria/hntr/gallery-10.jpg"
                 
             ]

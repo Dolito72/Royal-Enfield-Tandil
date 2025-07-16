@@ -335,6 +335,7 @@ form input, form select {
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.8s ease-out;
+    margin-top: 10px;
 }
 
 /* Botón debajo del texto */
@@ -1369,6 +1370,7 @@ iframe {
 
     .logo-hero{
         width: 300px;
+        margin-bottom: 10px;
     }
     /* Texto en tablet/desktop */
     .carousel-text {
